@@ -1,5 +1,13 @@
 # Applied Anomalology — build plan
 
+## Status: build complete
+
+Everything in "Agreed structure" below is built, checked, and committed.
+`pnpm check` and `pnpm check:evidence` are both green as of the latest
+commit. There is no required next step — see "One flagged limitation" for
+the one thing an autonomous session couldn't verify and should get a human
+look before submission.
+
 ## What this course is
 
 **Applied Anomalology** (`SLOP3646`, level 3, "Applied Anomalology"). An
@@ -27,51 +35,36 @@ On-campus anomalies (weeks 4–6) are original inventions set at the fictional
 Slop University campus (not real ANU locations); off-campus material
 (weeks 7–9) draws on existing creepypasta framed as case data.
 
-## Current state
-
-Harness carried forward from `comp4020-crit5-YueheSun`, committed
-(`f18ed41`). Baseline `pnpm check` green. Course concept, identity, structure,
-assessments, cast, assets and spec-test plan all agreed with the student —
-see the full agreed structure below. No content files have been touched yet;
-everything from here is execution.
-
-## Agreed structure
+## Agreed structure (fully realized)
 
 ### Identity — `src/course-config.ts`, `src/site-config.ts`
 
-- `courseMeta`: code `SLOP3646` (keep assigned `646`), level `3`, title
-  "Applied Anomalology", session "Semester 1", year `2027`, reuse the
-  existing date range (`2027-02-22`–`2027-05-28`) so week dates stay inside
-  the checked period. Description (80–300 chars) frames it as an applied
-  research methods course. Tags e.g. `["fieldwork", "anomalous phenomena",
-  "applied science"]`.
-- `sessionLabels`: rename to **Practicals** (collection key/URL/refs stay
-  `sessions`).
-- `socialImage`/`socialImageAlt` point at the new hero/card asset (below);
-  alt text updates automatically from `courseMeta`.
+Course code `SLOP3646` (kept assigned `646` suffix), level 3, "Semester 1"
+2027, date range `2027-02-22`–`2027-05-28`. `sessionLabels` renamed to
+**Practicals** (collection key/URL/refs stay `sessions`). `socialImage`/
+`socialImageAlt` point at the replacement card/hero assets.
 
 ### Cast — `src/content/people/`
 
-Replace both starter entries (delete old files, add new):
+- **Dr. Perpetua Solano** — Convenor. Owns theory, classification
+  frameworks, and the literature-synthesis lectures.
+- **Teaching Fellow Jonah Whitcombe** — Field Safety Officer. Runs the
+  field practicals and the comparative warding-traditions unit; owns
+  fieldwork safety protocol.
 
-- **Dr. Perpetua Solano** — Convenor, Department of Applied Anomalology
-  (School of Invented Disciplines). Owns theory, classification frameworks,
-  and the literature-synthesis lectures.
-- **Teaching Fellow Jonah Whitcombe** — Field Safety Officer. Runs the field
-  practicals and the comparative warding-traditions unit; owns fieldwork
-  safety protocol.
+Photos dropped rather than replaced — in-fiction: "identifying photograph
+withheld per containment protocol" (both `photo`/`photoAlt` are optional in
+the schema; a deleted starter file passes `check:evidence`'s hash gate).
 
-Photos: delete both starter `.avif` files, drop `photo`/`photoAlt`
-frontmatter (both optional in the schema) rather than generating replacement
-portraits — framed in-fiction as "identifying photograph withheld per
-containment protocol." A deleted file passes `check:evidence`'s
-starter-asset-hash gate.
+**Teacher ownership split** (a judgment call, not specified up front):
+Solano owns theory/method/desk-study/synthesis — weeks 1, 2, 7, 8, 9, 10, 11
+sessions, plus lectures week-01, week-06, week-09, week-11. Whitcombe owns
+fieldwork/warding — weeks 3, 4, 5, 6 sessions, plus lecture week-03. Week 12
+(final debrief) is co-taught. Rationale: the brief already called week 3's
+warding unit "his" and gave Solano the synthesis lectures, so this extends
+that same split by phase rather than inventing a new axis.
 
 ### Week-by-week (12 weeks, 5 phases)
-
-Sessions (Practicals) run every week; lectures sit at phase transitions.
-Existing `sessions/01-*.md`, `sessions/02-*.md`, `lectures/week-01.md`,
-`lectures/week-02.md`, and the deck get renamed/rewritten in place.
 
 | Wk | Phase | Practical (session) | Lecture |
 |----|-------|----------------------|---------|
@@ -88,174 +81,98 @@ Existing `sessions/01-*.md`, `sessions/02-*.md`, `lectures/week-01.md`,
 | 11 | Literature synthesis | The unifying fourth-dimensional hypothesis, presented as leading-but-contested | Lecture: current state of the field, open dissent |
 | 12 | Capstone | Final debrief / practical wrap-up — **Final Capstone due** | — |
 
-Rename convention: sessions `NN-topic-slug.md` (e.g. `06-case-clinic-2.md`),
-lectures `week-NN.md` (kept, matching the deck's existing `/decks/week-01/`
-path). `related:` refs between sessions/lectures/assessments get updated to
-match the new slugs.
-
 ### Assessments — `src/content/assessments/`
 
-Three-part, one per checkpoint (`assignment-1.md` → `case-file.md`,
-`final-project.md` → `final-capstone.md`, add `literature-review.md`):
-
-- **Field Case File** — due wk 6, **30%**, weighted marking (documentation
-  rigor / safety-protocol adherence / analytical quality). Covers phases 1–2.
-- **Comparative Literature Review** — due wk 9, **30%**, weighted marking
+- **Field Case File** — due wk 6, 30%, weighted marking (documentation
+  rigor / safety-protocol adherence / analytical quality). Phases 1–2.
+- **Comparative Literature Review** — due wk 9, 30%, weighted marking
   (breadth of comparison / quality of evaluation of competing theories).
-  Covers phase 3.
-- **Final Capstone** — due wk 12, **40%**, holistic marking. Covers phases
-  4–5: propose a containment/warding protocol for a novel case, grounded in
-  the course's classification and countermeasure material. A position on the
-  contested unifying theory may inform the protocol's design, but the
-  deliverable is the protocol, not a verdict on the theory.
+  Phase 3.
+- **Final Capstone** — due wk 12, 40%, holistic marking. Phases 4–5:
+  propose a containment/warding protocol for a novel case, grounded in the
+  course's classification and countermeasure material.
+
+Weights sum to 100 (asserted by `spec/assessment-weights.test.ts`).
 
 ### Deck — `src/decks/week-01.deck.mdx`
 
-Rewrite as the week 1 orientation briefing: what anomalology is, the applied
-observe → classify → apply-countermeasure method that structures the course
-(comparative/literature-synthesis phases are an extension of it, not the
-point of it), safety-first framing for fieldwork to come.
+Rewritten as the week 1 orientation briefing: what anomalology is, the
+applied observe → classify → apply-countermeasure method, safety-first
+framing for fieldwork to come. 9 slides, verified by counting rendered
+`<section>`s in the built output and checking each `_class` (`impact`,
+`banner`, `quote`, `centered`) landed correctly.
 
 ### Assets — `src/assets/images/`
 
-Replace `card.png` and `hero-home.avif` (starter-hash-gated) with two small
-custom SVG images in a liminal-space motif (empty fluorescent corridor /
-repeating geometric backrooms pattern), built in the existing Slop brand
-palette.
+`card.png` and `hero-home.avif` (starter, hash-gated) replaced with
+liminal-corridor artwork in the existing Slop gold/black brand palette:
+`hero-home.svg` (converging-corridor perspective) and `card.png` (a
+repeating light-panel grid with one dark door breaking the pattern — see
+"platform constraint" below for why this one is a PNG, not SVG).
 
-### New spec tests — `spec/`
+### Spec tests — `spec/`
 
 Alongside supplied `data-integrity.test.ts`:
 
-1. Course code retains assigned `646` suffix.
-2. Assessment weights sum to 100 across the whole course (schema only checks
-   per-assessment criteria sums, not cross-assessment `weight`).
-3. At least one lecture links a real, generated deck (API `meta.slides` set +
-   `dist/decks/<slug>/index.html` exists).
+1. `course-identity.test.ts` — course code retains assigned `646` suffix.
+2. `assessment-weights.test.ts` — weights sum to 100 across the course.
+3. `deck-links.test.ts` — at least one lecture's `meta.slides` resolves to
+   a real, generated `dist/decks/<slug>/index.html`.
 
-### Visual pass (light touch)
+### Visual pass
 
-Small atmosphere layer in `PageLayout.astro`'s global style block: a
-"classified/redacted" text-styling class for case-file excerpts. Minimal,
-on top of fixed brand tokens, not structural.
+A `.redacted` text-styling class for case-file excerpts, in
+`src/styles/global.css` (imported explicitly into every page that uses
+it — see the layout-routing pitfall below), exercised by a sample redacted
+log entry in `week-06.md`.
 
-## Current state (updated)
+## Two platform constraints hit during the build (full detail in `process-notes.md`)
 
-**Autonomous-execution note:** the student authorized proceeding through all
-remaining phases below without pausing between them (they stepped away).
-Standing rules still apply: `pnpm check` green before every commit, commit
-after each completed phase, update this file at each boundary. Genuine
-ambiguities get a documented judgment call here or in `process-notes.md`
-instead of a stop-and-wait. The usual `/clear` between phases is skipped for
-the same reason — this file is being kept current regardless, so a fresh
-agent can still pick up correctly if the session breaks.
+- **`socialImage` can't be SVG even though `heroImage` can.** `socialImage`
+  gets re-encoded to JPEG downstream (for scrapers that can't decode modern
+  formats); that re-encode is a sharp rasterize call that Astro refuses to
+  run on an SVG source. `heroImage` has no such step, so SVG works there.
+  Fix: kept the card design as an SVG source, rasterized it once locally to
+  PNG, committed the PNG — narrower blast radius than flipping the global
+  `image.dangerouslyProcessSVG` config flag for one asset.
+- **A global style on `PageLayout.astro` doesn't reach content-collection
+  pages.** `PageLayout.astro` is only wired up via the theme's
+  `defaultLayout` option, which reaches exactly two plain-markdown pages
+  (`404.md`, `policies/index.mdx`). `src/pages/{sessions,lectures,
+  assessments}/[slug].astro` and `src/pages/index.astro` import
+  `ContentLayout` from the theme package directly and never touch it — a
+  style scoped to `PageLayout.astro` silently matches nothing there, no
+  build error, `pnpm check` stays green throughout. Caught by manually
+  grepping built HTML for the rule rather than trusting the check. Fixed by
+  centralizing shared CSS in `src/styles/global.css` and importing it
+  explicitly into every page that needs it. Now also a permanent CLAUDE.md
+  note (sibling to the existing scoped-styles-vs-JS-DOM one) so it isn't
+  rediscovered on the next style added to this repo.
 
-Identity done (`8b1fdbf`). **All 12 weeks of session/lecture content across
-all 5 phases are written and committed** (`41b99eb`, `600daf3` for phase 1;
-`b8b8929` for phases 2–5 — weeks 4–12). Table in "Agreed structure" above is
-now fully realized in `src/content/sessions/` and `src/content/lectures/`.
+## One flagged limitation
 
-**Assessments done (`d7762ed`)**: `case-file.md` (30, weighted), 
-`literature-review.md` (30, weighted), `final-capstone.md` (40, holistic) —
-weights sum to 100. Starter `assignment-1.md`/`final-project.md` deleted.
-Hit one real bug here, written up in `process-notes.md`: a bare `: ` inside
-an unquoted multi-line YAML plain scalar (prose in `final-capstone.md`'s
-holistic `marking.description`) parses as an ambiguous nested mapping key
-and fails the whole document. Fixed by rewording rather than quoting; then
-grepped all other new frontmatter for the same pattern to rule out latent
-copies.
+This environment has no headless browser (no Playwright/Chromium/
+puppeteer), so the final visual/viewport check was done by reading built
+HTML/CSS directly (grepping computed rules and markup across every
+affected page type) and by rendering the two new image assets to pixels
+and viewing them — real verification against the built artifact, but not
+the same as opening the site in an actual browser. **Recommended before
+submission**: a `pnpm dev` + browser look at `/policies`,
+`/lectures/week-06` (the `.redacted` span in a blockquote), and the
+homepage hero at a few viewport widths. Full detail in `process-notes.md`'s
+final entry.
 
-**Cast done (`bc50d44`)**: Dr. Perpetua Solano (convenor) and Jonah
-Whitcombe (Field Safety Officer) replace the starter people entries;
-starter photos deleted, `photo`/`photoAlt` dropped (in-fiction: "withheld
-per containment protocol"), satisfying `check:evidence`'s starter-hash
-gate via deletion. `teachers:` backfilled on all 12 sessions + 5 lectures.
+## Commit log for this build (chronological)
 
-**Judgment call — teacher ownership split** (flagged as undecided in the
-prior version of this file, now resolved): Solano owns theory/method/
-desk-study/synthesis — weeks 1, 2, 7, 8, 9, 10, 11 sessions, plus lectures
-week-01, week-06, week-09, week-11. Whitcombe owns fieldwork/warding — weeks
-3, 4, 5, 6 sessions, plus lecture week-03. Week 12 (final debrief) is
-explicitly co-taught (`teachers: [perpetua-solano, jonah-whitcombe]`),
-matching its body text ("a joint session, run by both the convenor and the
-Field Safety Officer"). Rationale: the Agreed structure already calls
-week-3 warding "his" (Whitcombe's) unit and gives Solano the literature-
-synthesis lectures, so this extends that same split forward/backward by
-phase rather than introducing a new axis — fieldwork phase (3–6) to
-Whitcombe, everything bracketing it to Solano.
+`f18ed41` harness carried forward · `8b1fdbf` identity · `95698b8` plan
+checkpoint · `41b99eb` weeks 1–3 · `600daf3` plan checkpoint · `b8b8929`
+weeks 4–12 · `d7762ed` assessments · `bc50d44` cast + teacher backfill ·
+`f77e377` plan checkpoint · `8bc5a46` deck rewrite · `150293f` homepage +
+policies copy · `8103e49` image assets · `ecf762d` plan checkpoint ·
+`7b19897` spec tests · `7e29e05` `.redacted` CSS + layout-routing fix ·
+`dec883e` plan/harness checkpoint · `281ab7a` `PROCESS.md` · `ff9d1cf`
+plan checkpoint.
 
-`pnpm check` green after each of the three commits above.
-
-## Next step
-
-Done so far this phase: deck rewrite (`8bc5a46`), homepage body + policies
-page (`150293f`), the two starter image assets replaced (`8103e49`) —
-hero as SVG, card authored as SVG then rendered once to PNG (SVG can't be
-`socialImage` directly; see `process-notes.md`) — and the three new spec
-tests (`7b19897`: course-code suffix, assessment weights sum to 100, at
-least one lecture resolves to a real built deck).
-
-**CSS visual pass done (`7e29e05`)**: added a `.redacted` text-styling class
-for case-file excerpts, exercised via a sample redacted log entry added to
-`week-06.md`. Hit a real bug here: first put the rule in a
-`<style is:global>` block on `PageLayout.astro`, and `pnpm check` passed —
-but manually grepping the built HTML (not just trusting the check) showed
-the rule only reached `dist/policies/index.html`, not the lecture/session/
-assessment pages where the class is actually used. Root cause:
-`PageLayout.astro` is only rendered via `defaultLayout` for plain markdown
-pages (`404.md`, `policies/index.mdx`); the content-collection `[slug].astro`
-routes import `ContentLayout` directly and never touch it. Fixed by moving
-the rule into `src/styles/global.css` and importing it explicitly into
-`PageLayout.astro` plus all three `[slug].astro` route files; re-verified by
-grepping the rebuilt HTML across all four page types. Full writeup in
-`process-notes.md`; a general CLAUDE.md note now documents the pitfall.
-
-**`PROCESS.md` done (`281ab7a`)**: rewritten for real, citing 14 actual
-commit hashes from this repo's history and the one steering prompt that
-mattered (the autonomous "proceed through all remaining phases"
-instruction), replacing the template's placeholder content and fake
-commit hashes.
-
-**`pnpm check:evidence` done, fully green**: no starter-content markers,
-no starter asset hashes, `PROCESS.md`'s 14 cited commits all resolve,
-reflections/ correctly not required for this assignment type. Spot-checked
-the built HTML by hand too (homepage `<h2>`s, policies page's four section
-headings) rather than trusting the gate alone.
-
-## Status: done, with one flagged limitation
-
-All phases from "Agreed structure" are built, checked, and committed:
-identity, all 12 weeks across 5 phases, 3 assessments, cast + teacher
-backfill, deck rewrite, homepage/policies copy, 2 replacement image assets,
-3 new spec tests, the `.redacted` CSS pass (plus the layout-routing bug it
-surfaced and fixed), `PROCESS.md`, and a clean `check:evidence`.
-
-**Flagged for the student, not resolved autonomously**: this environment
-has no headless browser (no Playwright/Chromium), so the final visual pass
-was done by reading built HTML/CSS and rendering image assets to pixels
-directly rather than viewing pages in an actual browser. Worth a `pnpm dev`
-+ browser look before submission at `/policies`, `/lectures/week-06`
-(the `.redacted` span in context), and the homepage hero at a few viewport
-widths — see `process-notes.md`'s final entry for exactly what wasn't
-checkable here.
-
-**Judgment call — scope discovery from running `pnpm check:evidence` early:**
-running it now (rather than only at the very end) surfaced starter-content
-gates the original "Agreed structure" didn't enumerate: the homepage body
-copy and hero alt-text comment in `src/pages/index.astro`, the whole of
-`src/pages/policies/index.mdx`, and `PROCESS.md` itself (template comment +
-two placeholder commit citations that don't resolve in this repo). Treating
-these as in-scope required work, not optional polish, since step 8's
-`pnpm check:evidence` is a hard gate and "never commit a red state" implies
-getting it green eventually. Added as steps 1a/1b below; `PROCESS.md` moves
-to its own late step so it can honestly cite the commits made after it would
-otherwise have been written.
-
-1a. Rewrite the homepage body (`src/pages/index.astro`: "What you will do",
-    "Who it is for" sections, remove the STARTER_CONTENT comments) and
-    `src/pages/policies/index.mdx` (real late-work/extension/integrity/help
-    rules for this fictional course).
-1b. Write `PROCESS.md` for real, near the end, citing this session's actual
-    commits and the one real steering prompt that mattered (the autonomous
-    "proceed through all remaining phases" instruction) — not the template's
-    placeholder hashes.
+Full prose account with reasoning: `PROCESS.md`. Raw process moments (YAML
+colon trap, SVG/`socialImage` constraint, layout-routing bug, this
+limitation): `process-notes.md`.
