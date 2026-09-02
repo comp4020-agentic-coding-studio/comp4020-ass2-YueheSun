@@ -141,20 +141,21 @@ on top of fixed brand tokens, not structural.
 
 ## Next step
 
-1. Update `src/course-config.ts` and `src/site-config.ts` (identity +
-   `sessionLabels`) — this is the smallest change that should immediately
-   make the date-integrity check meaningful again. Run `pnpm check`, commit.
-2. Write the 12-week session/lecture content, phase by phase (Foundations →
+Done: `src/course-config.ts` (`SLOP3646`, level 3, "Applied Anomalology",
+applied-research-methods description, tags) and `src/site-config.ts`
+(`sessionLabels` → Practicals). `pnpm check` green, committed as `8b1fdbf`.
+
+1. Write the 12-week session/lecture content, phase by phase (Foundations →
    fieldwork → desk study → synthesis → capstone), checking and committing
-   after each phase.
-3. Write the three assessment files (renamed, correct weights) and update
+   after each phase. **Start here.**
+2. Write the three assessment files (renamed, correct weights) and update
    `related:` refs.
-4. Replace cast (`people/`) entries and delete starter photos.
-5. Rewrite the week-01 deck.
-6. Replace the two starter image assets.
-7. Add the three new spec tests.
-8. Add the light CSS visual pass.
-9. `pnpm check:evidence` + manual viewport check.
+3. Replace cast (`people/`) entries and delete starter photos.
+4. Rewrite the week-01 deck.
+5. Replace the two starter image assets.
+6. Add the three new spec tests.
+7. Add the light CSS visual pass.
+8. `pnpm check:evidence` + manual viewport check.
 
 At each phase boundary: update this file with current state + reasoning,
 `/clear`, reload with `@plan.md`.
