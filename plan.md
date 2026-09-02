@@ -188,20 +188,25 @@ Whitcombe, everything bracketing it to Solano.
 
 ## Next step
 
-1. Rewrite the week-01 deck (`src/decks/week-01.deck.mdx`) as the
-   orientation briefing per "Agreed structure" above.
-2. Replace the two starter image assets (`card.png`, `hero-home.avif`) with
-   custom SVGs in the liminal-space motif.
-3. Add the three new spec tests listed in "Agreed structure".
-4. Add the light CSS visual pass (redacted/classified text class) —
+Done so far this phase: deck rewrite (`8bc5a46`), homepage body + policies
+page (`150293f`), and the two starter image assets replaced (`8103e49`) —
+hero as SVG, card authored as SVG then rendered once to PNG (SVG can't be
+`socialImage` directly; see `process-notes.md`).
+
+1. Add the three new spec tests listed in "Agreed structure".
+2. Add the light CSS visual pass (redacted/classified text class) —
    `PageLayout.astro` has no global style block yet, so add one
    (`<style is:global>`) rather than assuming it exists.
-5. `pnpm check:evidence` + a viewport check. Since no one is watching this
+3. Write `PROCESS.md` for real (see judgment call above) — near the end so
+   it can cite the actual commit range, once there isn't much left to add
+   to it.
+4. `pnpm check:evidence` + a viewport check. Since no one is watching this
    session live, treat "manual check" as: build, then actually inspect the
-   rendered output (fetch/read the built HTML or a screenshot if a browser
-   tool is available) rather than assuming a green `pnpm check` implies the
-   page looks right — and note in `process-notes.md` if a real human look is
-   still needed before this is truly done.
+   rendered output (fetch/read the built HTML, or render key pages/images
+   to PNG and view them, as already done for the two new image assets)
+   rather than assuming a green `pnpm check` implies the page looks right —
+   and note in `process-notes.md` if a real human look is still needed
+   before this is truly done.
 
 Check + commit after each numbered step, same discipline as the content
 phases above.
