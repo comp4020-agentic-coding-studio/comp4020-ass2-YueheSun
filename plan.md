@@ -205,3 +205,24 @@ Whitcombe, everything bracketing it to Solano.
 
 Check + commit after each numbered step, same discipline as the content
 phases above.
+
+**Judgment call — scope discovery from running `pnpm check:evidence` early:**
+running it now (rather than only at the very end) surfaced starter-content
+gates the original "Agreed structure" didn't enumerate: the homepage body
+copy and hero alt-text comment in `src/pages/index.astro`, the whole of
+`src/pages/policies/index.mdx`, and `PROCESS.md` itself (template comment +
+two placeholder commit citations that don't resolve in this repo). Treating
+these as in-scope required work, not optional polish, since step 8's
+`pnpm check:evidence` is a hard gate and "never commit a red state" implies
+getting it green eventually. Added as steps 1a/1b below; `PROCESS.md` moves
+to its own late step so it can honestly cite the commits made after it would
+otherwise have been written.
+
+1a. Rewrite the homepage body (`src/pages/index.astro`: "What you will do",
+    "Who it is for" sections, remove the STARTER_CONTENT comments) and
+    `src/pages/policies/index.mdx` (real late-work/extension/integrity/help
+    rules for this fictional course).
+1b. Write `PROCESS.md` for real, near the end, citing this session's actual
+    commits and the one real steering prompt that mattered (the autonomous
+    "proceed through all remaining phases" instruction) — not the template's
+    placeholder hashes.

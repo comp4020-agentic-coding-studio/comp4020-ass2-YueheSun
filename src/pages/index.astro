@@ -5,33 +5,39 @@ import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
-
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
   heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
+  heroImageAlt="A repeating grid of identical fluorescent-lit corridor tiles, receding into a flat, seamless expanse"
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
   <h2>What you will do</h2>
   <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
+    You will log, corroborate and classify anomalous phenomena using the
+    department's observational method; run two supervised on-campus
+    observations under the fieldwork safety protocol; survey a regional and a
+    global corpus of documented cases as comparative desk study; and evaluate
+    the competing theoretical frameworks currently offered for what the
+    cases converge on. You walk out with a case file, a comparative
+    literature review, and a containment/warding protocol for a novel case —
+    the applied method, exercised end to end.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
+    Students who can already log an observation without interpreting it as
+    they go, and who are prepared to treat a protective ritual, a
+    contested causal theory, or a widely-circulated report as evidence to be
+    weighed rather than folklore to be dismissed. No prior anomalology is
+    assumed; a working comparative-method habit from any empirical discipline
+    transfers directly.
   </p>
 
   <h2>Where to go next</h2>
