@@ -139,18 +139,46 @@ Small atmosphere layer in `PageLayout.astro`'s global style block: a
 "classified/redacted" text-styling class for case-file excerpts. Minimal,
 on top of fixed brand tokens, not structural.
 
+## Current state (updated)
+
+Identity done (`8b1fdbf`). **Phase 1 of the week-by-week content (Foundations,
+weeks 1–3) is now written and committed (`41b99eb`)**:
+
+- `sessions/01-observational-method.md` (was `01-getting-started.md`),
+  `sessions/02-historical-taxonomies.md` (was `02-first-review.md`),
+  `sessions/03-comparative-warding.md` (new).
+- `lectures/week-01.md` rewritten in place (course overview, links the
+  still-placeholder week-01 deck); `lectures/week-02.md` renamed to
+  `lectures/week-03.md` and rewritten (protective practice as applied
+  research). Week 2 has no lecture, matching the table in "Agreed structure".
+- Verified in a live `pnpm dev` fetch: sessions listing shows all three
+  correct titles/weeks, and the week-1 lecture page shows the slides link and
+  the `related:` edge back to its session. `pnpm check` green.
+
+**Deliberate deferral:** none of these five files set `teachers:` (it's
+optional in the schema). The plan's cast section (Solano/Whitcombe) isn't
+built yet — the only `people/` entries that exist are the old starter
+placeholders (`marisol-quaye`, `idris-fenn`), and referencing those would
+just mean re-editing every file again once the real cast lands. Add
+`teachers:` refs when doing the cast-replacement step below: Solano owns
+weeks 1–2 (method framing, classification) and the week-1 lecture;
+Whitcombe owns the week-3 warding session (explicitly "his" unit per the
+Agreed structure). Week-3 lecture's owner is a judgment call not yet made —
+either teacher is defensible; decide it there rather than assuming Solano.
+
 ## Next step
 
-Done: `src/course-config.ts` (`SLOP3646`, level 3, "Applied Anomalology",
-applied-research-methods description, tags) and `src/site-config.ts`
-(`sessionLabels` → Practicals). `pnpm check` green, committed as `8b1fdbf`.
-
-1. Write the 12-week session/lecture content, phase by phase (Foundations →
-   fieldwork → desk study → synthesis → capstone), checking and committing
-   after each phase. **Start here.**
+1. **Continue the week-by-week content, phase by phase — do phase 2 next**
+   (On-campus fieldwork, weeks 4–6: fieldwork safety protocol session,
+   case clinic 1, case clinic 2 + Case File due + wrap-up lecture). Then
+   phase 3 (weeks 7–9), phase 4 (weeks 10–11), phase 5 (week 12) — checking
+   (`pnpm check`) and committing after each phase, same as phase 1.
 2. Write the three assessment files (renamed, correct weights) and update
-   `related:` refs.
-3. Replace cast (`people/`) entries and delete starter photos.
+   `related:` refs — do this once the sessions/lectures that assessments
+   point at (e.g. week 6, week 9, week 12) exist, so refs resolve on the
+   first try.
+3. Replace cast (`people/`) entries and delete starter photos; backfill
+   `teachers:` on the weeks-1-3 files per the deferral note above.
 4. Rewrite the week-01 deck.
 5. Replace the two starter image assets.
 6. Add the three new spec tests.
