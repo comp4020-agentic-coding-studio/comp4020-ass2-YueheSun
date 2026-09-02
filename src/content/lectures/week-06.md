@@ -21,3 +21,15 @@ related:
   adherence shows up in a write-up, not only in the field
 - what "analytical quality" means here: engagement with the classification
   scheme from week 2, not just tidy prose
+
+## A sample log entry
+
+A strong log entry from the stairwell case, as the department's running
+record keeps it — observer identity redacted per department policy, count
+and classification left intact for the write-up to work from:
+
+> Observer <span class="redacted">[redacted]</span>, buddy-paired, west
+> stairwell, descending. Counted thirteen steps aloud with buddy
+> confirming. Arrived at starting floor. Re-ran ascending: sixteen steps,
+> arrived one floor above starting point as geometry predicts. No
+> disengagement invoked. Provisional classification: responsive.

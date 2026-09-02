@@ -1,0 +1,14 @@
+/* Imported directly by pages that need it, rather than relying on Astro's
+   per-component style scoping: content-collection detail pages (sessions,
+   lectures, assessments) render through astro-theme-university's
+   ContentLayout, not this project's PageLayout.astro, so a scoped <style>
+   there never reaches them. See process-notes.md. */
+
+.redacted {
+  font-family: var(--at-font-mono);
+  padding: 0.05em 0.4em;
+  background: var(--at-black);
+  color: var(--at-white);
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
