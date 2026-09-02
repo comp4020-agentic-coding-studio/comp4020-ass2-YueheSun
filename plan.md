@@ -141,49 +141,67 @@ on top of fixed brand tokens, not structural.
 
 ## Current state (updated)
 
-Identity done (`8b1fdbf`). **Phase 1 of the week-by-week content (Foundations,
-weeks 1–3) is now written and committed (`41b99eb`)**:
+**Autonomous-execution note:** the student authorized proceeding through all
+remaining phases below without pausing between them (they stepped away).
+Standing rules still apply: `pnpm check` green before every commit, commit
+after each completed phase, update this file at each boundary. Genuine
+ambiguities get a documented judgment call here or in `process-notes.md`
+instead of a stop-and-wait. The usual `/clear` between phases is skipped for
+the same reason — this file is being kept current regardless, so a fresh
+agent can still pick up correctly if the session breaks.
 
-- `sessions/01-observational-method.md` (was `01-getting-started.md`),
-  `sessions/02-historical-taxonomies.md` (was `02-first-review.md`),
-  `sessions/03-comparative-warding.md` (new).
-- `lectures/week-01.md` rewritten in place (course overview, links the
-  still-placeholder week-01 deck); `lectures/week-02.md` renamed to
-  `lectures/week-03.md` and rewritten (protective practice as applied
-  research). Week 2 has no lecture, matching the table in "Agreed structure".
-- Verified in a live `pnpm dev` fetch: sessions listing shows all three
-  correct titles/weeks, and the week-1 lecture page shows the slides link and
-  the `related:` edge back to its session. `pnpm check` green.
+Identity done (`8b1fdbf`). **All 12 weeks of session/lecture content across
+all 5 phases are written and committed** (`41b99eb`, `600daf3` for phase 1;
+`b8b8929` for phases 2–5 — weeks 4–12). Table in "Agreed structure" above is
+now fully realized in `src/content/sessions/` and `src/content/lectures/`.
 
-**Deliberate deferral:** none of these five files set `teachers:` (it's
-optional in the schema). The plan's cast section (Solano/Whitcombe) isn't
-built yet — the only `people/` entries that exist are the old starter
-placeholders (`marisol-quaye`, `idris-fenn`), and referencing those would
-just mean re-editing every file again once the real cast lands. Add
-`teachers:` refs when doing the cast-replacement step below: Solano owns
-weeks 1–2 (method framing, classification) and the week-1 lecture;
-Whitcombe owns the week-3 warding session (explicitly "his" unit per the
-Agreed structure). Week-3 lecture's owner is a judgment call not yet made —
-either teacher is defensible; decide it there rather than assuming Solano.
+**Assessments done (`d7762ed`)**: `case-file.md` (30, weighted), 
+`literature-review.md` (30, weighted), `final-capstone.md` (40, holistic) —
+weights sum to 100. Starter `assignment-1.md`/`final-project.md` deleted.
+Hit one real bug here, written up in `process-notes.md`: a bare `: ` inside
+an unquoted multi-line YAML plain scalar (prose in `final-capstone.md`'s
+holistic `marking.description`) parses as an ambiguous nested mapping key
+and fails the whole document. Fixed by rewording rather than quoting; then
+grepped all other new frontmatter for the same pattern to rule out latent
+copies.
+
+**Cast done (`bc50d44`)**: Dr. Perpetua Solano (convenor) and Jonah
+Whitcombe (Field Safety Officer) replace the starter people entries;
+starter photos deleted, `photo`/`photoAlt` dropped (in-fiction: "withheld
+per containment protocol"), satisfying `check:evidence`'s starter-hash
+gate via deletion. `teachers:` backfilled on all 12 sessions + 5 lectures.
+
+**Judgment call — teacher ownership split** (flagged as undecided in the
+prior version of this file, now resolved): Solano owns theory/method/
+desk-study/synthesis — weeks 1, 2, 7, 8, 9, 10, 11 sessions, plus lectures
+week-01, week-06, week-09, week-11. Whitcombe owns fieldwork/warding — weeks
+3, 4, 5, 6 sessions, plus lecture week-03. Week 12 (final debrief) is
+explicitly co-taught (`teachers: [perpetua-solano, jonah-whitcombe]`),
+matching its body text ("a joint session, run by both the convenor and the
+Field Safety Officer"). Rationale: the Agreed structure already calls
+week-3 warding "his" (Whitcombe's) unit and gives Solano the literature-
+synthesis lectures, so this extends that same split forward/backward by
+phase rather than introducing a new axis — fieldwork phase (3–6) to
+Whitcombe, everything bracketing it to Solano.
+
+`pnpm check` green after each of the three commits above.
 
 ## Next step
 
-1. **Continue the week-by-week content, phase by phase — do phase 2 next**
-   (On-campus fieldwork, weeks 4–6: fieldwork safety protocol session,
-   case clinic 1, case clinic 2 + Case File due + wrap-up lecture). Then
-   phase 3 (weeks 7–9), phase 4 (weeks 10–11), phase 5 (week 12) — checking
-   (`pnpm check`) and committing after each phase, same as phase 1.
-2. Write the three assessment files (renamed, correct weights) and update
-   `related:` refs — do this once the sessions/lectures that assessments
-   point at (e.g. week 6, week 9, week 12) exist, so refs resolve on the
-   first try.
-3. Replace cast (`people/`) entries and delete starter photos; backfill
-   `teachers:` on the weeks-1-3 files per the deferral note above.
-4. Rewrite the week-01 deck.
-5. Replace the two starter image assets.
-6. Add the three new spec tests.
-7. Add the light CSS visual pass.
-8. `pnpm check:evidence` + manual viewport check.
+1. Rewrite the week-01 deck (`src/decks/week-01.deck.mdx`) as the
+   orientation briefing per "Agreed structure" above.
+2. Replace the two starter image assets (`card.png`, `hero-home.avif`) with
+   custom SVGs in the liminal-space motif.
+3. Add the three new spec tests listed in "Agreed structure".
+4. Add the light CSS visual pass (redacted/classified text class) —
+   `PageLayout.astro` has no global style block yet, so add one
+   (`<style is:global>`) rather than assuming it exists.
+5. `pnpm check:evidence` + a viewport check. Since no one is watching this
+   session live, treat "manual check" as: build, then actually inspect the
+   rendered output (fetch/read the built HTML or a screenshot if a browser
+   tool is available) rather than assuming a green `pnpm check` implies the
+   page looks right — and note in `process-notes.md` if a real human look is
+   still needed before this is truly done.
 
-At each phase boundary: update this file with current state + reasoning,
-`/clear`, reload with `@plan.md`.
+Check + commit after each numbered step, same discipline as the content
+phases above.
