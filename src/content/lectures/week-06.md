@@ -5,6 +5,8 @@ description:
   using the sub-basement stacks and the 13-step stairwell as worked examples.
 week: 6
 date: 2027-03-29
+teachers:
+  - perpetua-solano
 related:
   - sessions/06-case-clinic-2
 ---

@@ -6,6 +6,8 @@ description:
   observation before it costs anyone anything.
 week: 4
 date: 2027-03-15
+teachers:
+  - jonah-whitcombe
 spec:
   - you can state the disengagement rule and the single condition that
     triggers it

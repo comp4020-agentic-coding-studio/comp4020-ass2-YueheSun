@@ -6,6 +6,8 @@ description:
   filtered out.
 week: 8
 date: 2027-04-12
+teachers:
+  - perpetua-solano
 spec:
   - you can name two cases from different countries that the department's
     scheme classifies the same way despite no evident contact between their

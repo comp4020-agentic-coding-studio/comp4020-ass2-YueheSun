@@ -6,6 +6,8 @@ description:
   after exactly thirteen steps, sometimes.
 week: 6
 date: 2027-03-29
+teachers:
+  - jonah-whitcombe
 spec:
   - you can produce a log of the stairwell case that distinguishes what you
     counted from what you inferred

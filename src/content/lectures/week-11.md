@@ -6,6 +6,8 @@ description:
   "leading" as "concluded."
 week: 11
 date: 2027-05-03
+teachers:
+  - perpetua-solano
 related:
   - sessions/11-fourth-dimensional-hypothesis
 ---

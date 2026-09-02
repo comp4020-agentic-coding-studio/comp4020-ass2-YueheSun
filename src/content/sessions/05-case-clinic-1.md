@@ -6,6 +6,8 @@ description:
   it was at opening.
 week: 5
 date: 2027-03-22
+teachers:
+  - jonah-whitcombe
 spec:
   - you can produce a log of the case that a second observer, given only your
     notes, could use to navigate the stacks as you found them

@@ -5,6 +5,8 @@ description:
   classify, never intervene — introduced before any fieldwork begins.
 week: 1
 date: 2027-02-22
+teachers:
+  - perpetua-solano
 spec:
   - you can state the department's three-part observation protocol (log,
     corroborate, classify) without reference to notes

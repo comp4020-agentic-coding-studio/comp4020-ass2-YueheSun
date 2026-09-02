@@ -6,6 +6,8 @@ description:
   away.
 week: 3
 date: 2027-03-08
+teachers:
+  - jonah-whitcombe
 related:
   - sessions/03-comparative-warding
 ---

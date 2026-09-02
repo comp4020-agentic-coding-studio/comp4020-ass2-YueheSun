@@ -5,6 +5,9 @@ description:
   together, in the week the Final Capstone is due.
 week: 12
 date: 2027-05-10
+teachers:
+  - perpetua-solano
+  - jonah-whitcombe
 spec:
   - you have submitted the Final Capstone — a containment/warding protocol
     for a novel case, grounded in the course's classification and

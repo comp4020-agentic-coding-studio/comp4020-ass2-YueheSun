@@ -5,6 +5,8 @@ description:
   and the observe–classify–countermeasure method that structures the semester.
 week: 1
 date: 2027-02-22
+teachers:
+  - perpetua-solano
 slides: /decks/week-01/
 related:
   - sessions/01-observational-method

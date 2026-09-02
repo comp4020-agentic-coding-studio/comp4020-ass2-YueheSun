@@ -6,6 +6,8 @@ description:
   claims, not a menu to choose from.
 week: 10
 date: 2027-04-26
+teachers:
+  - perpetua-solano
 spec:
   - you can state the core claim of at least two competing frameworks in your
     own words

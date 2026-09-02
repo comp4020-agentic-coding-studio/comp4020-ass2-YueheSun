@@ -5,6 +5,8 @@ description:
   three earlier taxonomies were retired rather than patched.
 week: 2
 date: 2027-03-01
+teachers:
+  - perpetua-solano
 spec:
   - you can name the department's current top-level classification categories
     and place a described phenomenon into one

@@ -6,6 +6,8 @@ description:
   Review, due this week, has to stop short of a verdict.
 week: 9
 date: 2027-04-19
+teachers:
+  - perpetua-solano
 spec:
   - you can state what the pooled cases converge on, and, separately, what
     they do not

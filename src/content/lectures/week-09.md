@@ -6,6 +6,8 @@ description:
   conclusion this phase is entitled to.
 week: 9
 date: 2027-04-19
+teachers:
+  - perpetua-solano
 related:
   - sessions/09-comparative-analysis
 ---

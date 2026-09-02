@@ -6,6 +6,8 @@ description:
   from different sources comparable at all.
 week: 7
 date: 2027-04-05
+teachers:
+  - perpetua-solano
 spec:
   - you can state the comparative method's three requirements for treating
     an external case as usable data (sourcing, behaviour description,

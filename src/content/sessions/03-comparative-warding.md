@@ -6,6 +6,8 @@ description:
   read side by side as countermeasure research rather than folklore.
 week: 3
 date: 2027-03-08
+teachers:
+  - jonah-whitcombe
 spec:
   - you can describe one Western warding practice and one Chinese warding
     practice in terms of the mechanism each claims, not just the ritual form

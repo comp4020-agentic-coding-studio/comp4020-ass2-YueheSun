@@ -6,6 +6,8 @@ description:
   standard as every framework in week 10.
 week: 11
 date: 2027-05-03
+teachers:
+  - perpetua-solano
 spec:
   - you can state the fourth-dimensional hypothesis's core claim without
     overstating it as settled
