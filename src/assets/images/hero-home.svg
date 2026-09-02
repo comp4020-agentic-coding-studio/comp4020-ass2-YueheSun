@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#efe6d3" />
+      <stop offset="100%" stop-color="#d8c79f" />
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#f4ecdc" />
+
+  <!-- ceiling -->
+  <rect x="0" y="0" width="1600" height="360" fill="#efe6d3" />
+  <!-- floor -->
+  <rect x="0" y="360" width="1600" height="540" fill="url(#floor)" />
+
+  <!-- receding corridor tiles, converging toward a vanishing point -->
+  <g stroke="#241f16" stroke-width="3" fill="none">
+    <!-- ceiling tile grid lines converging up -->
+    <line x1="0" y1="360" x2="800" y2="120" />
+    <line x1="320" y1="360" x2="800" y2="170" />
+    <line x1="640" y1="360" x2="800" y2="220" />
+    <line x1="960" y1="360" x2="800" y2="220" />
+    <line x1="1280" y1="360" x2="800" y2="170" />
+    <line x1="1600" y1="360" x2="800" y2="120" />
+    <line x1="0" y1="200" x2="1600" y2="200" opacity="0" />
+
+    <!-- floor tile grid lines converging down -->
+    <line x1="0" y1="360" x2="800" y2="620" />
+    <line x1="320" y1="360" x2="800" y2="580" />
+    <line x1="640" y1="360" x2="800" y2="540" />
+    <line x1="960" y1="360" x2="800" y2="540" />
+    <line x1="1280" y1="360" x2="800" y2="580" />
+    <line x1="1600" y1="360" x2="800" y2="620" />
+  </g>
+
+  <!-- side walls -->
+  <polygon points="0,0 320,360 320,900 0,900" fill="#e6d9b8" stroke="#241f16" stroke-width="3" />
+  <polygon points="1600,0 1280,360 1280,900 1600,900" fill="#e6d9b8" stroke="#241f16" stroke-width="3" />
+
+  <!-- repeating fluorescent light panels along the ceiling, receding -->
+  <g fill="#b97d1c" stroke="#241f16" stroke-width="3">
+    <rect x="740" y="145" width="120" height="18" rx="3" />
+    <rect x="700" y="230" width="200" height="26" rx="4" />
+    <rect x="620" y="345" width="360" height="40" rx="5" />
+  </g>
+
+  <!-- repeating door/panel seams on each side wall, evenly spaced -->
+  <g stroke="#241f16" stroke-width="3">
+    <line x1="60" y1="60" x2="60" y2="850" />
+    <line x1="140" y1="90" x2="140" y2="820" />
+    <line x1="220" y1="130" x2="220" y2="770" />
+    <line x1="1540" y1="60" x2="1540" y2="850" />
+    <line x1="1460" y1="90" x2="1460" y2="820" />
+    <line x1="1380" y1="130" x2="1380" y2="770" />
+  </g>
+
+  <!-- a single flat gold door on each side, the only unrepeated shape -->
+  <rect x="90" y="470" width="90" height="200" fill="#b97d1c" stroke="#241f16" stroke-width="3" />
+  <rect x="1420" y="470" width="90" height="200" fill="#b97d1c" stroke="#241f16" stroke-width="3" />
+
+  <!-- vanishing point -->
+  <circle cx="800" cy="370" r="4" fill="#241f16" />
+</svg>
