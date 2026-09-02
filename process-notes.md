@@ -97,3 +97,23 @@ existing note about scoped styles + JS-created elements is the same failure
 class one level up: a scoped rule silently matching nothing, no error,
 just an unstyled page — here because of the wrong layout component, not
 runtime-created DOM.
+
+## Limits of the final manual check — no headless browser in this environment
+
+Closing out the build, `pnpm check:evidence` passed clean (14/14 cited
+commits resolve, no starter markers left). For the visual/viewport pass
+CLAUDE.md asks for, this environment has no Playwright/Chromium/puppeteer
+install and no way to launch one, so a real rendered-in-a-browser look
+wasn't possible here. What was actually done instead: read the built HTML
+and CSS directly (grepping computed rules and markup across every affected
+page type, as in the `.redacted` fix above), and for the two new image
+assets, rendered/rasterized them and viewed the actual pixels with the
+image-reading tool rather than trusting a file existed. That's real
+verification against the built artifact, not against a guess — but it
+still isn't the same as opening the site in a browser and looking at
+layout, spacing, and responsive behavior the way a human would. **Flagging
+this for the student**: worth a quick `pnpm dev` + browser look before
+submission, specifically at `/policies`, `/lectures/week-06`, and the
+homepage hero, to catch anything a text-level check can't (e.g. how the
+`.redacted` span reads inline in a blockquote, or how the new SVG hero
+scales at different viewport widths).

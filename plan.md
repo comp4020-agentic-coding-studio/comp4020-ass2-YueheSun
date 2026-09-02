@@ -210,20 +210,34 @@ the rule into `src/styles/global.css` and importing it explicitly into
 grepping the rebuilt HTML across all four page types. Full writeup in
 `process-notes.md`; a general CLAUDE.md note now documents the pitfall.
 
-1. Write `PROCESS.md` for real (see judgment call above) — citing this
-   session's actual commit hashes and the one real steering prompt (the
-   autonomous "proceed through all remaining phases" instruction), not the
-   template's placeholder hashes.
-2. `pnpm check:evidence` + a final viewport check. Since no one is watching
-   this session live, treat "manual check" as: build, then actually inspect
-   the rendered output (fetch/read the built HTML, or render key pages/
-   images to PNG and view them, as already done for the two new image
-   assets and the `.redacted` CSS) rather than assuming a green `pnpm check`
-   implies the page looks right — and note in `process-notes.md` if a real
-   human look is still needed before this is truly done.
+**`PROCESS.md` done (`281ab7a`)**: rewritten for real, citing 14 actual
+commit hashes from this repo's history and the one steering prompt that
+mattered (the autonomous "proceed through all remaining phases"
+instruction), replacing the template's placeholder content and fake
+commit hashes.
 
-Check + commit after each numbered step, same discipline as the content
-phases above.
+**`pnpm check:evidence` done, fully green**: no starter-content markers,
+no starter asset hashes, `PROCESS.md`'s 14 cited commits all resolve,
+reflections/ correctly not required for this assignment type. Spot-checked
+the built HTML by hand too (homepage `<h2>`s, policies page's four section
+headings) rather than trusting the gate alone.
+
+## Status: done, with one flagged limitation
+
+All phases from "Agreed structure" are built, checked, and committed:
+identity, all 12 weeks across 5 phases, 3 assessments, cast + teacher
+backfill, deck rewrite, homepage/policies copy, 2 replacement image assets,
+3 new spec tests, the `.redacted` CSS pass (plus the layout-routing bug it
+surfaced and fixed), `PROCESS.md`, and a clean `check:evidence`.
+
+**Flagged for the student, not resolved autonomously**: this environment
+has no headless browser (no Playwright/Chromium), so the final visual pass
+was done by reading built HTML/CSS and rendering image assets to pixels
+directly rather than viewing pages in an actual browser. Worth a `pnpm dev`
++ browser look before submission at `/policies`, `/lectures/week-06`
+(the `.redacted` span in context), and the homepage hero at a few viewport
+widths — see `process-notes.md`'s final entry for exactly what wasn't
+checkable here.
 
 **Judgment call — scope discovery from running `pnpm check:evidence` early:**
 running it now (rather than only at the very end) surfaced starter-content
