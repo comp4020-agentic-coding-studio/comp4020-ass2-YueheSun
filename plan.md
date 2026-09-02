@@ -189,24 +189,38 @@ Whitcombe, everything bracketing it to Solano.
 ## Next step
 
 Done so far this phase: deck rewrite (`8bc5a46`), homepage body + policies
-page (`150293f`), and the two starter image assets replaced (`8103e49`) —
+page (`150293f`), the two starter image assets replaced (`8103e49`) —
 hero as SVG, card authored as SVG then rendered once to PNG (SVG can't be
-`socialImage` directly; see `process-notes.md`).
+`socialImage` directly; see `process-notes.md`) — and the three new spec
+tests (`7b19897`: course-code suffix, assessment weights sum to 100, at
+least one lecture resolves to a real built deck).
 
-1. Add the three new spec tests listed in "Agreed structure".
-2. Add the light CSS visual pass (redacted/classified text class) —
-   `PageLayout.astro` has no global style block yet, so add one
-   (`<style is:global>`) rather than assuming it exists.
-3. Write `PROCESS.md` for real (see judgment call above) — near the end so
-   it can cite the actual commit range, once there isn't much left to add
-   to it.
-4. `pnpm check:evidence` + a viewport check. Since no one is watching this
-   session live, treat "manual check" as: build, then actually inspect the
-   rendered output (fetch/read the built HTML, or render key pages/images
-   to PNG and view them, as already done for the two new image assets)
-   rather than assuming a green `pnpm check` implies the page looks right —
-   and note in `process-notes.md` if a real human look is still needed
-   before this is truly done.
+**CSS visual pass done (`7e29e05`)**: added a `.redacted` text-styling class
+for case-file excerpts, exercised via a sample redacted log entry added to
+`week-06.md`. Hit a real bug here: first put the rule in a
+`<style is:global>` block on `PageLayout.astro`, and `pnpm check` passed —
+but manually grepping the built HTML (not just trusting the check) showed
+the rule only reached `dist/policies/index.html`, not the lecture/session/
+assessment pages where the class is actually used. Root cause:
+`PageLayout.astro` is only rendered via `defaultLayout` for plain markdown
+pages (`404.md`, `policies/index.mdx`); the content-collection `[slug].astro`
+routes import `ContentLayout` directly and never touch it. Fixed by moving
+the rule into `src/styles/global.css` and importing it explicitly into
+`PageLayout.astro` plus all three `[slug].astro` route files; re-verified by
+grepping the rebuilt HTML across all four page types. Full writeup in
+`process-notes.md`; a general CLAUDE.md note now documents the pitfall.
+
+1. Write `PROCESS.md` for real (see judgment call above) — citing this
+   session's actual commit hashes and the one real steering prompt (the
+   autonomous "proceed through all remaining phases" instruction), not the
+   template's placeholder hashes.
+2. `pnpm check:evidence` + a final viewport check. Since no one is watching
+   this session live, treat "manual check" as: build, then actually inspect
+   the rendered output (fetch/read the built HTML, or render key pages/
+   images to PNG and view them, as already done for the two new image
+   assets and the `.redacted` CSS) rather than assuming a green `pnpm check`
+   implies the page looks right — and note in `process-notes.md` if a real
+   human look is still needed before this is truly done.
 
 Check + commit after each numbered step, same discipline as the content
 phases above.

@@ -25,6 +25,21 @@ give the `<style>` block covering those parts `is:global`, or move those
 rules into `global.css`. Check the built page's CSS for an `astro-*` hash on
 the rule in question if styles seem to be silently not applying.
 
+## Not every page renders through `PageLayout.astro`
+
+`PageLayout.astro` only reaches pages via the theme's `defaultLayout`
+option, which auto-injects a `layout:` field into plain markdown pages under
+`src/pages/` that don't declare their own. Content-collection detail pages
+(`src/pages/{sessions,lectures,assessments}/[slug].astro`) and
+`src/pages/index.astro` import `ContentLayout` from `astro-theme-university`
+directly and never touch it — so a style scoped to `PageLayout.astro` is
+silently absent from most of the site, no build error, `pnpm check` still
+green. Put shared global CSS in `src/styles/global.css` and import it
+explicitly from every page/route that needs it, rather than assuming a
+layout-level style block reaches the whole site. When in doubt, grep the
+built HTML for the rule across a few different page types before trusting
+that a style landed.
+
 ## Auto-commit
 
 Commit automatically whenever a feature is added, removed, or adjusted —

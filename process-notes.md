@@ -57,3 +57,43 @@ SVG asset just to accommodate one file's format.
 change to work around a single asset choice — smaller blast radius to
 rasterize once at authoring time than to loosen a safety default for the
 whole build.
+
+## A global style on `PageLayout.astro` doesn't reach content-collection pages — 2027-09-03 (commit 7e29e05)
+
+Added a `.redacted` text-styling class (a demo excerpt in `week-06.md`'s
+lecture body) as a `<style is:global>` block inside `src/layouts/
+PageLayout.astro`. `pnpm check` passed clean, "no accessibility violations."
+Manually grepped the built HTML for the rule anyway before trusting it, per
+CLAUDE.md's manual-check discipline — and it was only present in
+`dist/policies/index.html`. Absent from `dist/lectures/week-06/index.html`,
+every session and assessment page, and the homepage.
+
+**What happened:** `PageLayout.astro` is not a general page shell — it's
+only reached via the theme integration's `defaultLayout` option, which
+auto-injects a `layout:` frontmatter field into plain markdown pages under
+`src/pages/` that don't declare their own (reaches `404.md` and
+`policies/index.mdx`, and nothing else). `src/pages/{sessions,lectures,
+assessments}/[slug].astro` and `src/pages/index.astro` each import
+`ContentLayout` from `astro-theme-university` directly and render it
+themselves — they never touch `PageLayout.astro` at all. A style scoped
+there silently matches nothing on those pages: no build error, `pnpm check`
+stays green, because nothing in the check suite asserts computed CSS
+actually reaches specific pages.
+
+**Fix applied:** moved the rule into a new `src/styles/global.css` (with a
+comment explaining why it lives there instead of in a component-scoped
+block) and imported it directly into `PageLayout.astro` plus each of the
+three `[slug].astro` route files that use redacted-style excerpts.
+Re-verified by grepping the rebuilt HTML for `.redacted{` across
+`lectures/week-06`, a session page, an assessment page, and `policies` —
+present in all four this time.
+
+**This is a harness-gap moment, not a routine retry**: `pnpm check` cannot
+catch "the CSS rule that's syntactically fine and scoped correctly never
+reaches the element it's meant to style" — that's a routing fact about
+which layout component a page actually renders through, invisible from
+inside any single file. Worth a CLAUDE.md note (see below) since the
+existing note about scoped styles + JS-created elements is the same failure
+class one level up: a scoped rule silently matching nothing, no error,
+just an unstyled page — here because of the wrong layout component, not
+runtime-created DOM.
