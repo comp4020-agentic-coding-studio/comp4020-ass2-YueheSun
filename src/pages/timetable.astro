@@ -1,0 +1,13 @@
+---
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import TimetableGrid from "../components/TimetableGrid.astro";
+import { siteConfig } from "../site-config";
+---
+
+<ContentLayout
+  title="Timetable"
+  description="The whole semester at a glance: phase, practical and lecture for every week, with assessment due dates."
+  {...siteConfig}
+>
+  <TimetableGrid />
+</ContentLayout>

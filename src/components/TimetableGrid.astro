@@ -1,0 +1,117 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+import { withBase } from "astro-theme-university/url";
+import { formatCourseDate } from "../lib/dates";
+
+// Phase names have no schema field (content.config.ts has none, and adding
+// one would mean touching all 12 session frontmatters for a pure
+// presentation label) — copied verbatim from plan.md's Week-by-week table.
+const PHASES: { name: string; from: number; to: number }[] = [
+  { name: "Foundations", from: 1, to: 3 },
+  { name: "On-campus fieldwork", from: 4, to: 6 },
+  { name: "Off-campus desk study", from: 7, to: 9 },
+  { name: "Literature synthesis", from: 10, to: 11 },
+  { name: "Capstone", from: 12, to: 12 },
+];
+
+function phaseForWeek(week: number): string {
+  return PHASES.find((phase) => week >= phase.from && week <= phase.to)?.name ?? "";
+}
+
+const [sessions, lectures, assessments] = await Promise.all([
+  getPublishedCollection("sessions"),
+  getPublishedCollection("lectures"),
+  getPublishedCollection("assessments"),
+]);
+
+const rows = Array.from({ length: 12 }, (_, index) => {
+  const week = index + 1;
+  return {
+    week,
+    phase: phaseForWeek(week),
+    session: sessions.find((entry) => entry.data.week === week),
+    lecture: lectures.find((entry) => entry.data.week === week),
+    assessment: assessments.find((entry) => entry.data.week === week),
+  };
+});
+---
+
+<table class="timetable">
+  <thead>
+    <tr>
+      <th scope="col">Week</th>
+      <th scope="col">Phase</th>
+      <th scope="col">Practical</th>
+      <th scope="col">Lecture</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      rows.map((row) => (
+        <tr>
+          <th scope="row">{row.week}</th>
+          <td>{row.phase}</td>
+          <td>
+            {row.session && (
+              <a href={withBase(`/sessions/${row.session.id}/`)}>{row.session.data.title}</a>
+            )}
+            {row.assessment && (
+              <>
+                {" "}
+                <a class="due-badge" href={withBase(`/assessments/${row.assessment.id}/`)}>
+                  {row.assessment.data.title} due{" "}
+                  {formatCourseDate(row.assessment.data.due)}
+                </a>
+              </>
+            )}
+          </td>
+          <td>
+            {row.lecture ? (
+              <a href={withBase(`/lectures/${row.lecture.id}/`)}>{row.lecture.data.title}</a>
+            ) : (
+              <span aria-hidden="true">—</span>
+            )}
+          </td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+
+<style>
+  .timetable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .timetable th,
+  .timetable td {
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--at-border);
+  }
+
+  .timetable thead th {
+    background: var(--at-table-header-bg);
+    color: var(--at-table-header-text);
+  }
+
+  .timetable tbody tr:nth-child(even) {
+    background: var(--at-table-stripe);
+  }
+
+  .timetable th[scope="row"] {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .due-badge {
+    display: inline-block;
+    margin-top: 0.25rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--at-text-secondary);
+    background: var(--at-bg-alt);
+  }
+</style>

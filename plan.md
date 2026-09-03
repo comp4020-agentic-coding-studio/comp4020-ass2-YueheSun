@@ -81,6 +81,19 @@ that same split by phase rather than inventing a new axis.
 | 11 | Literature synthesis | The unifying fourth-dimensional hypothesis, presented as leading-but-contested | Lecture: current state of the field, open dissent |
 | 12 | Capstone | Final debrief / practical wrap-up — **Final Capstone due** | — |
 
+This table is also the design source for **`/timetable/`** (new page:
+`src/pages/timetable.astro` + `src/components/TimetableGrid.astro`), which
+renders it live from the `sessions`/`lectures`/`assessments` content
+collections instead of transcribing it — so session/lecture titles, dates
+and due-week badges can never drift from the real content. The one thing
+that *is* hardcoded there is the Phase column itself (the 1–3/4–6/7–9/10–11/12
+week ranges above): `content.config.ts`'s schema has no `phase` field, and
+adding one just to back this label would mean touching all 12 session
+frontmatters for no other benefit. If a future edit changes which weeks
+belong to which phase, update both this table and the `PHASES` array in
+`TimetableGrid.astro` — they're two representations of the same decision,
+not one deriving from the other.
+
 ### Assessments — `src/content/assessments/`
 
 - **Field Case File** — due wk 6, 30%, weighted marking (documentation
