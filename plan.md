@@ -216,7 +216,7 @@ what's actually done, not the historical week-by-week table further down.
 | 1 | Foundations | ✅ | ✅ | done |
 | 2 | Foundations | ✅ | ✅ | done |
 | 3 | Foundations | ✅ | ✅ | done |
-| 4 | On-campus fieldwork | ❌ | ❌ | missing |
+| 4 | On-campus fieldwork | ✅ | ✅ | done |
 | 5 | On-campus fieldwork | ❌ | ❌ | missing |
 | 6 | On-campus fieldwork | ✅ | ❌ | deck missing |
 | 7 | Off-campus desk study | ❌ | ❌ | missing |
