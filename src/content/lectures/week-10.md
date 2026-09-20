@@ -2,7 +2,7 @@
 title: "What the frameworks that clear the bar actually say"
 description:
   Cosmic prisoner theory and shadow domain theory held to the
-  falsifiability test the session sets — and what three real, citable
+  falsifiability test the practical sets — and what three real, citable
   frameworks say instead, once you stop looking for a single cause.
 week: 10
 date: 2027-04-26
@@ -19,7 +19,7 @@ related:
   as their own popular accounts allow: what would a case have to do to
   break either one? Neither answer survives being asked out loud — not
   because the ideas are wrong, but because neither is stated precisely
-  enough to be wrong. That is the failure this week's session already
+  enough to be wrong. That is the failure this week's practical already
   names: "most popular accounts of these theories can't clear that bar
   as written"
 - Freud's uncanny (1919): dread as something familiar returning in

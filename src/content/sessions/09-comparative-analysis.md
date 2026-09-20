@@ -17,18 +17,18 @@ spec:
     the review does not have enough evidence to rule out
 ---
 
-## Before the session
+## Before the practical
 
 The Comparative Literature Review is due this week — bring it finished, not
 in progress.
 
-## In the session
+## In the practical
 
 Pooling weeks 7 and 8's cases and asking, plainly: what do they converge on?
 This course's classification categories recur across sources with no
 contact between them; certain triggers — thresholds, repeated counts,
 specific times — recur too. What they do not converge on, at this point, is
-cause, and the session spends as much time naming that gap honestly as it
+cause, and the practical spends as much time naming that gap honestly as it
 does on the convergence itself.
 
 ## Afterwards

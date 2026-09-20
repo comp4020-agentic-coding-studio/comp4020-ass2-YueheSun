@@ -21,13 +21,13 @@ spec:
     blurred judgment call
 ---
 
-## Before the session
+## Before the practical
 
 Consent form and buddy pairing from week 4 must be on file. Bring your log
 template, a thermometer/hygrometer pair, and a nazar amulet from the
 department's fieldwork kit.
 
-## In the session
+## In the practical
 
 The case: Seminar Room 3 in the Arts Annex has sat empty since a
 renovation bricked over its second fire exit, and facilities flagged it

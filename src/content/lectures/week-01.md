@@ -41,6 +41,6 @@ believe in the extraordinary; it asks you to look properly at the ordinary.
 
 ## After this lecture
 
-This week's session puts the observation half of the method into your hands
+This week's practical puts the observation half of the method into your hands
 before you've seen anything worth writing down — deliberately, so the habit
 is set before the material gets stranger.

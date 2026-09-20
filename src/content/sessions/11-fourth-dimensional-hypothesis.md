@@ -17,12 +17,12 @@ spec:
     being the leading framework
 ---
 
-## Before the session
+## Before the practical
 
 Bring week 10's falsifiability standard — this week applies it to one more
 framework, not a different standard.
 
-## In the session
+## In the practical
 
 The fourth-dimensional hypothesis holds that a structurally-adjacent
 higher-dimensional space intersects ordinary space at specific, unstable
@@ -32,7 +32,7 @@ than being independent phenomena in their own right. It's the framework most
 current cases get read against informally, including, off the record, some
 of this course's own on-campus cases from weeks 5–6.
 
-"Leading" is not "settled": the session spends as much time on the corpus
+"Leading" is not "settled": the practical spends as much time on the corpus
 cases that resist this reading as on the ones that fit it, and treats a
 colleague's published dissent from the hypothesis as data rather than noise.
 

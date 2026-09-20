@@ -16,11 +16,11 @@ spec:
     category at once, rather than forcing a single fit
 ---
 
-## Before the session
+## Before the practical
 
 No preparation beyond the logging habit from week 1.
 
-## In the session
+## In the practical
 
 A walk through three retired schemes and why each broke:
 

@@ -19,12 +19,12 @@ spec:
     treating "thirteen steps" as a rule rather than a coincidence
 ---
 
-## Before the session
+## Before the practical
 
 Bring both cases' logs — this week reviews case clinic 1 alongside the new
 case, and the Field Case File is due this week.
 
-## In the session
+## In the practical
 
 The case: the west stairwell in the Design building occasionally returns an
 observer to the floor they started on after descending or ascending thirteen

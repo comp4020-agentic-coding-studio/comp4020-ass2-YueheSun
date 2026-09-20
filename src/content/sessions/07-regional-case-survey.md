@@ -18,12 +18,12 @@ spec:
     what this course would need to classify it confidently
 ---
 
-## Before the session
+## Before the practical
 
 No fieldwork this week — the phase changes from on-campus observation to
 desk study, using documented cases as the primary source.
 
-## In the session
+## In the practical
 
 Before comparing anything, the method that makes comparison legitimate: a
 case counts as usable data only if it names where it came from, describes

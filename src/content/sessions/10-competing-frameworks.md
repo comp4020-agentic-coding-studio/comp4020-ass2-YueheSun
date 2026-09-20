@@ -17,12 +17,12 @@ spec:
     than complementary
 ---
 
-## Before the session
+## Before the practical
 
 Nothing to prepare beyond weeks 7–9's convergence findings, which every
 framework this week is trying to explain.
 
-## In the session
+## In the practical
 
 A working survey of frameworks currently in circulation, each read for what
 it actually claims:

@@ -16,13 +16,13 @@ spec:
     template
 ---
 
-## Before the session
+## Before the practical
 
 Bring nothing except a notebook. The course's observation log template is
 issued at the door — printing your own in advance defeats the point of week
 one, which is calibrating everyone to the same one.
 
-## In the session
+## In the practical
 
 Three exercises, each run against a short recorded excerpt from a previous
 cohort's fieldwork (nothing live — that starts in week 4): log the excerpt

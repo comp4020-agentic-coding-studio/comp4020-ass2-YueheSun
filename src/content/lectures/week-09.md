@@ -15,7 +15,7 @@ related:
 
 ## Outline
 
-- what "convergence" in this week's session actually licenses you to claim,
+- what "convergence" in this week's practical actually licenses you to claim,
   and what it doesn't
 - the difference between a pattern across cases and an explanation for the
   pattern

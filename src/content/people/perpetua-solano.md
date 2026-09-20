@@ -7,7 +7,7 @@ description:
 role: Course Convenor, Applied Anomalology (SLOP3646)
 email: perpetua.solano@slop.university
 contact:
-  Email for course-level questions; the weekly session or lecture is where
+  Email for course-level questions; the weekly practical or lecture is where
   feedback on a classification or analysis call actually happens.
 ---
 

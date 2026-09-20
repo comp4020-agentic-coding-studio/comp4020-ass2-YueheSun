@@ -17,12 +17,12 @@ spec:
     before next week's first case clinic
 ---
 
-## Before the session
+## Before the practical
 
 Nothing to bring, and nothing yet to observe. This is the paperwork-and-
 protocol week that has to happen before case clinics start next week.
 
-## In the session
+## In the practical
 
 Three rules, in the order they get applied:
 

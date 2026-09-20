@@ -17,12 +17,12 @@ spec:
     rather than substituting a dry in-universe term for it
 ---
 
-## Before the session
+## Before the practical
 
 Nothing to prepare. Bring the classification vocabulary from week 2 — this
-session tests it against material it wasn't built for.
+practical tests it against material it wasn't built for.
 
-## In the session
+## In the practical
 
 Nine traditions, named as exactly what they are. This course does not
 rename real practice to keep it at arm's length — the whole point is that

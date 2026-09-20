@@ -18,12 +18,12 @@ spec:
     case from this week's corpus and say whether it passes
 ---
 
-## Before the session
+## Before the practical
 
 Bring last week's regional classifications — this week's corpus is read
 against the same scheme, at a larger scale.
 
-## In the session
+## In the practical
 
 The international corpus students work through this week includes cases with
 no plausible route of contact between their original sources — different
@@ -38,6 +38,6 @@ deleted from the record.
 
 ## Afterwards
 
-No submission this week. Next week's session pools this corpus with the
+No submission this week. Next week's practical pools this corpus with the
 regional one and asks what the convergence across it does and doesn't
 support.

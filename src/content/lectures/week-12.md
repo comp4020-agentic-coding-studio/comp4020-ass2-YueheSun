@@ -45,5 +45,5 @@ related:
 ## After this lecture
 
 The Final Capstone is due this week. There is no further submission
-after it — this session is the last time the method gets reviewed
+after it — this practical is the last time the method gets reviewed
 before you're asked to run the whole thing yourself, once, end to end.

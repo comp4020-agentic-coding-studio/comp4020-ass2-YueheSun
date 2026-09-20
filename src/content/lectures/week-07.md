@@ -23,7 +23,7 @@ related:
 - case-format literacy: a text write-up (a sculpture that only moves
   unobserved) and a video/software claim (a secondhand game cartridge
   whose glitches escalate) look nothing alike on the page, but the same
-  three sourcing questions from the session apply to both
+  three sourcing questions from the practical apply to both
 - the week-2 reveal: the persistent-plus-dormant case previewed then —
   affectionate and unchanging on the surface, and, rarely, while
   unobserved, doing something else entirely — gets its full write-up this

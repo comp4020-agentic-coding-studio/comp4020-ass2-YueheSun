@@ -39,5 +39,5 @@ reason rather than by oversight: the corpus this course draws from has
 real, sourced content for every other week, but nothing written for week 2
 specifically. Rather than pad the gap with an invented incident, the week
 teaches the classification method itself — the same non-exclusive-category
-move the session introduces — and holds its first real test for week 7,
+move the practical introduces — and holds its first real test for week 7,
 where the persistent-plus-dormant case gets its full write-up.

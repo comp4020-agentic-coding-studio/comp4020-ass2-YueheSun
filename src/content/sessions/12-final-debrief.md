@@ -1,7 +1,7 @@
 ---
 title: "Final debrief and practical wrap-up"
 description:
-  The closing session — reviewing the semester's cases and frameworks
+  The closing practical — reviewing the semester's cases and frameworks
   together, in the week the Final Capstone is due.
 week: 12
 date: 2027-05-10
@@ -20,13 +20,13 @@ spec:
     design
 ---
 
-## Before the session
+## Before the practical
 
 The Final Capstone is due this week. Bring it finished.
 
-## In the session
+## In the practical
 
-A joint session, run by both the convenor and the Field Safety Officer,
+A joint practical, run by both the convenor and the Field Safety Officer,
 reviewing the semester in the order it was built: the observation method
 from week 1, the classification scheme from week 2, the warding traditions
 from week 3, the two on-campus cases, the desk-study convergence, and the

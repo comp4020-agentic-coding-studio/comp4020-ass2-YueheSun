@@ -24,7 +24,7 @@ related:
 - reading a ritual practice as a countermeasure claim: what it predicts, and
   how that prediction could fail
 - the transition-and-precision convergence introduced in this week's
-  session, and why convergence across nine traditions with no documented
+  practical, and why convergence across nine traditions with no documented
   contact between them counts as evidence
 - what carries forward: the same read-a-practice-as-a-claim method returns in
   the literature-synthesis phase (weeks 10–11), applied to theories about
