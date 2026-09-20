@@ -219,7 +219,7 @@ what's actually done, not the historical week-by-week table further down.
 | 4 | On-campus fieldwork | ✅ | ✅ | done |
 | 5 | On-campus fieldwork | ❌ | ❌ | missing |
 | 6 | On-campus fieldwork | ✅ | ❌ | deck missing |
-| 7 | Off-campus desk study | ❌ | ❌ | missing |
+| 7 | Off-campus desk study | ✅ | ✅ | done |
 | 8 | Off-campus desk study | ❌ | ❌ | missing |
 | 9 | Off-campus desk study | ✅ | ❌ | deck missing |
 | 10 | Literature synthesis | ❌ | ❌ | missing |
@@ -235,17 +235,32 @@ required "how to use these in practice" section walking through the
 when/how/sequence/limit/failure reading of a countermeasure and three
 worked examples pulled from `sources.md`'s practical-measures table;
 verified against built HTML for slide count, class styling, and section
-presence).
+presence). Week 4 is done (On-campus fieldwork's representative week —
+lecture and 10-slide deck built from the three real safety-tradition
+clusters sourced in `sources.md`'s week-4 material). Week 7 is done
+(Off-campus desk study's representative week — lecture and 14-slide deck
+covering the three sourcing-failure-mode teaching triad, case-format
+literacy across text vs. video/software claims, the week-2
+persistent-plus-dormant case's full reveal, and the Halloween-candy
+scholarship bridge to week 8; both verified against built HTML for slide
+count and `_class` styling). All real-world case titles (SCP entries,
+creepypasta, ARGs) are described generically rather than named in
+rendered body text, matching the existing sessions' own convention of
+never naming a specific fictional-media title in-universe; only genuinely
+real, citable academic material (e.g. the Halloween-candy-tampering
+scholarship) is named directly, the same way week 3 names real warding
+traditions.
 
-**Next step, in the agreed order:** (1) one week per remaining phase
-(pick from 4–6, 7–9, 10–11) to get every phase at least one full
-lecture+deck; (2) the rest, in whatever order keeps each phase's
+**Next step, in the agreed order:** one week per remaining phase is now
+done for On-campus fieldwork (week 4) and Off-campus desk study (week 7).
+Remaining: (1) one representative week each for Literature synthesis
+(pick from 10–11) and Capstone (week 12); (2) then the rest — week 5
+(lecture+deck), week 6 (deck only), week 8 (lecture+deck), week 9 (deck
+only), week 11 (deck only) — in whatever order keeps each phase's
 `pnpm check` green before moving on. Commit after each phase and update
 the table above as it goes. If work stops before all 12 weeks are
 covered, this table — not prose elsewhere in this file — is what should
-say exactly what's left. **Checkpoint now, before starting**: this
-section is updated; run `/clear` and reload with `@plan.md` before
-beginning implementation.
+say exactly what's left.
 
 ## What this course is
 

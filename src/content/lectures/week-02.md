@@ -2,8 +2,8 @@
 title: "The four-category scheme, as a method to apply"
 description:
   How to test a case against persistent / recurring / responsive / dormant
-  rather than just recite the labels, using SCP-1048's dual profile as the
-  worked example — and why this week has no case of its own.
+  rather than just recite the labels, using a benign-looking object's dual
+  profile as the worked example — and why this week has no case of its own.
 week: 2
 date: 2027-03-01
 teachers:
