@@ -1,6 +1,6 @@
 # Applied Anomalology — build plan
 
-## Status: content redesign complete (12/12 weeks); post-build audit in progress — see "Full-site audit" below for the current checklist
+## Status: content redesign complete (12/12 weeks); shipped and live at https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-YueheSun/ (Assignment 2, due 2026-09-21T12:00). Post-ship polish audit in progress — see "Full-site audit" below; 3 of 23 items done, 20 pending. **Next step for a cold reader: pick up item #2 or #3 from the checklist (both high-priority/small-effort) — see that section for the full list.**
 
 ## Full-site audit (2026-09-21) — prioritized checklist
 
@@ -13,10 +13,10 @@ duplicate rows.
 
 | # | Finding | Dimension | Priority | Effort | Status |
 |---|---|---|---|---|---|
-| 1 | Repo private / GitHub Pages not deployed — brief graded live, deadline same-day | Requirements | High | Small | In progress (Step 3, this session) |
-| 2 | "Practicals" rename never reached content — homepage card copy, Solano's bio, and 23/24 session/lecture files still say "session" | Readability | High | Small | Pending |
-| 3 | `_class: banner` isn't a real theme class — 15 thesis-statement slides (one/week) render unstyled | Atmosphere | High | Small | Pending |
-| 4 | PROCESS.md doesn't cover the redesign work (theory audit, research pass, case swaps) — the reasoning that most satisfies the 45%-weighted process criterion | Requirements | High | Medium | In progress (Step 2, this session) |
+| 1 | Repo private / GitHub Pages not deployed — brief graded live, deadline same-day | Requirements | High | Small | **Done** (shipped 2026-09-21, see "Ship status" above) |
+| 2 | "Practicals" rename never reached content — homepage card copy, Solano's bio, and 23/24 session/lecture files still say "session" | Readability | High | Small | Pending — **recommended next pick** |
+| 3 | `_class: banner` isn't a real theme class — 15 thesis-statement slides (one/week) render unstyled | Atmosphere | High | Small | Pending — **recommended next pick** |
+| 4 | PROCESS.md doesn't cover the redesign work (theory audit, research pass, case swaps) — the reasoning that most satisfies the 45%-weighted process criterion | Requirements | High | Medium | **Done** (this session, see "Ship status" above) |
 | 5 | "X, not Y" antithesis is the site's default sentence shape almost everywhere, reads as a tic across 12 weeks | Readability | High | Medium | Pending |
 | 6 | Turn the `.hero` slide fix into a real deck visual identity (reused phase backgrounds) | Extra credit | High | Medium | Pending |
 | 7 | Week 7 deck's three "failure mode" slides are paragraph-shaped, not slide-shaped, unlike every other deck's labeled pattern | Readability | Medium | Small | Pending |
@@ -25,7 +25,7 @@ duplicate rows.
 | 10 | Homepage body copy drops the deadpan voice entirely below the hero | Atmosphere | Medium | Small | Pending |
 | 11 | People index cards lose the "photograph withheld" line (only shows on detail pages) | Atmosphere | Medium | Small | Pending |
 | 12 | A hidden/non-nav page (e.g. `/incidents/`) linked only from an in-body reference | Extra credit | Medium | Small | Pending |
-| 13 | PROCESS.md over the indicative 400–600 word count (was 975) | Requirements | Medium | Medium | In progress (Step 2, this session) |
+| 13 | PROCESS.md over the indicative 400–600 word count (was 975) | Requirements | Medium | Medium | **Done** (this session — now 514 words, see "Ship status" above) |
 | 14 | "Ordinary" repetition risks flattening into a slogan by week 8–10 | Readability | Medium | Medium | Pending |
 | 15 | Decks have zero visual elements beyond text (no image/diagram/background anywhere sampled) | Atmosphere | Medium | Medium | Pending |
 | 16 | Self-declared gap: 5 of 9 week-3 warding traditions never reappear after week 3 (iron/salt, fú talisman, spirit wall, witch ball, ofuda) | Requirements | Medium | Large | Pending |
@@ -39,12 +39,36 @@ duplicate rows.
 
 **Verified strengths, no action needed:** `pnpm check` and `pnpm check:evidence` both green; 49 built pages, zero broken links; all 12 lectures have a real linked deck; assessment weights sum to 100; `spec/` tests read as genuine course-design decisions; deadpan voice is excellent and consistent everywhere it's been written (sessions/lectures/policies); no typos or broken markdown found anywhere.
 
-## Ship status
+## Ship status — shipped and live (2026-09-21)
 
-Not yet shipped as of this checkpoint. Plan: run the `/ship` skill (explicit
-user authorization to make the repo public), enable GitHub Pages, dispatch
-the deploy, then verify the live URL returns 200 and that home/timetable/one
-deck render. Recorded in "Live deployment" below once confirmed.
+**Live URL:** https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-YueheSun/
+
+Shipped via the `/ship` skill this session: preflight clean (no uncommitted
+work, everything pushed, `check:evidence` green), secret scan clean, repo
+flipped public (explicit user authorization), GitHub Pages enabled as a
+workflow site (`build_type=workflow`, not legacy branch-source — avoids the
+race with GitHub's own auto-deploy job), `checks` workflow dispatched and
+both `deploy`/`check` jobs green. Independently verified (not just trusting
+the CI status code) with `verify-deploy.sh` against three pages — homepage,
+`/timetable/`, and the `week-01` deck — each returning 200 with every
+referenced JS/CSS asset also resolving under the `/comp4020-ass2-YueheSun/`
+base path. This is Assignment 2, not a crit week, so no `crit-<n>` tag step
+applies.
+
+Assignment 2 is due **2026-09-21T12:00** (confirmed via
+`next-deadline.sh`) — shipped same-day, ahead of the cutoff.
+
+**Two process artifacts also updated and pushed this session, ahead of
+shipping:**
+- `PROCESS.md` rewritten from 975 to 514 words (indicative target
+  400–600), now covering the research-first sourcing pass (commit
+  `84b4b13`, `research/01-theory-audit.md` catching two fabricated
+  week-10 frameworks by dated web search, `research/sources.md`'s 1,828-line
+  merged corpus) alongside the teacher-split judgment call, the self-caught
+  false "12/12 complete" claim, and the `PageLayout` routing bug. All 11
+  cited commits verified resolving via `pnpm check:evidence`.
+- The full-site audit checklist below, recorded before any of the listed
+  fixes were made.
 
 ## Previous status (superseded by the audit above, kept for history)
 
