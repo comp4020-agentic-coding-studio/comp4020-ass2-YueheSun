@@ -1,6 +1,6 @@
 # Applied Anomalology — build plan
 
-## Status: content redesign complete (12/12 weeks); shipped and live at https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-YueheSun/ (Assignment 2, due 2026-09-21T12:00). Post-ship polish audit in progress — see "Full-site audit" below; 3 of 23 items done, 20 pending. **Next step for a cold reader: pick up item #2 or #3 from the checklist (both high-priority/small-effort) — see that section for the full list.**
+## Status: content redesign complete (12/12 weeks); shipped and live at https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-YueheSun/ (Assignment 2, due 2026-09-21T12:00). Post-ship polish audit in progress — see "Full-site audit" below; 11 of 23 items done, 12 pending. User stepped away and asked the agent to work through the remaining checklist unattended, in the list's own priority order, committing each verified item as its own increment without pausing for manual sign-off. **Next step for a cold reader: pick up item #6 (High/Medium, extra credit — deck visual identity) — see that section for the full remaining list.**
 
 ## Full-site audit (2026-09-21) — prioritized checklist
 
@@ -14,16 +14,16 @@ duplicate rows.
 | # | Finding | Dimension | Priority | Effort | Status |
 |---|---|---|---|---|---|
 | 1 | Repo private / GitHub Pages not deployed — brief graded live, deadline same-day | Requirements | High | Small | **Done** (shipped 2026-09-21, see "Ship status" above) |
-| 2 | "Practicals" rename never reached content — homepage card copy, Solano's bio, and 23/24 session/lecture files still say "session" | Readability | High | Small | Pending — **recommended next pick** |
-| 3 | `_class: banner` isn't a real theme class — 15 thesis-statement slides (one/week) render unstyled | Atmosphere | High | Small | Pending — **recommended next pick** |
+| 2 | "Practicals" rename never reached content — homepage card copy, Solano's bio, and 23/24 session/lecture files still say "session" | Readability | High | Small | **Done** — prose nouns renamed sitewide (sessions/lectures/people/index); collection key, `/sessions/` URL, and `related:` slugs left as-is (deliberate label/identifier split, see `site-config.ts`) |
+| 3 | `_class: banner` isn't a real theme class — 15 thesis-statement slides (one/week) render unstyled | Atmosphere | High | Small | **Done** — swapped all 15 to the real `impact` class; verified styled `<section>` in built decks, zero "banner" left in `dist/` |
 | 4 | PROCESS.md doesn't cover the redesign work (theory audit, research pass, case swaps) — the reasoning that most satisfies the 45%-weighted process criterion | Requirements | High | Medium | **Done** (this session, see "Ship status" above) |
-| 5 | "X, not Y" antithesis is the site's default sentence shape almost everywhere, reads as a tic across 12 weeks | Readability | High | Medium | Pending |
-| 6 | Turn the `.hero` slide fix into a real deck visual identity (reused phase backgrounds) | Extra credit | High | Medium | Pending |
-| 7 | Week 7 deck's three "failure mode" slides are paragraph-shaped, not slide-shaped, unlike every other deck's labeled pattern | Readability | Medium | Small | Pending |
-| 8 | Inconsistent lecture closers — weeks 3, 9, 11 have no "after this lecture" bridge that every other week has | Readability | Medium | Small | Pending |
-| 9 | `final-capstone.md` missing the `related:` lecture cross-ref the other two assessments have | Refinements | Medium | Small | Pending |
-| 10 | Homepage body copy drops the deadpan voice entirely below the hero | Atmosphere | Medium | Small | Pending |
-| 11 | People index cards lose the "photograph withheld" line (only shows on detail pages) | Atmosphere | Medium | Small | Pending |
+| 5 | "X, not Y" antithesis is the site's default sentence shape almost everywhere, reads as a tic across 12 weeks | Readability | High | Medium | **Done** — reworded ~half the instances in the 5 highest-density files (week-02/03/07 decks, week-12 lecture, week-3 warding session); kept headings and single worked-example callbacks as deliberate anchors. Sitewide count was 75; not exhaustively rewritten everywhere (see effort rating) |
+| 6 | Turn the `.hero` slide fix into a real deck visual identity (reused phase backgrounds) | Extra credit | High | Medium | Pending — **recommended next pick** |
+| 7 | Week 7 deck's three "failure mode" slides are paragraph-shaped, not slide-shaped, unlike every other deck's labeled pattern | Readability | Medium | Small | **Done** — rewrote as 3-bullet `**The case**/**What audit found**/**The lesson**` structure per slide, matching the rest of the deck's pattern; slide count unchanged |
+| 8 | Inconsistent lecture closers — weeks 3, 9, 11 have no "after this lecture" bridge that every other week has | Readability | Medium | Small | **Done** — added closing sections to all three, each bridging into the specific next-week content |
+| 9 | `final-capstone.md` missing the `related:` lecture cross-ref the other two assessments have | Refinements | Medium | Small | **Done** — added `lectures/week-12`; course-graph edges 17→18 |
+| 10 | Homepage body copy drops the deadpan voice entirely below the hero | Atmosphere | Medium | Small | **Done** — rewrote "What you will do"/"Who it is for" into the site's declarative/procedural register |
+| 11 | People index cards lose the "photograph withheld" line (only shows on detail pages) | Atmosphere | Medium | Small | **Done** — added the same conditional line to `PeopleGrid.astro`'s card body |
 | 12 | A hidden/non-nav page (e.g. `/incidents/`) linked only from an in-body reference | Extra credit | Medium | Small | Pending |
 | 13 | PROCESS.md over the indicative 400–600 word count (was 975) | Requirements | Medium | Medium | **Done** (this session — now 514 words, see "Ship status" above) |
 | 14 | "Ordinary" repetition risks flattening into a slogan by week 8–10 | Readability | Medium | Medium | Pending |
