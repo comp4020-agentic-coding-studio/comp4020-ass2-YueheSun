@@ -8,6 +8,7 @@ week: 11
 date: 2027-05-03
 teachers:
   - perpetua-solano
+slides: /decks/week-11/
 related:
   - sessions/11-fourth-dimensional-hypothesis
 ---
