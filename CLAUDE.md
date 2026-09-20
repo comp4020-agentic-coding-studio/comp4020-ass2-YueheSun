@@ -40,6 +40,25 @@ layout-level style block reaches the whole site. When in doubt, grep the
 built HTML for the rule across a few different page types before trusting
 that a style landed.
 
+## MDX's inline markup isn't JSX — camelCase SVG attributes pass through literally
+
+`.deck.mdx`/`.mdx` files let you write markup that looks like JSX
+(`<svg>`, `<g>`, camelCase props), but this pipeline is not a React
+runtime: it compiles that markup directly into static HTML without
+normalizing prop names. A camelCase SVG presentation attribute
+(`fontSize`, `strokeWidth`, `textAnchor`, `fontFamily`) is emitted
+verbatim as a literal camelCase HTML attribute, which browsers don't
+recognize — they require kebab-case (`font-size`, `stroke-width`, etc.).
+Nothing in `pnpm check` (build, a11y check, deck structural check) renders
+the page and looks at it, so this fails silently: no error anywhere, just
+oversized/overflowing text once you actually open the slide. The one
+exception is `style={{...}}` object syntax, which *is* specially handled
+and does serialize correctly to a kebab-case `style="..."` string. Write
+inline SVG presentation properties as `style={{ fontSize: "26px", ... }}`
+objects rather than bare attributes, so you're relying on the one path
+this pipeline actually gets right instead of hand-tracking which raw
+attribute names need kebab-casing.
+
 ## Auto-commit
 
 Commit automatically whenever a feature is added, removed, or adjusted —

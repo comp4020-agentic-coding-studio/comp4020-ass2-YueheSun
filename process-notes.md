@@ -179,3 +179,42 @@ by someone reading the doc and doubting it, which is what happened here.
 Worth remembering for any future plan.md status update: before writing
 "implemented" or "verified," run the `ls`/`grep` that would falsify it,
 the same discipline already applied to code changes.
+
+## MDX's inline SVG passes camelCase JSX attributes through literally — 2026-09-21 (commit pending)
+
+Added an inline SVG diagram to week 2's deck (`.deck.mdx`), written with
+JSX-style camelCase presentation attributes (`fontSize`, `strokeWidth`,
+`textAnchor`, `fontFamily`) — the natural way to write it, since MDX's
+markup looks like JSX. `pnpm check` passed clean (build, a11y check, deck
+structural check, all green). A screenshot of the actual rendered slide
+(headless Firefox, per the technique in the note above) showed the labels
+rendered at a huge fallback size, overflowing both their boxes and the
+slide viewport.
+
+**What happened:** this MDX-to-HTML pipeline is not a React runtime — it
+compiles JSX-like markup directly into static HTML, and does not normalize
+JSX prop names to their HTML/SVG equivalents. Confirmed by grepping the
+built `dist/decks/week-02/index.html`: `fontSize="26"` came through
+verbatim as a literal attribute name, which browsers don't recognize as an
+SVG presentation attribute (they require kebab-case: `font-size`). No
+build or check error at any stage — this only fails visually, in a
+browser. The one exception is `style={{...}}` object syntax, which *is*
+specially handled and does compile to a real kebab-case `style="..."`
+string.
+
+**Fix applied:** moved every presentational attribute into `style={{
+fontSize: "26px", strokeWidth: 2, textAnchor: "middle", ... }}` objects
+instead of bare attributes, relying on the one syntax this pipeline does
+serialize correctly rather than trying to remember which raw attribute
+names need kebab-casing by hand. Re-verified via `dist/` grep (kebab-case
+CSS properties present) and a fresh screenshot (correctly-sized,
+non-overflowing text).
+
+**This is a harness-gap moment, not a routine retry**: `pnpm check`'s
+deck-structural checker and the a11y checker both stayed green through a
+visibly broken slide, because neither renders and looks at the page — the
+same failure class as the two layout/scoped-style notes above (a
+syntactically valid rule or attribute that silently matches nothing a
+browser honors). Promoted to CLAUDE.md as a platform-gotcha note, next to
+the scoped-styles one, since any future inline SVG in a `.deck.mdx` file
+will hit this the same way.
