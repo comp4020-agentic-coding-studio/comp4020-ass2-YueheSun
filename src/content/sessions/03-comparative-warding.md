@@ -53,7 +53,7 @@ comparison.
 5. **Ofuda, kamidana, and shimenawa** (Japanese Shinto household warding) —
    shrine-issued talismans placed in a fixed order when several are used
    together, explicitly time-limited: returned to the shrine and replaced
-   annually, not installed once and forgotten.
+   annually — never installed once and left in place.
 
 **Four supplementary traditions:**
 
@@ -81,8 +81,9 @@ falls again and again on **transitions** — doorways, corners, mirrors,
 points where a space or a state changes — rather than the open middle of a
 room, and on **precision of execution** (the exact stage, the exact
 placement, the exact seal) as the difference between a functioning
-countermeasure and an inert prop. That convergence, not any one tradition's
-internal logic, is the principle this course actually uses in the field.
+countermeasure and an inert prop. That convergence is the principle this
+course actually uses in the field, ahead of any one tradition's internal
+logic.
 
 ## Afterwards
 

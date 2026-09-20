@@ -15,7 +15,8 @@ related:
 
 ## Outline
 
-- the method, walked in the order it was built, not recited as a list:
+- the method, walked in the order it was built rather than recited as a
+  list:
   observe under protocol (week 1) → classify against the four categories,
   non-exclusively (week 2) → read a candidate countermeasure as a
   falsifiable claim (week 3) → apply that under the safety protocol
@@ -40,7 +41,7 @@ related:
   rule — that your protocol's design decision would break without
 - taking a stated position on the current leading framework from week
   11, and saying plainly whether and how it shaped the protocol — an
-  open position, not a hidden assumption
+  open position, stated rather than left as a hidden assumption
 
 ## After this lecture
 
