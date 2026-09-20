@@ -1,6 +1,6 @@
 # Applied Anomalology — build plan
 
-## Status: content redesign in progress — Phase 1 (weeks 1–3) session content rewritten, lecture/deck coverage incomplete
+## Status: content redesign complete — all 12 weeks have a lecture + deck; one follow-up decision remains unimplemented (see "Known follow-up" below)
 
 The build described below (identity, cast, page structure, decks, assets,
 spec tests, visual pass) is still complete and still green — nothing in
@@ -217,14 +217,18 @@ what's actually done, not the historical week-by-week table further down.
 | 2 | Foundations | ✅ | ✅ | done |
 | 3 | Foundations | ✅ | ✅ | done |
 | 4 | On-campus fieldwork | ✅ | ✅ | done |
-| 5 | On-campus fieldwork | ❌ | ❌ | missing |
-| 6 | On-campus fieldwork | ✅ | ❌ | deck missing |
+| 5 | On-campus fieldwork | ✅ | ✅ | done |
+| 6 | On-campus fieldwork | ✅ | ✅ | done |
 | 7 | Off-campus desk study | ✅ | ✅ | done |
-| 8 | Off-campus desk study | ❌ | ❌ | missing |
-| 9 | Off-campus desk study | ✅ | ❌ | deck missing |
+| 8 | Off-campus desk study | ✅ | ✅ | done |
+| 9 | Off-campus desk study | ✅ | ✅ | done |
 | 10 | Literature synthesis | ✅ | ✅ | done |
-| 11 | Literature synthesis | ✅ | ❌ | deck missing |
+| 11 | Literature synthesis | ✅ | ✅ | done |
 | 12 | Capstone | ✅ | ✅ | done |
+
+**All 12 weeks now have both a lecture page and a full deck.** The hard
+requirement stated above is satisfied — no week hits the timetable with a
+practical but nothing to read or present.
 
 **Progress:** week 2 is done (lecture built around applying the
 classification scheme as method, honestly flagged as thin since no
@@ -267,14 +271,81 @@ using every prior skill; offers 6 of `sources.md`'s 8 idea seeds as
 non-mandatory starting points, all described generically per the same
 fictional-media-anonymization convention used since week 7).
 
-**Every phase now has at least one full lecture+deck.** Weeks 1, 2, 3,
-4, 7, 10, and 12 are fully done. **Next step, in the agreed order:**
-"the rest" — week 5 (lecture+deck), week 6 (deck only), week 8
-(lecture+deck), week 9 (deck only), week 11 (deck only) — in whatever
-order keeps each phase's `pnpm check` green before moving on. Commit
-after each and update the table above as it goes. If work stops before
-all 12 weeks are covered, this table — not prose elsewhere in this file
-— is what should say exactly what's left.
+Weeks 5, 6, 8, 9, and 11 (the remaining gap) are now done too:
+
+- **Week 5** — lecture + 10-slide deck, built around the case as it
+  actually exists in `05-case-clinic-1.md` (the library sub-basement),
+  not the SCP-2093 swap `course-logic-proposal.md` §5 settled but never
+  implemented (see "Known follow-up" below). Content: applying the
+  four-category scheme to a case with no prior write-up, the buddy
+  system tested rather than asserted, sourcing discipline turned inward
+  on a case the department is generating itself — and an explicit,
+  unsmoothed admission that no week-3 warding measure gets tested by
+  this case yet, matching the honesty standard `course-logic-proposal.md`
+  and week 10's content already set.
+- **Week 6** — deck only (9 slides; lecture already existed). Matches
+  the existing lecture's worked reviews of both campus cases and its
+  sample redacted log entry — written as plain-text `[redacted]` rather
+  than the `.redacted` CSS span, since `src/decks/theme.css` only imports
+  `astro-theme-university`'s deck stylesheet, not this project's
+  `global.css` where `.redacted` lives (confirmed by reading
+  `theme.css`'s own header comment before writing the slide, not after
+  finding it unstyled).
+- **Week 8** — lecture + 12-slide deck, both new. Pairs Bloody Mary and
+  Hanako-san as the two-country, no-plausible-contact case the session's
+  own spec line asks for, with Langlois/Dundes's reflection-reframing
+  finding extending week 10's Freud citation into a concrete case, plus
+  the Charlie Charlie Challenge as a sourcing-integrity example (a real,
+  older Spanish-language pencil-game family wearing a fabricated 2015
+  brand name).
+- **Week 9** — deck only (8 slides; lecture and session already
+  existed). Matches the existing lecture's already-generic framing
+  (convergence on category/trigger but not cause, competing frameworks
+  "named here only to flag that it exists") rather than introducing the
+  Brunvand/Tolbert material `lecture-plan.md` sketches for this week —
+  that would have meant rewriting the lecture prose too, which was out of
+  scope for "deck only."
+- **Week 11** — deck only (9 slides; lecture and session already
+  existed, and already matched the settled Kripal-trope-not-named-as-
+  Kripal framing). Deck mirrors it directly: leading vs. settled,
+  dissent treated as data.
+
+All six new/changed decks and both new lecture pages were verified
+against built HTML for slide count and `_class` styling, then driven
+through headless Firefox (same cached-Playwright + `LD_LIBRARY_PATH`
+workaround as the Phase 1 check) confirming HTTP 200 and zero console
+errors on every page. **All 12 weeks now have a real lecture and a real
+deck — the hard requirement above is met.**
+
+## Known follow-up (not done, flagged rather than papered over)
+
+`course-logic-proposal.md` §5 settled two case swaps that were never
+actually implemented in the session files:
+
+- Week 5: library sub-basement stacks → SCP-2093-derived seminar room
+  (thermal/humidity instrument signal, external-rescue mechanic that
+  gives week 4's buddy system real teeth, self-sealing failure state).
+- Week 6: 13-step stairwell keeps its setting but gains an
+  SCP-087-derived edge case (a non-visual anomaly signal, an alternate
+  step count that breaks the pattern, one redacted/withdrawn expedition
+  giving week 4's disengagement rule something concrete it once failed
+  to catch).
+
+**Why this wasn't done now:** the task actually authorized and tracked
+by this file's coverage table was "every week needs a lecture and a
+deck," not "implement the case-swap decision." Writing week 5/6's
+lecture+deck around a case that doesn't exist yet in the session files
+students actually read would have made the site self-contradictory —
+so week 5's lecture/deck were written honestly around the case that is
+currently live, and this gap is named explicitly here instead. This is
+also the reason weeks 5–6 still can't cleanly demonstrate a week-3
+warding measure in action (`lecture-plan.md`'s cross-reference table
+already flagged this); the swap, when implemented, is what closes it.
+**If this work resumes, the next step is: rewrite
+`src/content/sessions/05-case-clinic-1.md` and
+`06-case-clinic-2.md` per the sketches in `research/sources.md`'s SCP-087
+and SCP-2093 entries, then revise week 5/6's lecture and deck content
+(written in this pass) to match the new case.**
 
 ## What this course is
 
