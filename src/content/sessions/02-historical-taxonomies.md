@@ -1,14 +1,14 @@
 ---
 title: Historical taxonomies of anomalous phenomena
 description:
-  How the department's classification scheme took its present shape, and why
+  How the course's classification scheme took its present shape, and why
   three earlier taxonomies were retired rather than patched.
 week: 2
 date: 2027-03-01
 teachers:
   - perpetua-solano
 spec:
-  - you can name the department's current top-level classification categories
+  - you can name the course's current top-level classification categories
     and place a described phenomenon into one
   - you can give one retired taxonomy and the observation it failed to
     accommodate
@@ -33,8 +33,8 @@ A walk through three retired schemes and why each broke:
   or location, and lets a case belong to more than one category at once
 
 Notice what's missing from all three retired schemes above: no named
-historical incident, no founding "case zero" invented to justify them. The
-department describes a retired scheme by the structural gap it failed to
+historical incident, no founding "case zero" invented to justify them. This
+course describes a retired scheme by the structural gap it failed to
 accommodate, not by a specific anecdote built to sell it — the same
 sourcing discipline this course holds its own case files to from week 4
 onward. A scheme earns its place by what it can classify, not by a good

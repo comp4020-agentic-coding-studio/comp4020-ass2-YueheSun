@@ -9,10 +9,10 @@ date: 2027-04-12
 teachers:
   - perpetua-solano
 spec:
-  - you can name two cases from different countries that the department's
+  - you can name two cases from different countries that this course's
     scheme classifies the same way despite no evident contact between their
     sources
-  - you can explain why the department treats a widely-circulated account as
+  - you can explain why this course treats a widely-circulated account as
     data rather than discounting it for being widely circulated
   - you can apply last week's three sourcing requirements to at least one
     case from this week's corpus and say whether it passes
@@ -28,7 +28,7 @@ against the same scheme, at a larger scale.
 The international corpus students work through this week includes cases with
 no plausible route of contact between their original sources — different
 countries, different eras, no shared language of description — yet a number
-of them classify the same way under the department's scheme. That
+of them classify the same way under this course's scheme. That
 repetition, not any one case's detail, is the finding the desk-study phase is
 building toward.
 

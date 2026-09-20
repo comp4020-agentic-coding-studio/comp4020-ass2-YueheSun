@@ -11,7 +11,7 @@ teachers:
 spec:
   - you can produce a log of the case that a second observer, given only your
     notes, could use to navigate the stacks as you found them
-  - you can state which of the department's four behaviour categories
+  - you can state which of the course's four behaviour categories
     (persistent, recurring, responsive, dormant) currently fits this case,
     and why
   - you followed the buddy system and disengagement rule for the full
@@ -33,13 +33,13 @@ fire door to the stairwell have all been logged differently by different
 cohorts on different days — and, for weeks at a stretch, not differently at
 all.
 
-In pairs, observers log the current layout against the department's standing
+In pairs, observers log the current layout against the course's standing
 floor plan, note every discrepancy with a timestamp, and do not attempt to
 test the rearrangement by deliberately re-entering a logged aisle to check
 it. That's an intervention, not an observation — it voids the log.
 
 ## Afterwards
 
-Logs are collected into the department's running record of the case, which
+Logs are collected into the course's running record of the case, which
 every cohort adds to. Your own log, plus this week's classification call, is
 raw material for the Field Case File due in week 6.

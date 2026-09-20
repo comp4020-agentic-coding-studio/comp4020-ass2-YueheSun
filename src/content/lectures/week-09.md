@@ -2,7 +2,7 @@
 title: "Does it converge on one cause?"
 description:
   What the pooled regional and global cases do and don't support, and why the
-  department treats a single unifying cause as a live question rather than a
+  course treats a single unifying cause as a live question rather than a
   conclusion this phase is entitled to.
 week: 9
 date: 2027-04-19

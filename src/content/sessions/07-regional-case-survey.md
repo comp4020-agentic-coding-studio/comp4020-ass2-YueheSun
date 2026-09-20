@@ -1,7 +1,7 @@
 ---
 title: "Regional case survey: comparative method"
 description:
-  Moving from the department's own two campus cases to a survey of
+  Moving from the course's own two campus cases to a survey of
   documented regional cases, and the comparative method that makes cases
   from different sources comparable at all.
 week: 7
@@ -12,10 +12,10 @@ spec:
   - you can state the comparative method's three requirements for treating
     an external case as usable data (sourcing, behaviour description,
     corroboration)
-  - you can apply the department's four-category classification scheme to a
+  - you can apply the course's four-category classification scheme to a
     case you did not personally observe
   - you can identify one way a documented case's write-up under-specifies
-    what the department would need to classify it confidently
+    what this course would need to classify it confidently
 ---
 
 ## Before the session
@@ -32,7 +32,7 @@ it. A striking case that fails on any of these three still gets read; it
 just doesn't get weight in a comparison.
 
 Applied to two regional cases — drawn from documented, publicly circulated
-accounts, not the department's own fieldwork — students classify each
+accounts, not the course's own fieldwork — students classify each
 against the week-2 scheme and note where the write-up doesn't give them what
 they'd need for confident classification.
 

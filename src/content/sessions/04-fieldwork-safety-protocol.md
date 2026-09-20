@@ -13,7 +13,7 @@ spec:
     triggers it
   - you can explain, in terms of what a lone observer cannot corroborate, why
     fieldwork is never run solo
-  - you have signed the department's consent and buddy-pairing paperwork
+  - you have signed the course's consent and buddy-pairing paperwork
     before next week's first case clinic
 ---
 
@@ -29,7 +29,7 @@ Three rules, in the order they get applied:
 1. **Consent** — every observation site is one students and staff already
    move through as part of ordinary campus life; nobody is placed anywhere
    they wouldn't otherwise go, and no site is observed without the
-   department's sign-off that it is currently sanctioned for fieldwork.
+   course's sign-off that it is currently sanctioned for fieldwork.
 2. **Buddy system** — no solo observation, ever. Not because two people are
    mechanically safer than one, but because a log backed by only one
    observer's word corroborates nothing, and a log that can't be

@@ -13,7 +13,7 @@ spec:
     counted from what you inferred
   - you have submitted the Field Case File covering both campus cases,
     meeting its documentation, safety-protocol and analytical criteria
-  - you can say, for each case, which of the department's classification
+  - you can say, for each case, which of the course's classification
     categories it currently sits in and what would have to change to move it
 ---
 
@@ -28,7 +28,7 @@ The case: the west stairwell in the Design building occasionally returns an
 observer to the floor they started on after descending or ascending thirteen
 steps, rather than the floor the stairwell's geometry would predict. It does
 not do this every time, or to every observer, or even necessarily to the same
-observer twice in one week — which is most of why the department wants it
+observer twice in one week — which is most of why this course wants it
 logged rather than explained.
 
 Same protocol as case clinic 1: buddy pairs, step counts logged aloud as

@@ -13,7 +13,7 @@ spec:
     own words
   - you can name one observation each framework would need to explain but
     currently doesn't
-  - you can explain why the department presents these as competing rather
+  - you can explain why this course presents these as competing rather
     than complementary
 ---
 
@@ -36,7 +36,7 @@ it actually claims:
 - others, briefer, read the same way: what does it predict, and what
   observed case would break it.
 
-None is presented as the department's position. The point of the week is
+None is presented as this course's position. The point of the week is
 being able to state a framework's claim precisely enough that you could say
 what would falsify it — most popular accounts of these theories can't clear
 that bar as written.

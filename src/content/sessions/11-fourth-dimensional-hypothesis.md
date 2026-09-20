@@ -13,7 +13,7 @@ spec:
     overstating it as settled
   - you can name the strongest single piece of convergent evidence for it,
     and the strongest case that doesn't fit it
-  - you can explain why the department presents it as contested despite it
+  - you can explain why this course presents it as contested despite it
     being the leading framework
 ---
 
@@ -30,7 +30,7 @@ points, and that most of the corpus's convergent triggers — thresholds,
 counts, timing — mark where that intersection is currently unstable, rather
 than being independent phenomena in their own right. It's the framework most
 current cases get read against informally, including, off the record, some
-of the department's own on-campus cases from weeks 5–6.
+of this course's own on-campus cases from weeks 5–6.
 
 "Leading" is not "settled": the session spends as much time on the corpus
 cases that resist this reading as on the ones that fit it, and treats a

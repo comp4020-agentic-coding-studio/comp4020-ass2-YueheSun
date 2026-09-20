@@ -1,7 +1,7 @@
 ---
 title: Protective practice as applied research, not superstition
 description:
-  Why the department treats nine independently-arrived-at warding traditions,
+  Why this course treats nine independently-arrived-at warding traditions,
   named explicitly as themselves, as countermeasure data rather than
   folklore to be explained away.
 week: 3
@@ -14,11 +14,11 @@ related:
 
 ## Outline
 
-- why "it's just superstition" is not an argument the department accepts,
+- why "it's just superstition" is not an argument this course accepts,
   and what would count as one
-- why the department names each of this week's nine traditions explicitly —
+- why this course names each of this week's nine traditions explicitly —
   fú talisman, mezuzah, witch bottle, nazar — rather than filing them under
-  a dry departmental label: the point is that you could recognize these
+  a dry, generic label: the point is that you could recognize these
   from your own life, and renaming would only hide that
 - reading a ritual practice as a countermeasure claim: what it predicts, and
   how that prediction could fail

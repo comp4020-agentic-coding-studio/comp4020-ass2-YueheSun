@@ -25,7 +25,7 @@ in progress.
 ## In the session
 
 Pooling weeks 7 and 8's cases and asking, plainly: what do they converge on?
-The department's classification categories recur across sources with no
+This course's classification categories recur across sources with no
 contact between them; certain triggers — thresholds, repeated counts,
 specific times — recur too. What they do not converge on, at this point, is
 cause, and the session spends as much time naming that gap honestly as it
@@ -35,4 +35,4 @@ does on the convergence itself.
 
 The Comparative Literature Review is due this week. This week's lecture
 takes the convergence question further: whether it points toward one cause,
-and why the department is not yet willing to say so.
+and why this course is not yet willing to say so.

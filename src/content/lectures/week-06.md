@@ -24,8 +24,8 @@ related:
 
 ## A sample log entry
 
-A strong log entry from the stairwell case, as the department's running
-record keeps it — observer identity redacted per department policy, count
+A strong log entry from the stairwell case, as the course's running
+record keeps it — observer identity redacted for privacy, count
 and classification left intact for the write-up to work from:
 
 > Observer <span class="redacted">[redacted]</span>, buddy-paired, west

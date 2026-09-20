@@ -13,7 +13,7 @@ spec:
     of at least three of this week's nine traditions, in your own words
   - you can identify where at least two traditions converge on the same
     countermeasure principle despite no documented contact between them
-  - you can explain why the department names each tradition explicitly
+  - you can explain why this course names each tradition explicitly
     rather than substituting a dry in-universe term for it
 ---
 
@@ -24,7 +24,7 @@ session tests it against material it wasn't built for.
 
 ## In the session
 
-Nine traditions, named as exactly what they are. The department does not
+Nine traditions, named as exactly what they are. This course does not
 rename real practice to keep it at arm's length — the whole point is that
 you could plausibly recognize these from your own life, and a dry
 in-universe label would only obscure that. Five are studied as full
@@ -75,18 +75,18 @@ comparison.
    claim that a household in mourning is especially vulnerable at exactly
    the moment a death has left a vacancy.
 
-The department's interest is where these nine converge despite no
+This course's interest is where these nine converge despite no
 documented contact between the traditions producing them: the emphasis
 falls again and again on **transitions** — doorways, corners, mirrors,
 points where a space or a state changes — rather than the open middle of a
 room, and on **precision of execution** (the exact stage, the exact
 placement, the exact seal) as the difference between a functioning
 countermeasure and an inert prop. That convergence, not any one tradition's
-internal logic, is the principle the department actually uses in the field.
+internal logic, is the principle this course actually uses in the field.
 
 ## Afterwards
 
 No submission this week. The Field Case File (due week 6) is marked in part
 on whether your countermeasure reasoning draws on this convergence across
 independent traditions, rather than citing a single one as though it were
-the department's official position.
+this course's official position.

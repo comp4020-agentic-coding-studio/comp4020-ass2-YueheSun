@@ -12,7 +12,7 @@ marking:
     The capstone is judged as a whole, on whether the proposed protocol is
     grounded in specific classification and countermeasure material from
     across the semester rather than general plausibility, whether it is
-    safe to run under the department's fieldwork rules, and whether it
+    safe to run under the course's fieldwork rules, and whether it
     stands on its own as something a field team could actually follow.
 spec:
   - submitted by the deadline, proposing a containment/warding protocol for
