@@ -27,9 +27,11 @@ in progress.
 Pooling weeks 7 and 8's cases and asking, plainly: what do they converge on?
 This course's classification categories recur across sources with no
 contact between them; certain triggers — thresholds, repeated counts,
-specific times — recur too. What they do not converge on, at this point, is
-cause, and the practical spends as much time naming that gap honestly as it
-does on the convergence itself.
+specific times — recur too, the same pattern week 3's iron-and-salt line and
+spirit-wall placement were already trading on as folk practice, well before
+this practical had a name for it as convergence. What they do not converge
+on, at this point, is cause, and the practical spends as much time naming
+that gap honestly as it does on the convergence itself.
 
 ## Afterwards
 
