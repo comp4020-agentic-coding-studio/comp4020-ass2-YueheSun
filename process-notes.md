@@ -218,3 +218,36 @@ syntactically valid rule or attribute that silently matches nothing a
 browser honors). Promoted to CLAUDE.md as a platform-gotcha note, next to
 the scoped-styles one, since any future inline SVG in a `.deck.mdx` file
 will hit this the same way.
+
+## SVG viewBox clipping caption text — silent, same failure class — 2026-09-21 (commit 0fbb3eb)
+
+Reusing week-02's field-kit SVG icon across weeks 3/5/9 (audit item #21),
+the first caption draft ("field kit — iron nail and salt at a threshold,
+nazar amulet", 61 characters) was too wide for the icon's `viewBox="0 0
+220 70"` at `font-size: 11px`. A root `<svg>` element clips to its own
+box by default (`overflow: hidden` is the CSS-spec default for the root
+`svg`, unlike other elements) — so the overflowing text wasn't squeezed
+or wrapped, it was cut off flush at both edges, mid-word, with nothing in
+the source or the build log to suggest anything was wrong.
+
+**What happened:** `pnpm check` stayed fully green across three
+rebuilds — deck-structural checker, a11y checker, broken-link checker, all
+pass, because none of them render a page and look at it. Only caught by
+screenshotting all three decks (the same headless-Firefox pipeline used
+for item #15 and item #6) and actually reading the caption text in the
+image.
+
+**Fix applied:** shortened the caption to "iron, salt, and nazar amulet"
+(29 characters), comfortably inside the viewBox. Re-verified with fresh
+screenshots.
+
+**Same failure class as the camelCase-SVG-attribute bug above, not a new
+one**: both are cases where the MDX pipeline compiles inline SVG exactly
+as written, with no linting or rendering step to catch a value that's
+syntactically fine but visually wrong. Not promoted to its own CLAUDE.md
+rule — this is a general "SVG viewBox has hard edges, unlike a text
+column" fact rather than a pipeline-specific gotcha, and the existing
+"decks don't render in the check suite, look at a screenshot" discipline
+already covers it. Worth noting here because it's the second time in this
+session that *only* a screenshot caught a defect three separate green
+`pnpm check` runs missed.
