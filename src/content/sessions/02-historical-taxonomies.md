@@ -32,6 +32,23 @@ A walk through three retired schemes and why each broke:
   persistent, recurring, responsive, or dormant — rather than by appearance
   or location, and lets a case belong to more than one category at once
 
+Notice what's missing from all three retired schemes above: no named
+historical incident, no founding "case zero" invented to justify them. The
+department describes a retired scheme by the structural gap it failed to
+accommodate, not by a specific anecdote built to sell it — the same
+sourcing discipline this course holds its own case files to from week 4
+onward. A scheme earns its place by what it can classify, not by a good
+story about where it came from.
+
+Why non-exclusive membership matters, in practice rather than in the
+abstract: a full case held back until week 7 involves an object with a
+consistently affectionate, entirely benign baseline behaviour that, rarely
+and only while unobserved, does something else altogether. Under the old
+hostile/benign scale it would have to be filed as one or the other and
+misfiled either way. The current scheme classifies it as **persistent**
+(the affectionate baseline) *and* **dormant** (the rare behaviour) at the
+same time — two tracked channels on one case file, not a forced choice.
+
 ## Afterwards
 
 No submission this week. The vocabulary introduced here is what next week's

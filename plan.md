@@ -1,12 +1,188 @@
 # Applied Anomalology — build plan
 
-## Status: build complete
+## Status: content redesign in progress — Phase 1 (weeks 1–3) implemented and verified
 
-Everything in "Agreed structure" below is built, checked, and committed.
-`pnpm check` and `pnpm check:evidence` are both green as of the latest
-commit. There is no required next step — see "One flagged limitation" for
-the one thing an autonomous session couldn't verify and should get a human
-look before submission.
+The build described below (identity, cast, page structure, decks, assets,
+spec tests, visual pass) is still complete and still green — nothing in
+"Agreed structure" has been touched or is at risk. What changed: the
+*content* filled into that structure was audited and found too thin (5 of
+12 lectures exist, 2 of 12 have real content depth) and, in three places,
+factually dishonest about its own sourcing (two "competing frameworks" in
+week 10 are invented with no real source at all — see the theory audit).
+A full research pass (`research/`) and a course-logic proposal
+(`course-logic-proposal.md`, `lecture-plan.md`) now exist to fix this
+without touching the structural build. See "Current redesign" below for
+where that stands and what a cold reader needs to pick it up.
+
+## Current redesign — where this stands
+
+**Why this started:** the site structurally exists (12 weeks, 3
+assessments, all pages render) but the content in most weeks is a
+placeholder asserting a corpus ("the international corpus," "two regional
+cases") that was never actually written, and week 10's two named theories
+("cosmic prisoner theory," "shadow domain theory") don't trace to any real
+source — see `research/01-theory-audit.md`. Fixing this needed real source
+material before any lecture could be rewritten, so a research pass ran
+first, deliberately kept separate from any code/content change.
+
+**Design principle settled during this pass (governs all content
+decisions from here on, screen every future addition against it):** the
+course's purpose is to surface **the eeriness hidden beneath the surface
+of ordinary life** — for an audience of ordinary university students. A
+case, tradition, or theory earns a place in the course only if it's
+something an ordinary person could plausibly brush up against (a
+threshold in their own home, a library, an elevator, a dorm chat group,
+a VHS tape, a chain email) — not exotic occult lore, government-facility
+containment mythology, or monster-of-the-week content. This is a
+screening filter, not a retroactive rewrite of what's already agreed
+(the "no grand unifying theory" and "open secret = the phenomena, not the
+department" decisions already satisfy it and don't need to change) — see
+`course-logic-proposal.md`'s "Ordinary-life audit" section for how every
+sourced research candidate was checked against it, and which ones failed.
+
+**Mid-pass correction (this update):** after the first research pass, the
+student asked two follow-up questions that changed the corpus, not just
+the plan text: (1) audit everything already gathered against the
+ordinary-life design principle above, and (2) remove what fails, then
+search widely for real, better-fitting replacements. That produced two
+supplement research files (`sources-phase1-supplement.md`,
+`sources-phase3-supplement.md`), which have now been read in full,
+cross-checked against each other for overlap (Slender Man and BEN Drowned
+were candidates in both — resolved and documented, see `sources.md`), and
+merged into `sources.md` and `course-logic-proposal.md` §0. Nothing was
+deleted outright: every demoted item is reclassified in place with its
+new role (literary comparison, contrast case) so the earlier research
+investment stays visible, and the new material is added as its own
+clearly-marked subsections rather than renumbering the original corpus.
+
+**What exists now:**
+- `research/00-gap-inventory.md` — week-by-week content-depth audit plus a
+  diagnosis of why the two on-campus cases (rearranging sub-basement,
+  13-step stairwell) don't work as horror (no rule, no stakes, no link to
+  week 3's warding material).
+- `research/01-theory-audit.md` — verifies every theory/tradition the site
+  currently presents as established. Two week-10 frameworks are fabricated
+  outright; the week-11 "fourth-dimensional hypothesis" is a real trope
+  *family* (Kripal) wearing an invented specific name; the week-3 warding
+  material is real but under-cited and missing concrete procedure.
+- `research/sources.md` (merged from `sources-phase1.md`/`-phase2.md`/
+  `-phase3-5.md`, then further merged with `sources-phase1-supplement.md`/
+  `-phase3-supplement.md` after the ordinary-life audit) — the full sourced
+  corpus for all 5 phases, now including: 9 real warding traditions for
+  week 3 (5 original + 4 from the expansion pass: witch bottles, mezuzah
+  fraud, witch balls, nazar amulets, mirror-covering), a week-1 hook
+  ("Candle Cove"), 12 campus rules-horror candidates for weeks 4–6, a full
+  week 7/8 replacement pipeline for the demoted SCP-093 (Polybius,
+  Halloween-candy legend, Petscop, BEN Drowned, SCP-1048, Bloody Mary,
+  Hanako-san, Charlie Charlie Challenge), and 6 real citable frameworks for
+  weeks 9–11 (2 of which — Tolbert/Slender Man+Marble Hornets, Fisher/The
+  Stone Tape — now have a directly paired real case, not just a citation).
+- `course-logic-proposal.md` — the course's through-line, 2–3 alternative
+  progression structures with trade-offs, explicit weak-link callouts, and
+  the ordinary-life audit of every sourced candidate, updated after the
+  expansion pass with sharper recommendations (drop vs. relabel) now that
+  real replacements exist for most demoted items.
+- `lecture-plan.md` (marked DRAFT) — per-week title/role/points/sourced
+  case/hook/assessment-link for all 12 weeks, a week-1 slide-by-slide
+  outline, and week 3's practical-measures-in-use slide section with
+  explicit cross-references to which week 4–6 case uses which week-3
+  measure, built from the finalized (but not yet student-approved) corpus.
+
+**Course logic is now settled (2026-09-21)** — full record in
+`course-logic-proposal.md` §5. In brief:
+- **Progression:** A+C blend — keep the existing phase/week/assessment
+  boundaries, fold case-theory pairing into how weeks 9–11 are written.
+- Dunwich Horror and Painted Skin **dropped outright** (witch bottles,
+  mezuzah fraud replace their teaching roles); Hōichi stays
+  literary-comparison-only.
+- SCP-093 **dropped outright** (full week 7/8 replacement pipeline stands
+  in its place).
+- Week 3 traditions are **named explicitly as themselves**, not
+  in-universe-renamed.
+- Case swaps confirmed: library sub-basement → SCP-2093-derived seminar
+  room (wk 5); stairwell keeps its setting, gains an SCP-087-derived edge
+  case (wk 6).
+- Week 3's supplementary traditions **trimmed to two of three**: nazar
+  amulets and mirror-covering kept (both have real downstream uses —
+  see `lecture-plan.md`'s cross-reference table and the week 9 Tolbert
+  pairing); witch balls cut (weakest fit, unused anywhere else). Final
+  week-3 tradition count: 9.
+- Tolbert/Slender-Man-origin+*Marble Hornets* and Fisher/*The Stone Tape*
+  pairings **confirmed** for weeks 9–10 (creature still excluded from the
+  case corpus). "Candle Cove" **confirmed** as the week 1 hook.
+
+`lecture-plan.md` has been updated to reflect every decision above (all
+`[PENDING Q#]` markers resolved to `[SETTLED Q#]` in place, so the
+reasoning trail stays visible).
+
+## Phase 1 (weeks 1–3) — implemented and manually verified (this update)
+
+Turned `lecture-plan.md`'s settled Phase 1 points into actual content
+edits, cross-checked against `research/sources.md` for procedural detail
+rather than paraphrased from the plan alone:
+
+- **Week 1** — `src/decks/week-01.deck.mdx` gained two new slides right
+  after the title: a "Case file, unlogged" hook (the Candle Cove-style
+  in-universe forum thread, `sources.md`'s own suggested adaptation) and a
+  `_class: banner` slide stating the ordinary-life design thesis
+  explicitly, both before the existing "Applied is not decoration" slide.
+  Deck is now 11 slides (was 9); rebuilt and reverified section-by-section,
+  same as the original 9-slide check. `src/content/lectures/week-01.md`
+  gained the same thesis statement in prose plus a sourcing-standard
+  preview bullet ("behaviour, not atmosphere, corroborated"). Session file
+  (`01-observational-method.md`) was already solid — untouched.
+- **Week 2** — `src/content/sessions/02-historical-taxonomies.md` gained
+  two paragraphs: an explicit callout that all three retired taxonomies
+  are described generically, with no invented "case zero" incident (the
+  same sourcing discipline the course holds its own cases to), and a
+  concrete preview of *why* non-exclusive classification matters — the
+  SCP-1048 "Builder Bear" persistent-plus-dormant case, held back for its
+  full treatment in week 7. No lecture file exists for week 2 by design
+  (table in "Agreed structure" below has no lecture for that week) — not
+  a gap, matches the original structure.
+- **Week 3** — the big rewrite. `03-comparative-warding.md` replaced two
+  generic tradition-categories with all **nine** named, real traditions
+  from `course-logic-proposal.md` §5's settled corpus: iron/salt
+  thresholds, fú talisman consecration, spirit walls, mezuzah placement,
+  ofuda/kamidana/shimenawa (the five originals) plus English witch
+  bottles, mezuzah fraud, nazar amulets, and mirror-covering during shiva
+  (the four supplementary ones — witch balls cut per the settled
+  decision). Each is named explicitly as itself per `[SETTLED Q4]`, with
+  real procedure/sequence/failure detail pulled from `sources.md`'s
+  practical-measures table, not just cited by name. Spec bullets rewritten
+  to match (procedure/sequence/failure of ≥3 traditions; convergence
+  across ≥2; why explicit naming matters). `week-03.md` lecture updated to
+  match the nine-tradition scope and state the explicit-naming rationale.
+
+**Manually verified**, not just `pnpm check`-green (which also passed):
+built the site, grepped rendered HTML for the new content, then drove a
+real headless Firefox (via a cached Playwright install + the
+`LD_LIBRARY_PATH`-pointed-at-extracted-`libasound.so.2` workaround already
+recorded in `process-notes.md`) across all five touched pages plus stepped
+through the deck slide-by-slide with keyboard nav. No console errors on
+any page; the new banner slide renders identically styled to the existing
+"Fieldwork starts week 4" banner slide (confirms the `_class` comment
+parsed correctly, not just that a slide-boundary `---` was inserted); week
+2/3 session pages render with correct headings, bold terms, numbered
+lists, and the 符 CJK character displaying correctly.
+
+**Next step:** **Phase 2 (weeks 4–6)** — on-campus fieldwork. Per
+`lecture-plan.md`: week 4 needs the buddy-system/disengagement protocol
+plus an SCP-2093 preview (fixes weak link #2 — gives the buddy system a
+case that actually requires it); week 5 swaps the library sub-basement
+case for SCP-2093 relocated to a disused seminar room; week 6 upgrades the
+13-step stairwell with an SCP-087-derived edge case and adds the
+case-file write-up lecture content. Also worth deciding at the start of
+that phase: `lecture-plan.md`'s cross-reference table flags that the
+nazar amulet is the one week-3 measure weeks 5–6 could test directly
+(visible state change during fieldwork) — consider writing SCP-2093's
+case around a diagnose-then-neutralize structure (mirroring the witch
+bottle) if it fits naturally, per that table's own recommendation, but
+don't force a tradition-tie-in that doesn't earn its place. **Checkpoint
+now, before starting Phase 2**: this section is updated; run `/clear` and
+reload with `@plan.md` before beginning implementation.
+
+## What this course is
 
 ## What this course is
 
