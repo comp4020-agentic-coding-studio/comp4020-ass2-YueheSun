@@ -8,6 +8,7 @@ week: 3
 date: 2027-03-08
 teachers:
   - jonah-whitcombe
+slides: /decks/week-03/
 related:
   - sessions/03-comparative-warding
 ---

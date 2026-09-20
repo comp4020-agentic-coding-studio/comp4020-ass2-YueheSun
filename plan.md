@@ -215,7 +215,7 @@ what's actually done, not the historical week-by-week table further down.
 |---|---|---|---|---|
 | 1 | Foundations | ✅ | ✅ | done |
 | 2 | Foundations | ✅ | ✅ | done |
-| 3 | Foundations | ✅ | ❌ | deck missing — next |
+| 3 | Foundations | ✅ | ✅ | done |
 | 4 | On-campus fieldwork | ❌ | ❌ | missing |
 | 5 | On-campus fieldwork | ❌ | ❌ | missing |
 | 6 | On-campus fieldwork | ✅ | ❌ | deck missing |
@@ -230,17 +230,22 @@ what's actually done, not the historical week-by-week table further down.
 classification scheme as method, honestly flagged as thin since no
 sourced material targets week 2 specifically; deck follows the same
 content, 10 slides, verified against built HTML for slide count and
-`_class` styling).
+`_class` styling). Week 3's deck is done (13 slides, includes the
+required "how to use these in practice" section walking through the
+when/how/sequence/limit/failure reading of a countermeasure and three
+worked examples pulled from `sources.md`'s practical-measures table;
+verified against built HTML for slide count, class styling, and section
+presence).
 
-**Next step, in the agreed order:** (1) build week 3's deck, including
-the protective-measures-in-practice section; (2) one week per remaining
-phase (pick from 4–6, 7–9, 10–11) to get every phase at least one deck;
-(3) the rest, in whatever order keeps each phase's `pnpm check` green
-before moving on. Commit after each phase and update the table above as
-it goes. If work stops before all 12 weeks are covered, this table — not
-prose elsewhere in this file — is what should say exactly what's left.
-**Checkpoint now, before starting**: this section is updated; run
-`/clear` and reload with `@plan.md` before beginning implementation.
+**Next step, in the agreed order:** (1) one week per remaining phase
+(pick from 4–6, 7–9, 10–11) to get every phase at least one full
+lecture+deck; (2) the rest, in whatever order keeps each phase's
+`pnpm check` green before moving on. Commit after each phase and update
+the table above as it goes. If work stops before all 12 weeks are
+covered, this table — not prose elsewhere in this file — is what should
+say exactly what's left. **Checkpoint now, before starting**: this
+section is updated; run `/clear` and reload with `@plan.md` before
+beginning implementation.
 
 ## What this course is
 
