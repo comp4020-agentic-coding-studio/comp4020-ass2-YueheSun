@@ -29,3 +29,10 @@ related:
 - what carries forward: the same read-a-practice-as-a-claim method returns in
   the literature-synthesis phase (weeks 10–11), applied to theories about
   cause rather than practices for containment
+
+## After this lecture
+
+Fieldwork starts next week. Week 4 covers the safety protocol you'll run
+these traditions' logic against for real — consent, the buddy system, the
+disengagement rule — before either on-campus case gets its first
+observation logged.

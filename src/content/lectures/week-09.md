@@ -24,3 +24,10 @@ related:
   only to flag that it exists
 - why the Comparative Literature Review is marked on evaluating competing
   explanations, not on picking a winner
+
+## After this lecture
+
+The Comparative Literature Review is due this week, marked on exactly the
+pattern-without-a-cause result this lecture just walked through — not on
+whether your review settles one. Week 10 starts weighing the frameworks
+named here only to flag that they exist.

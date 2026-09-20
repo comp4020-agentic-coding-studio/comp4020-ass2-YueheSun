@@ -23,3 +23,9 @@ related:
   "this is what's happening," and why this course keeps the two visibly
   separate
 - what next week's capstone does and doesn't ask of you on this question
+
+## After this lecture
+
+There's no new material after this — week 12 is co-taught and reviews the
+whole method in build order, then reframes the capstone as a design task
+using everything covered since week 1.
