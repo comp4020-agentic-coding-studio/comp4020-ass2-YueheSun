@@ -7,6 +7,7 @@ week: 6
 date: 2027-03-29
 teachers:
   - perpetua-solano
+slides: /decks/week-06/
 related:
   - sessions/06-case-clinic-2
 ---
