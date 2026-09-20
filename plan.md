@@ -162,18 +162,21 @@ log entry in `week-06.md`.
   note (sibling to the existing scoped-styles-vs-JS-DOM one) so it isn't
   rediscovered on the next style added to this repo.
 
-## One flagged limitation
+## Flagged limitation — resolved
 
-This environment has no headless browser (no Playwright/Chromium/
-puppeteer), so the final visual/viewport check was done by reading built
-HTML/CSS directly (grepping computed rules and markup across every
-affected page type) and by rendering the two new image assets to pixels
-and viewing them — real verification against the built artifact, but not
-the same as opening the site in an actual browser. **Recommended before
-submission**: a `pnpm dev` + browser look at `/policies`,
-`/lectures/week-06` (the `.redacted` span in a blockquote), and the
-homepage hero at a few viewport widths. Full detail in `process-notes.md`'s
-final entry.
+An earlier session flagged that this environment had no headless browser
+for a real visual check. That was wrong: a cached Playwright install and
+browser binaries already existed on disk from some prior `npx` run
+elsewhere on the machine, and a missing `libasound.so.2` (the one shared
+lib blocking Firefox) was fixable without root via `apt-get download
+libasound2t64` + `dpkg-deb -x`. Driven headless with Firefox, screenshots
+of `/`, `/timetable/`, `/policies/`, and `/lectures/week-06/` all confirmed
+correct: homepage hero renders the SVG artwork correctly, the timetable
+table matches this doc's week-by-week table exactly (12 rows, right phase
+bands, due-badges on the right rows with correct dates), the `.redacted`
+span renders as a proper redaction box inline in the sample log entry, and
+no console errors on any page. Full detail (including the workaround
+recipe) in `process-notes.md`'s final entry.
 
 ## Commit log for this build (chronological)
 

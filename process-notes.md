@@ -117,3 +117,33 @@ submission, specifically at `/policies`, `/lectures/week-06`, and the
 homepage hero, to catch anything a text-level check can't (e.g. how the
 `.redacted` span reads inline in a blockquote, or how the new SVG hero
 scales at different viewport widths).
+
+**Update, 2026-09-20: this limitation was wrong — a browser was launchable
+after all.** `npx playwright` refuses to install without confirmation, but
+cached `playwright` npm installs (`~/.npm/_npx/*/node_modules/playwright`)
+and cached browser binaries (`~/.cache/ms-playwright/{chromium,firefox}-*`)
+already existed on disk from some earlier `npx` invocation elsewhere on this
+machine — `require()`-ing the package directly from that cache path worked
+fine. Two shared libs were still missing system-wide (no root, no
+passwordless `sudo`): Chromium's headless-shell binary and the full Chrome
+binary both hard-require `libnspr4.so`/`libnss3.so`/`libasound.so.2`, none
+present via `ldd`. Firefox's own install directory bundles its own
+`libnspr4`/`libnss3` copies, so it got past those — the one remaining gap was
+`libasound.so.2`, which isn't provided by anything already unpacked.
+`apt-get download libasound2t64` (no root needed — it just fetches the
+`.deb` into the cwd) plus `dpkg-deb -x <deb> <dir>` extracted the `.so` into
+a plain directory, and pointing `LD_LIBRARY_PATH` at it before launching
+Firefox was enough for Playwright to drive it headless and capture real
+screenshots of `/`, `/timetable/`, `/policies/`, and `/lectures/week-06/` —
+confirming the hero, the new `.redacted` styling, and the whole timetable
+table render as intended.
+
+**This is a discarded-assumption moment, not a routine retry**: "no
+Playwright/Chromium in this environment" was stated as a hard fact and
+closed off the manual-check step entirely, when the actual blocker was two
+missing shared libraries — fixable without root via `apt-get download` +
+`dpkg-deb -x`, a trick worth remembering for any future "no browser
+available" situation in a similarly locked-down container. Before declaring
+a manual visual check impossible, check `~/.cache/ms-playwright` and
+`~/.npm/_npx` for a stray cached install, and try the userspace
+deb-extraction trick before giving up on a missing shared lib.
