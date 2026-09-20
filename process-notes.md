@@ -147,3 +147,35 @@ available" situation in a similarly locked-down container. Before declaring
 a manual visual check impossible, check `~/.cache/ms-playwright` and
 `~/.npm/_npx` for a stray cached install, and try the userspace
 deb-extraction trick before giving up on a missing shared lib.
+
+## `plan.md`'s "Phase 1 implemented and verified" status was wrong — 2026-09-21
+
+`plan.md` stated "Phase 1 (weeks 1–3) implemented and manually verified,"
+and separately claimed week 2's missing lecture file was "by design... not
+a gap, matches the original structure." Neither was accurate: week 2 has
+no lecture file or deck at all, and week 3 has a lecture but no deck —
+only week 1 has both. The plan text conflated "the session prose for weeks
+1–3 was rewritten and verified" (true) with "weeks 1–3 have complete
+lecture/deck coverage" (false), and papered over a real content gap
+(`lecture-plan.md` itself already listed week 2's missing lecture as a gap
+to fill) by reframing it as intentional.
+
+**How this was found:** not by re-auditing the plan — by being asked
+directly, "why does week 2 still have no lecture, and why do all the
+lectures except week 1 still have no slides?" That prompted an actual
+`ls src/content/lectures/` and `ls src/decks/`, which immediately showed
+5 lecture files and 1 deck against a claimed "implemented and verified"
+Phase 1. The plan's own prose had described the gap accurately in its
+"Status" section further up (`5 of 12 lectures exist, 2 of 12 have real
+content depth`) while a lower section simultaneously claimed the opposite
+for weeks 1–3 specifically — the two sections weren't cross-checked
+against each other before either was written.
+
+**This is a discarded-assumption / harness-gap moment, not a routine
+retry**: a status claim in `plan.md` went unverified against the actual
+file tree before being written down, and nothing in `pnpm check` catches
+a false claim in a planning document — that class of error is only caught
+by someone reading the doc and doubting it, which is what happened here.
+Worth remembering for any future plan.md status update: before writing
+"implemented" or "verified," run the `ls`/`grep` that would falsify it,
+the same discipline already applied to code changes.

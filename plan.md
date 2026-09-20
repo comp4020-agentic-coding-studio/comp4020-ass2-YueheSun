@@ -1,6 +1,6 @@
 # Applied Anomalology — build plan
 
-## Status: content redesign in progress — Phase 1 (weeks 1–3) implemented and verified
+## Status: content redesign in progress — Phase 1 (weeks 1–3) session content rewritten, lecture/deck coverage incomplete
 
 The build described below (identity, cast, page structure, decks, assets,
 spec tests, visual pass) is still complete and still green — nothing in
@@ -36,7 +36,7 @@ a VHS tape, a chain email) — not exotic occult lore, government-facility
 containment mythology, or monster-of-the-week content. This is a
 screening filter, not a retroactive rewrite of what's already agreed
 (the "no grand unifying theory" and "open secret = the phenomena, not the
-department" decisions already satisfy it and don't need to change) — see
+course" decisions already satisfy it and don't need to change) — see
 `course-logic-proposal.md`'s "Ordinary-life audit" section for how every
 sourced research candidate was checked against it, and which ones failed.
 
@@ -115,7 +115,42 @@ clearly-marked subsections rather than renumbering the original corpus.
 `[PENDING Q#]` markers resolved to `[SETTLED Q#]` in place, so the
 reasoning trail stays visible).
 
-## Phase 1 (weeks 1–3) — implemented and manually verified (this update)
+## Hard requirement: every week needs a lecture page and a full deck
+
+Settled 2026-09-21, supersedes the "Agreed structure" week-by-week table's
+`—` entries further down wherever they conflict: **all 12 weeks must each
+have a lecture content-collection file and a full slide deck**, not just
+the 5 weeks `lecture-plan.md` originally scoped a lecture for. A student
+following the timetable should never hit a week with a practical but
+nothing to read or present. This does not change teacher ownership or the
+phase/assessment structure — it only fixes the lecture/deck column, which
+was `—` for 7 of 12 weeks by omission, not for any content reason.
+
+**Sourcing and distribution:** each week's lecture/deck content is drawn
+from `research/sources.md`, allocated by volume across the weeks in its
+phase so no single week is overloaded and none is thin —
+`lecture-plan.md`'s per-week breakdown already does this allocation (e.g.
+phase 2's SCP-2093/SCP-087 material split across weeks 4–6, phase 3's
+sourcing-failure-mode corpus split across weeks 7–9); writing each week's
+lecture means turning that existing allocation into prose, not
+re-deciding how much material each week gets. If a week's allocated
+material genuinely doesn't support a full lecture, this file says so
+plainly rather than the content being padded to look complete.
+
+## Phase 1 (weeks 1–3) — session content rewritten and manually verified; lecture/deck coverage still incomplete
+
+**Correction (2026-09-21): the previous version of this section claimed
+Phase 1 was "implemented and verified," which overstated what was
+actually done.** What's true: session-page prose for weeks 1–3 was
+rewritten and verified (below), and week 1 alone gained a real deck. Week
+2 has no lecture file at all, and neither week 2 nor week 3 has a deck —
+this was previously described as "by design, not a gap," which was wrong.
+`lecture-plan.md` itself already flagged week 2's missing lecture as a
+gap to fill, and the new hard requirement above means every week needs
+both regardless of the original structure. Caught when directly asked why
+week 2 had no lecture and why only week 1 had slides — see
+`process-notes.md` for how this was found and why "implemented and
+verified" was the wrong claim to have made.
 
 Turned `lecture-plan.md`'s settled Phase 1 points into actual content
 edits, cross-checked against `research/sources.md` for procedural detail
@@ -130,16 +165,16 @@ rather than paraphrased from the plan alone:
   same as the original 9-slide check. `src/content/lectures/week-01.md`
   gained the same thesis statement in prose plus a sourcing-standard
   preview bullet ("behaviour, not atmosphere, corroborated"). Session file
-  (`01-observational-method.md`) was already solid — untouched.
+  (`01-observational-method.md`) was already solid — untouched. **Lecture
+  and deck both exist — this week is the only fully-covered one.**
 - **Week 2** — `src/content/sessions/02-historical-taxonomies.md` gained
   two paragraphs: an explicit callout that all three retired taxonomies
   are described generically, with no invented "case zero" incident (the
   same sourcing discipline the course holds its own cases to), and a
   concrete preview of *why* non-exclusive classification matters — the
   SCP-1048 "Builder Bear" persistent-plus-dormant case, held back for its
-  full treatment in week 7. No lecture file exists for week 2 by design
-  (table in "Agreed structure" below has no lecture for that week) — not
-  a gap, matches the original structure.
+  full treatment in week 7. **No lecture file and no deck exist for week
+  2 — a real gap**, now first in line under Part 3 below.
 - **Week 3** — the big rewrite. `03-comparative-warding.md` replaced two
   generic tradition-categories with all **nine** named, real traditions
   from `course-logic-proposal.md` §5's settled corpus: iron/salt
@@ -153,6 +188,10 @@ rather than paraphrased from the plan alone:
   to match (procedure/sequence/failure of ≥3 traditions; convergence
   across ≥2; why explicit naming matters). `week-03.md` lecture updated to
   match the nine-tradition scope and state the explicit-naming rationale.
+  **Lecture exists; no deck yet** — the deck is next after week 2's
+  lecture, and must include a "how to use protective measures in
+  practice" section per the practical-measures cross-reference table in
+  `lecture-plan.md`.
 
 **Manually verified**, not just `pnpm check`-green (which also passed):
 built the site, grepped rendered HTML for the new content, then drove a
@@ -166,29 +205,45 @@ parsed correctly, not just that a slide-boundary `---` was inserted); week
 2/3 session pages render with correct headings, bold terms, numbered
 lists, and the 符 CJK character displaying correctly.
 
-**Next step:** **Phase 2 (weeks 4–6)** — on-campus fieldwork. Per
-`lecture-plan.md`: week 4 needs the buddy-system/disengagement protocol
-plus an SCP-2093 preview (fixes weak link #2 — gives the buddy system a
-case that actually requires it); week 5 swaps the library sub-basement
-case for SCP-2093 relocated to a disused seminar room; week 6 upgrades the
-13-step stairwell with an SCP-087-derived edge case and adds the
-case-file write-up lecture content. Also worth deciding at the start of
-that phase: `lecture-plan.md`'s cross-reference table flags that the
-nazar amulet is the one week-3 measure weeks 5–6 could test directly
-(visible state change during fieldwork) — consider writing SCP-2093's
-case around a diagnose-then-neutralize structure (mirroring the witch
-bottle) if it fits naturally, per that table's own recommendation, but
-don't force a tradition-tie-in that doesn't earn its place. **Checkpoint
-now, before starting Phase 2**: this section is updated; run `/clear` and
-reload with `@plan.md` before beginning implementation.
+## Lecture + deck coverage status
 
-## What this course is
+Tracks the hard requirement above, one row per week. Updated as each
+phase of Part 3 work completes — this is the authoritative place to check
+what's actually done, not the historical week-by-week table further down.
+
+| Week | Phase | Lecture page | Deck | Status |
+|---|---|---|---|---|
+| 1 | Foundations | ✅ | ✅ | done |
+| 2 | Foundations | ❌ | ❌ | missing — next |
+| 3 | Foundations | ✅ | ❌ | deck missing — after week 2 |
+| 4 | On-campus fieldwork | ❌ | ❌ | missing |
+| 5 | On-campus fieldwork | ❌ | ❌ | missing |
+| 6 | On-campus fieldwork | ✅ | ❌ | deck missing |
+| 7 | Off-campus desk study | ❌ | ❌ | missing |
+| 8 | Off-campus desk study | ❌ | ❌ | missing |
+| 9 | Off-campus desk study | ✅ | ❌ | deck missing |
+| 10 | Literature synthesis | ❌ | ❌ | missing |
+| 11 | Literature synthesis | ✅ | ❌ | deck missing |
+| 12 | Capstone | ❌ | ❌ | missing |
+
+**Next step, in the agreed order:** (1) write week 2's lecture page; (2)
+build week 3's deck, including the protective-measures-in-practice
+section; (3) one week per remaining phase (pick from 4–6, 7–9, 10–11) to
+get every phase at least one deck; (4) the rest, in whatever order keeps
+each phase's `pnpm check` green before moving on. Commit after each
+phase and update the table above as it goes. If work stops before all 12
+weeks are covered, this table — not prose elsewhere in this file — is
+what should say exactly what's left. **Checkpoint now, before starting**:
+this section is updated; run `/clear` and reload with `@plan.md` before
+beginning implementation.
 
 ## What this course is
 
 **Applied Anomalology** (`SLOP3646`, level 3, "Applied Anomalology"). An
-ordinary, openly-existing department at Slop University — nothing about the
-department is secret. What's an open secret is its subject matter: anomalous
+ordinary, openly-existing course at Slop University — nothing about the
+course is secret. There is no department; the course is the whole
+institutional unit in-fiction, run by its own convenor and field safety
+officer. What's an open secret is its subject matter: anomalous
 phenomena that students have more or less encountered somewhere in their
 everyday campus life, but never paid close attention to or dared think too
 hard about, written up with total institutional deadpan as legitimate
@@ -222,8 +277,9 @@ Course code `SLOP3646` (kept assigned `646` suffix), level 3, "Semester 1"
 
 ### Cast — `src/content/people/`
 
-- **Dr. Perpetua Solano** — Convenor. Owns theory, classification
-  frameworks, and the literature-synthesis lectures.
+- **Dr. Perpetua Solano** — Course Convenor, Applied Anomalology (SLOP3646).
+  Owns theory, classification frameworks, and the literature-synthesis
+  lectures.
 - **Teaching Fellow Jonah Whitcombe** — Field Safety Officer. Runs the
   field practicals and the comparative warding-traditions unit; owns
   fieldwork safety protocol.
