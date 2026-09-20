@@ -2,7 +2,7 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import heroImage from "../assets/images/hero-home.svg";
+import heroImage from "../assets/images/title.jpg";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 ---
@@ -11,7 +11,7 @@ import { sessionLabels, siteConfig } from "../site-config";
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
   heroImage={heroImage}
-  heroImageAlt="A repeating grid of identical fluorescent-lit corridor tiles, receding into a flat, seamless expanse"
+  heroImageAlt="Three figures in yellow hazmat suits walking away down a sickly-lit, featureless corridor lined with identical carpeted walls"
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">
