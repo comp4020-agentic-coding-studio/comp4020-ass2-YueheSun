@@ -11,3 +11,46 @@
  * slide class you reach for (`_class: quote`), a code-heavy layout, a
  * background. */
 @import url("astro-theme-university/styles/deck.css");
+
+/* Per-phase impact-slide identity: each of the course's 5 phases gets a
+ * consistent `.impact` fill across its decks, so the thesis-statement slides
+ * read as one visual sequence rather than 12 decks that happen to share a
+ * template. Foundations (weeks 1-3) keeps the un-suffixed default
+ * (--at-primary, i.e. the house gold) unchanged.
+ *
+ * --at-on-primary/-alt (deck.css) are declared once on :root, computed from
+ * whatever --at-primary resolves to there (the house gold) --- they do NOT
+ * re-derive per element, so overriding --at-primary alone on a phase class
+ * changes the fill but leaves the ink fixed at the gold-derived value.
+ * Verified against real WCAG contrast math this breaks silently for three of
+ * the four phases (bronze and warm grey render sub-AA dark text at
+ * 3.6:1/3.5:1; the dark shade is nearly invisible at 1.4:1) --- only the
+ * light tint happens to want the same dark ink gold does. The fix is to
+ * redeclare --at-on-primary/-alt locally, right here, using the same formula
+ * deck.css uses, so each one resolves against ITS OWN --at-primary override
+ * (declaration order within a rule lets a later custom property reference an
+ * earlier one on the same selector). Confirmed correct per-phase via WCAG AA
+ * (4.5:1): bronze and warm grey now take white ink (5.8:1, 6.1:1); the light
+ * tint keeps black ink (17.3:1); the dark shade now takes white ink
+ * (14.8:1). */
+.impact.phase-fieldwork {
+  --at-primary: var(--at-secondary);
+}
+.impact.phase-deskstudy {
+  --at-primary: var(--at-tertiary);
+}
+.impact.phase-synthesis {
+  --at-primary: #f1e8da;
+}
+.impact.phase-capstone {
+  --at-primary: #2b2722;
+}
+.impact.phase-fieldwork,
+.impact.phase-deskstudy,
+.impact.phase-synthesis,
+.impact.phase-capstone {
+  --at-on-primary: oklch(from var(--at-primary) clamp(0.16, (0.58 - l) * 1000, 1) 0 h);
+  --at-on-primary-alt: oklch(
+    from var(--at-primary) clamp(0.16, (l - 0.58) * 1000, 1) 0 h
+  );
+}
