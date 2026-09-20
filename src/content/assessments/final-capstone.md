@@ -24,6 +24,7 @@ spec:
     hypothesis or any other contested framework to be usable
 related:
   - sessions/12-final-debrief
+  - lectures/week-12
 ---
 
 ## The brief

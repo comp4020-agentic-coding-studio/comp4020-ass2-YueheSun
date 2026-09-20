@@ -52,6 +52,13 @@ const visible = people.sort((a, b) => {
           </p>
         )}
         <p>{person.data.description}</p>
+        {!person.data.photo && (
+          <p>
+            <small>
+              <em>Identifying photograph withheld per containment protocol.</em>
+            </small>
+          </p>
+        )}
       </Card>
     ))
   }
