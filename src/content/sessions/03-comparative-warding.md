@@ -75,15 +75,15 @@ comparison.
    claim that a household in mourning is especially vulnerable at exactly
    the moment a death has left a vacancy.
 
-This course's interest is where these nine converge despite no
-documented contact between the traditions producing them: the emphasis
+This course's interest is where these nine converge, despite no
+documented contact between the traditions that produced them. The emphasis
 falls again and again on **transitions** — doorways, corners, mirrors,
 points where a space or a state changes — rather than the open middle of a
-room, and on **precision of execution** (the exact stage, the exact
-placement, the exact seal) as the difference between a functioning
-countermeasure and an inert prop. That convergence is the principle this
-course actually uses in the field, ahead of any one tradition's internal
-logic.
+room. It falls just as consistently on **precision of execution**: the
+exact stage, the exact placement, the exact seal, as the line between a
+functioning countermeasure and an inert prop. That convergence — not any
+one tradition's internal logic — is the principle this course actually
+uses in the field.
 
 ## Afterwards
 

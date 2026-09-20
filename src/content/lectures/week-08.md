@@ -49,10 +49,9 @@ Neither case is unusual on its own — a mirror ritual and a bathroom
 ghost story are both common enough to seem unremarkable. What the
 pairing demonstrates is the department's actual comparative method: two
 independently-sourced, no-contact cases converging on the same
-structure is evidence worth weighing, and a widely-circulated account
-isn't discounted just for being widely circulated — a widely-circulated
-account is often exactly the kind of case with the deepest sourcing
-trail to check.
+structure is evidence worth weighing. A widely-circulated account isn't
+discounted just for being widely circulated — it's often exactly the kind
+of case with the deepest sourcing trail to check.
 
 ## After this lecture
 

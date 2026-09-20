@@ -30,8 +30,8 @@ A joint practical, run by both the convenor and the Field Safety Officer,
 reviewing the semester in the order it was built: the observation method
 from week 1, the classification scheme from week 2, the warding traditions
 from week 3, the two on-campus cases, the desk-study convergence, and the
-competing frameworks — closing with a few capstone protocols presented back
-to the room as worked examples of the method applied end to end.
+competing frameworks. It closes with a few capstone protocols presented
+back to the room as worked examples of the method applied end to end.
 
 ## Afterwards
 
