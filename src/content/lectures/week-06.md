@@ -2,7 +2,7 @@
 title: "Writing up a case file: reviewing the two campus cases"
 description:
   How to turn a week of field logs into a case file a marker can assess,
-  using the sub-basement stacks and the 13-step stairwell as worked examples.
+  using the seminar room and the 13-step stairwell as worked examples.
 week: 6
 date: 2027-03-29
 teachers:
@@ -16,10 +16,16 @@ related:
 
 - what a case file has to do that a raw log doesn't: state a classification
   and defend it against the log, not just present the log
-- worked review of the sub-basement stacks case — what separates a
+- worked review of the seminar-room case — what separates a
   documentation-rigor pass from a fail
-- worked review of the 13-step stairwell case — where safety-protocol
-  adherence shows up in a write-up, not only in the field
+- worked review of the 13-step stairwell case, now with a stated edge: the
+  fourteen-step count that breaks the pattern instead of repeating it,
+  and the dimming-lights signal that's loggable independently of any
+  count at all
+- citing a precedent you can't go verify: Incident SU-6-04, the restricted
+  expedition, as a worked example of documentation rigor that doesn't
+  depend on access — what a write-up can honestly claim about a case it
+  can only cite, not observe
 - what "analytical quality" means here: engagement with the classification
   scheme from week 2, not just tidy prose
 

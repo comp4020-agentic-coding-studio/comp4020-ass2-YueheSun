@@ -16,7 +16,7 @@ marking:
     - name: Analytical quality
       weight: 30
 spec:
-  - submitted by the deadline, covering both the sub-basement stacks case and
+  - submitted by the deadline, covering both the seminar-room case and
     the 13-step stairwell case
   - each case's log is timestamped, corroborated between buddy pairs, and
     free of any observation gained by intervening in the case
@@ -30,7 +30,7 @@ related:
 
 ## The brief
 
-> Write up the sub-basement stacks and 13-step stairwell cases as a single
+> Write up the seminar-room and 13-step stairwell cases as a single
 > Field Case File the course can add to its running record.
 
 A case file is not a longer log. The log proves you were there and followed
