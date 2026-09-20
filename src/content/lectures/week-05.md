@@ -1,9 +1,9 @@
 ---
 title: "Reading a case with no prior write-up"
 description:
-  Applying the classification scheme live for the first time, and what the
-  buddy system actually buys you once there's no departmental precedent to
-  check your log against.
+  Applying the classification scheme live for the first time, the case
+  that finally gives the buddy system real teeth, and the corpus's first
+  real fieldwork test of a week-3 measure.
 week: 5
 date: 2027-03-22
 teachers:
@@ -18,22 +18,33 @@ related:
 - the difference between this week and everything discussed so far: no
   prior write-up to check your log against, no departmental precedent to
   lean on — the log you produce this week *is* the record
-- applying the four-category scheme live: why the sub-basement case
+- applying the four-category scheme live: why the seminar-room case
   currently reads as responsive rather than persistent, and what evidence
   would have to change for that call to move
-- the buddy system stops being paperwork here: a second observer's
-  independent log is what turns a discrepancy from noticed into
-  corroborated, on a case with no other source to check against
+- the case week 4 previewed: an occupant who can't self-extract, and only
+  a second observer, outside, opening the door, ends the observation.
+  Corroboration and rescue turn out to be the same requirement, not two
+  separate justifications for the same paperwork
+- diagnose, then respond — two stages, logged separately: confirming the
+  instrument reading against a corridor baseline before the case counts
+  as live, then a distinct, separate rescue action. Named explicitly as
+  the same two-stage shape week 3's English witch bottles use (diagnose
+  first, then a separate construction/response stage), not a
+  coincidence — it's the first case built to test that structure rather
+  than only cite it
+- the nazar amulet, run honestly: the corpus's first real fieldwork test
+  of a week-3 measure. Not run because anyone's confident it does
+  anything against a spatial anomaly — run because a self-signalling
+  check that costs nothing to log alongside an instrument reading is
+  worth logging either way, and the result goes in the file whichever way
+  it comes out
 - sourcing discipline turned inward: the same rule this course holds a
   published case to — behaviour, not atmosphere; corroborated, not
   asserted — applies just as strictly to a case this course is generating
   itself
-- said plainly rather than smoothed over: no week-3 warding measure gets
-  tested by this case. Logging a discrepancy is not the same as
-  attempting a countermeasure against it, and this week doesn't pretend
-  otherwise
 
 ## After this lecture
 
-Keep this week's log. It's raw material for the Field Case File, due next
-week alongside the stairwell case.
+Keep this week's log — the classification call, the diagnose/respond
+entries, and the nazar reading. It's raw material for the Field Case
+File, due next week alongside the stairwell case.
