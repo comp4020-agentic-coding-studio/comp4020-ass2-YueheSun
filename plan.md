@@ -222,7 +222,7 @@ what's actually done, not the historical week-by-week table further down.
 | 7 | Off-campus desk study | ✅ | ✅ | done |
 | 8 | Off-campus desk study | ❌ | ❌ | missing |
 | 9 | Off-campus desk study | ✅ | ❌ | deck missing |
-| 10 | Literature synthesis | ❌ | ❌ | missing |
+| 10 | Literature synthesis | ✅ | ✅ | done |
 | 11 | Literature synthesis | ✅ | ❌ | deck missing |
 | 12 | Capstone | ❌ | ❌ | missing |
 
@@ -249,12 +249,23 @@ rendered body text, matching the existing sessions' own convention of
 never naming a specific fictional-media title in-universe; only genuinely
 real, citable academic material (e.g. the Halloween-candy-tampering
 scholarship) is named directly, the same way week 3 names real warding
-traditions.
+traditions. Week 10 is done (Literature synthesis's representative week
+— lecture and 14-slide deck. Rather than edit the existing week-10
+session file, which still names the two fabricated frameworks by title,
+the new content uses the session's own already-present framing: cosmic
+prisoner theory and shadow domain theory are restated and shown to fail
+the falsifiability test the session itself sets, then Freud's uncanny,
+Fisher's weird/eerie, and Turner's liminality — all real and citable —
+fill the session's open "others, briefer" slot, each paired with a case
+already on the site: the week-1 forum-thread hook, an in-universe
+recording-hypothesis case file, and week 3's mirror-covering custom.
+No fabricated theory is presented as real and no session file needed
+editing to make that true).
 
 **Next step, in the agreed order:** one week per remaining phase is now
-done for On-campus fieldwork (week 4) and Off-campus desk study (week 7).
-Remaining: (1) one representative week each for Literature synthesis
-(pick from 10–11) and Capstone (week 12); (2) then the rest — week 5
+done for On-campus fieldwork (week 4), Off-campus desk study (week 7),
+and Literature synthesis (week 10). Remaining: (1) one representative
+week for Capstone (week 12); (2) then the rest — week 5
 (lecture+deck), week 6 (deck only), week 8 (lecture+deck), week 9 (deck
 only), week 11 (deck only) — in whatever order keeps each phase's
 `pnpm check` green before moving on. Commit after each phase and update
