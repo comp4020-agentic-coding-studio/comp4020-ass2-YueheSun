@@ -19,13 +19,13 @@ spec:
 
 ## Before the practical
 
-Nothing to prepare. Bring the classification vocabulary from week 2 — this
+Nothing to prepare. Bring the classification vocabulary from week 2: this
 practical tests it against material it wasn't built for.
 
 ## In the practical
 
 Nine traditions, named as exactly what they are. This course does not
-rename real practice to keep it at arm's length — the whole point is that
+rename real practice to keep it at arm's length; the whole point is that
 you could plausibly recognize these from your own life, and a dry
 in-universe label would only obscure that. Five are studied as full
 procedural case studies; four are read alongside them as supplementary
@@ -53,7 +53,7 @@ comparison.
 5. **Ofuda, kamidana, and shimenawa** (Japanese Shinto household warding) —
    shrine-issued talismans placed in a fixed order when several are used
    together, explicitly time-limited: returned to the shrine and replaced
-   annually — never installed once and left in place.
+   annually, never installed once and left in place.
 
 **Four supplementary traditions:**
 
@@ -68,8 +68,8 @@ comparison.
    indistinguishable from a valid one without an examiner's inspection.
 8. **Nazar / evil-eye amulets** — a different failure signal entirely: the
    amulet is believed to absorb an ill-wish and visibly *signals* success by
-   cracking. A broken nazar isn't a failure, it's proof of interception —
-   the standard response is simply replacing it.
+   cracking. A broken nazar isn't a failure, it's proof of interception,
+   and the standard response is simply replacing it.
 9. **Mirror-covering during shiva** (Jewish mourning practice) — every
    mirror in a household covered for the seven-day mourning period, on the
    claim that a household in mourning is especially vulnerable at exactly
@@ -77,12 +77,12 @@ comparison.
 
 This course's interest is where these nine converge, despite no
 documented contact between the traditions that produced them. The emphasis
-falls again and again on **transitions** — doorways, corners, mirrors,
-points where a space or a state changes — rather than the open middle of a
+falls again and again on **transitions** (doorways, corners, mirrors,
+points where a space or a state changes) rather than the open middle of a
 room. It falls just as consistently on **precision of execution**: the
 exact stage, the exact placement, the exact seal, as the line between a
-functioning countermeasure and an inert prop. That convergence — not any
-one tradition's internal logic — is the principle this course actually
+functioning countermeasure and an inert prop. That convergence, not any
+one tradition's internal logic, is the principle this course actually
 uses in the field.
 
 ## Afterwards
