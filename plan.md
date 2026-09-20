@@ -1,6 +1,6 @@
 # Applied Anomalology — build plan
 
-## Status: content redesign complete — all 12 weeks have a lecture + deck; one follow-up decision remains unimplemented (see "Known follow-up" below)
+## Status: content redesign complete — all 12 weeks have a lecture + deck; the week 5/6 case swaps are now implemented (see "Week 5/6 case swaps" below, was "Known follow-up")
 
 The build described below (identity, cast, page structure, decks, assets,
 spec tests, visual pass) is still complete and still green — nothing in
@@ -273,16 +273,14 @@ fictional-media-anonymization convention used since week 7).
 
 Weeks 5, 6, 8, 9, and 11 (the remaining gap) are now done too:
 
-- **Week 5** — lecture + 10-slide deck, built around the case as it
-  actually exists in `05-case-clinic-1.md` (the library sub-basement),
-  not the SCP-2093 swap `course-logic-proposal.md` §5 settled but never
-  implemented (see "Known follow-up" below). Content: applying the
-  four-category scheme to a case with no prior write-up, the buddy
-  system tested rather than asserted, sourcing discipline turned inward
-  on a case the department is generating itself — and an explicit,
-  unsmoothed admission that no week-3 warding measure gets tested by
-  this case yet, matching the honesty standard `course-logic-proposal.md`
-  and week 10's content already set.
+- **Week 5** — lecture + 10-slide deck, originally built around the case
+  as it existed at the time (the library sub-basement), applying the
+  four-category scheme to a case with no prior write-up and the buddy
+  system tested rather than asserted. **Superseded 2026-09-21** — the
+  underlying case was then swapped to the SCP-2093-derived seminar room
+  (12-slide deck); see "Week 5/6 case swaps" below for the current
+  content and reasoning. This entry is kept for the deck-slide-count/
+  `_class` verification method, which carried over unchanged.
 - **Week 6** — deck only (9 slides; lecture already existed). Matches
   the existing lecture's worked reviews of both campus cases and its
   sample redacted log entry — written as plain-text `[redacted]` rather
@@ -290,7 +288,9 @@ Weeks 5, 6, 8, 9, and 11 (the remaining gap) are now done too:
   `astro-theme-university`'s deck stylesheet, not this project's
   `global.css` where `.redacted` lives (confirmed by reading
   `theme.css`'s own header comment before writing the slide, not after
-  finding it unstyled).
+  finding it unstyled). **Extended 2026-09-21** with the SCP-087 edge
+  case (deck now 13 slides) — see "Week 5/6 case swaps" below; the
+  `.redacted`-avoidance finding above still holds for the new slides.
 - **Week 8** — lecture + 12-slide deck, both new. Pairs Bloody Mary and
   Hanako-san as the two-country, no-plausible-contact case the session's
   own spec line asks for, with Langlois/Dundes's reflection-reframing
@@ -317,35 +317,69 @@ workaround as the Phase 1 check) confirming HTTP 200 and zero console
 errors on every page. **All 12 weeks now have a real lecture and a real
 deck — the hard requirement above is met.**
 
-## Known follow-up (not done, flagged rather than papered over)
+## Week 5/6 case swaps (implemented 2026-09-21, was "Known follow-up")
 
-`course-logic-proposal.md` §5 settled two case swaps that were never
-actually implemented in the session files:
+`course-logic-proposal.md` §5 settled two case swaps that had gone
+unimplemented through the "every week needs a lecture and a deck" pass
+(that task was scoped to lecture/deck coverage, not this decision, so it
+was correctly left as a named gap rather than force-fit). Both are now
+built:
 
-- Week 5: library sub-basement stacks → SCP-2093-derived seminar room
-  (thermal/humidity instrument signal, external-rescue mechanic that
-  gives week 4's buddy system real teeth, self-sealing failure state).
-- Week 6: 13-step stairwell keeps its setting but gains an
-  SCP-087-derived edge case (a non-visual anomaly signal, an alternate
-  step count that breaks the pattern, one redacted/withdrawn expedition
-  giving week 4's disengagement rule something concrete it once failed
-  to catch).
+- **Week 5** — the library sub-basement case is fully replaced by an
+  SCP-2093-derived case: a disused seminar room (Seminar Room 3, Arts
+  Annex) flagged "do not reassign" after a fire exit was bricked over,
+  which reads as extending past its real footprint. Instrument-verifiable
+  signal (thermometer/hygrometer against a corridor baseline) and an
+  external-rescue rule — an occupant can't self-extract, only a buddy
+  outside opening the door ends the observation — finally pay off week
+  4's lecture/deck, which already previewed this exact case for the
+  buddy-system rule.
+- **Week 6** — the 13-step stairwell keeps its setting (still the best
+  ordinary-life fit) and gains an SCP-087-derived edge case: light
+  fixtures dimming below a stated threshold as a non-visual, countable-
+  independent signal; a fourteen-step count that skips a floor instead of
+  returning to start, so "thirteen steps" reads as a stated rule with a
+  documented edge rather than a coincidence; and one redacted/withdrawn
+  expedition ("Incident SU-6-04") giving week 4's disengagement rule a
+  concrete failure-to-catch precedent, used in week 6's lecture as a
+  documentation-rigor example (citing a precedent you can't verify
+  yourself).
 
-**Why this wasn't done now:** the task actually authorized and tracked
-by this file's coverage table was "every week needs a lecture and a
-deck," not "implement the case-swap decision." Writing week 5/6's
-lecture+deck around a case that doesn't exist yet in the session files
-students actually read would have made the site self-contradictory —
-so week 5's lecture/deck were written honestly around the case that is
-currently live, and this gap is named explicitly here instead. This is
-also the reason weeks 5–6 still can't cleanly demonstrate a week-3
-warding measure in action (`lecture-plan.md`'s cross-reference table
-already flagged this); the swap, when implemented, is what closes it.
-**If this work resumes, the next step is: rewrite
-`src/content/sessions/05-case-clinic-1.md` and
-`06-case-clinic-2.md` per the sketches in `research/sources.md`'s SCP-087
-and SCP-2093 entries, then revise week 5/6's lecture and deck content
-(written in this pass) to match the new case.**
+**Scope was widened beyond the bare swap, by explicit user choice**
+(asked directly rather than assumed): `lecture-plan.md`'s "Week 3
+practical-measures cross-reference" table — a more granular document than
+this one — recommended going further than the swap itself, since weak
+link #5 (`course-logic-proposal.md` §2: "week 3's warding material never
+reappears after week 3") was still open. The user chose the fuller scope,
+so week 5's new case also closes two specific entries from that table:
+the nazar amulet (the table's top recommendation — "the one measure a
+student can watch change state during fieldwork") is now tested via a
+supplementary self-signalling check logged next to the instrument
+reading, honestly framed as a first test rather than a working
+countermeasure claim; and the case's protocol is explicitly built as a
+two-stage diagnose-then-respond structure, named in the lecture as
+mirroring English witch bottles' diagnose-then-neutralize logic, closing
+that table row too. The table's other, lower-priority rows (iron/salt at
+thresholds, fú talisman, spirit wall, witch ball, ofuda) remain open gaps
+— not addressed in this pass, and not claimed to be.
+
+Also fixed in the same pass: `src/content/assessments/case-file.md` had
+two literal "sub-basement stacks" mentions (spec bullet + brief
+blockquote) that would otherwise have gone stale — renamed to "seminar
+room."
+
+All six touched files (`05-case-clinic-1.md`, `06-case-clinic-2.md`,
+`week-05.md`/`week-06.md` lectures, `week-05.deck.mdx`/`week-06.deck.mdx`,
+`case-file.md`) were verified in two steps (week 5 first, then week 6 +
+the assessment file) per the manual-checks discipline: `pnpm check`
+green after each step, built HTML grepped for the new content and for
+correct `_class` slide styling, then driven through headless Firefox
+(cached-Playwright + `LD_LIBRARY_PATH` workaround, same recipe as the
+original visual pass) confirming HTTP 200 and zero console errors on all
+seven affected pages, with screenshots reviewed for the session, deck,
+and assessment pages. Committed as two separate commits (week 5, then
+week 6 + the assessment rename) so each step stays independently
+revertable.
 
 ## What this course is
 
@@ -414,7 +448,7 @@ that same split by phase rather than inventing a new axis.
 | 2 | Foundations | Historical taxonomies of anomalous phenomena | — |
 | 3 | Foundations | Comparative warding: Western practice (salt, iron, threshold rites) & Chinese practice (feng shui boundary theory, fú talismans) | Lecture: protective practice as applied research, not superstition |
 | 4 | On-campus fieldwork | Fieldwork method & safety protocol (consent, buddy system, disengagement rule) | — |
-| 5 | On-campus fieldwork | Case clinic 1: the library sub-basement stacks that rearrange overnight | — |
+| 5 | On-campus fieldwork | Case clinic 1: the seminar room past the bricked-over fire door | — |
 | 6 | On-campus fieldwork | Case clinic 2: the stairwell that returns you to your starting floor after 13 steps — **Case File due** | Lecture: writing up a case file, review of the two campus cases |
 | 7 | Off-campus desk study | Regional case survey: comparative method | — |
 | 8 | Off-campus desk study | Global case survey: the international corpus as primary source data | — |
@@ -529,7 +563,9 @@ weeks 4–12 · `d7762ed` assessments · `bc50d44` cast + teacher backfill ·
 policies copy · `8103e49` image assets · `ecf762d` plan checkpoint ·
 `7b19897` spec tests · `7e29e05` `.redacted` CSS + layout-routing fix ·
 `dec883e` plan/harness checkpoint · `281ab7a` `PROCESS.md` · `ff9d1cf`
-plan checkpoint.
+plan checkpoint · `6bdb53d` plan checkpoint (all 12 weeks) · `bf18bc5`
+week 5 case swap (seminar room, diagnose-then-respond, nazar test) ·
+`1895196` week 6 SCP-087 edge case + assessment file rename.
 
 Full prose account with reasoning: `PROCESS.md`. Raw process moments (YAML
 colon trap, SVG/`socialImage` constraint, layout-routing bug, this
