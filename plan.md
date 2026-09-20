@@ -224,7 +224,7 @@ what's actually done, not the historical week-by-week table further down.
 | 9 | Off-campus desk study | ✅ | ❌ | deck missing |
 | 10 | Literature synthesis | ✅ | ✅ | done |
 | 11 | Literature synthesis | ✅ | ❌ | deck missing |
-| 12 | Capstone | ❌ | ❌ | missing |
+| 12 | Capstone | ✅ | ✅ | done |
 
 **Progress:** week 2 is done (lecture built around applying the
 classification scheme as method, honestly flagged as thin since no
@@ -260,18 +260,21 @@ fill the session's open "others, briefer" slot, each paired with a case
 already on the site: the week-1 forum-thread hook, an in-universe
 recording-hypothesis case file, and week 3's mirror-covering custom.
 No fabricated theory is presented as real and no session file needed
-editing to make that true).
+editing to make that true). Week 12 is done (Capstone's representative
+week — lecture and 11-slide deck, co-taught, reviewing the method end
+to end in build order and reframing the Final Capstone as a design task
+using every prior skill; offers 6 of `sources.md`'s 8 idea seeds as
+non-mandatory starting points, all described generically per the same
+fictional-media-anonymization convention used since week 7).
 
-**Next step, in the agreed order:** one week per remaining phase is now
-done for On-campus fieldwork (week 4), Off-campus desk study (week 7),
-and Literature synthesis (week 10). Remaining: (1) one representative
-week for Capstone (week 12); (2) then the rest — week 5
-(lecture+deck), week 6 (deck only), week 8 (lecture+deck), week 9 (deck
-only), week 11 (deck only) — in whatever order keeps each phase's
-`pnpm check` green before moving on. Commit after each phase and update
-the table above as it goes. If work stops before all 12 weeks are
-covered, this table — not prose elsewhere in this file — is what should
-say exactly what's left.
+**Every phase now has at least one full lecture+deck.** Weeks 1, 2, 3,
+4, 7, 10, and 12 are fully done. **Next step, in the agreed order:**
+"the rest" — week 5 (lecture+deck), week 6 (deck only), week 8
+(lecture+deck), week 9 (deck only), week 11 (deck only) — in whatever
+order keeps each phase's `pnpm check` green before moving on. Commit
+after each and update the table above as it goes. If work stops before
+all 12 weeks are covered, this table — not prose elsewhere in this file
+— is what should say exactly what's left.
 
 ## What this course is
 
