@@ -32,7 +32,7 @@ related:
   two ritual-summoning cases, same responsive-ghost-in-an-institutional-
   fixture structure, independently documented in two countries with no
   plausible route of contact between their sources — an ordinary
-  bathroom mirror and an ordinary school stall, not exotic material
+  bathroom mirror and an unremarkable school stall, not exotic material
   either way
 - the Charlie Charlie Challenge, read for sourcing integrity rather than
   content: reported everywhere in 2015 as an authentic named demon game,
