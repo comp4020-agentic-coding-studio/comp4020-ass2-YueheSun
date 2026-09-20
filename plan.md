@@ -1,6 +1,52 @@
 # Applied Anomalology — build plan
 
-## Status: content redesign complete — all 12 weeks have a lecture + deck; the week 5/6 case swaps are now implemented (see "Week 5/6 case swaps" below, was "Known follow-up")
+## Status: content redesign complete (12/12 weeks); post-build audit in progress — see "Full-site audit" below for the current checklist
+
+## Full-site audit (2026-09-21) — prioritized checklist
+
+A full read-only review against the brief/rubric, readability, extra credit,
+atmosphere, and refinements, done in three parallel passes (requirements,
+content-quality, atmosphere/extra-credit) before any further edits. Ordered
+high-priority/small-effort first per the review request. `status` tracks
+work against this list; update in place as items are picked up — don't
+duplicate rows.
+
+| # | Finding | Dimension | Priority | Effort | Status |
+|---|---|---|---|---|---|
+| 1 | Repo private / GitHub Pages not deployed — brief graded live, deadline same-day | Requirements | High | Small | In progress (Step 3, this session) |
+| 2 | "Practicals" rename never reached content — homepage card copy, Solano's bio, and 23/24 session/lecture files still say "session" | Readability | High | Small | Pending |
+| 3 | `_class: banner` isn't a real theme class — 15 thesis-statement slides (one/week) render unstyled | Atmosphere | High | Small | Pending |
+| 4 | PROCESS.md doesn't cover the redesign work (theory audit, research pass, case swaps) — the reasoning that most satisfies the 45%-weighted process criterion | Requirements | High | Medium | In progress (Step 2, this session) |
+| 5 | "X, not Y" antithesis is the site's default sentence shape almost everywhere, reads as a tic across 12 weeks | Readability | High | Medium | Pending |
+| 6 | Turn the `.hero` slide fix into a real deck visual identity (reused phase backgrounds) | Extra credit | High | Medium | Pending |
+| 7 | Week 7 deck's three "failure mode" slides are paragraph-shaped, not slide-shaped, unlike every other deck's labeled pattern | Readability | Medium | Small | Pending |
+| 8 | Inconsistent lecture closers — weeks 3, 9, 11 have no "after this lecture" bridge that every other week has | Readability | Medium | Small | Pending |
+| 9 | `final-capstone.md` missing the `related:` lecture cross-ref the other two assessments have | Refinements | Medium | Small | Pending |
+| 10 | Homepage body copy drops the deadpan voice entirely below the hero | Atmosphere | Medium | Small | Pending |
+| 11 | People index cards lose the "photograph withheld" line (only shows on detail pages) | Atmosphere | Medium | Small | Pending |
+| 12 | A hidden/non-nav page (e.g. `/incidents/`) linked only from an in-body reference | Extra credit | Medium | Small | Pending |
+| 13 | PROCESS.md over the indicative 400–600 word count (was 975) | Requirements | Medium | Medium | In progress (Step 2, this session) |
+| 14 | "Ordinary" repetition risks flattening into a slogan by week 8–10 | Readability | Medium | Medium | Pending |
+| 15 | Decks have zero visual elements beyond text (no image/diagram/background anywhere sampled) | Atmosphere | Medium | Medium | Pending |
+| 16 | Self-declared gap: 5 of 9 week-3 warding traditions never reappear after week 3 (iron/salt, fú talisman, spirit wall, witch ball, ofuda) | Requirements | Medium | Large | Pending |
+| 17 | "Last updated"/document-metadata footer detail, deliberately slightly off | Extra credit | Low | Small | Pending |
+| 18 | Favicon not confirmed changed from starter default | Extra credit | Low | Small | Pending |
+| 19 | Long, clause-heavy sentences in a few spots (e.g. week 3 session's closing sentence) | Readability | Low | Medium | Pending |
+| 20 | Chrome (nav/footer/page titles) is generic theme boilerplate, no in-fiction framing | Atmosphere | Low | Medium | Pending |
+| 21 | Small reused diagram/field-kit image for nazar amulet / threshold salt, cross-referenced across weeks 3/5/9 | Extra credit | Low | Medium | Pending |
+| 22 | Site-wide em-dash density (deliberate voice choice; only worth a pass if a full copy-edit happens anyway) | Readability | Low | Large | Pending |
+| 23 | No dark/"redacted-document" surface treatment anywhere outside the decks | Atmosphere | Low | Large | Pending |
+
+**Verified strengths, no action needed:** `pnpm check` and `pnpm check:evidence` both green; 49 built pages, zero broken links; all 12 lectures have a real linked deck; assessment weights sum to 100; `spec/` tests read as genuine course-design decisions; deadpan voice is excellent and consistent everywhere it's been written (sessions/lectures/policies); no typos or broken markdown found anywhere.
+
+## Ship status
+
+Not yet shipped as of this checkpoint. Plan: run the `/ship` skill (explicit
+user authorization to make the repo public), enable GitHub Pages, dispatch
+the deploy, then verify the live URL returns 200 and that home/timetable/one
+deck render. Recorded in "Live deployment" below once confirmed.
+
+## Previous status (superseded by the audit above, kept for history)
 
 The build described below (identity, cast, page structure, decks, assets,
 spec tests, visual pass) is still complete and still green — nothing in
