@@ -12,6 +12,7 @@ contact:
 ---
 
 *Identifying photograph withheld per containment protocol.*
+<span class="stamp">record withheld</span>
 
 Whitcombe wrote the course's current disengagement rule after an
 earlier version of the protocol left the call to the observer's judgement in

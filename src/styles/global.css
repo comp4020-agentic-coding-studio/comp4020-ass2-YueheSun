@@ -4,6 +4,16 @@
    ContentLayout, not this project's PageLayout.astro, so a scoped <style>
    there never reaches them. See process-notes.md. */
 
+/* The short, unsettling tagline under a lecture's academic title. Used on
+   both the /lectures listing cards (routed through PageLayout, which
+   imports this file) and the lecture detail pages (ContentLayout, which
+   import it directly) — one rule, since neither route is scoped-style
+   friendly for the other. */
+.lecture-subtitle {
+  font-style: italic;
+  color: var(--at-text-secondary);
+}
+
 .redacted {
   font-family: var(--at-font-mono);
   padding: 0.05em 0.4em;
@@ -11,4 +21,80 @@
   color: var(--at-white);
   letter-spacing: 0.03em;
   border-radius: 2px;
+}
+
+/* In-fiction document annotations --- a small, reused visual vocabulary for
+   "this record has a gap in it" that never sits on top of or reflows the
+   text it annotates. See plan.md / process-notes.md for which pages use
+   which. */
+
+.stamp {
+  display: inline-block;
+  font-family: var(--at-font-mono);
+  font-size: var(--at-font-size-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 1px solid var(--at-text-muted);
+  border-radius: 2px;
+  padding: 0.1em 0.5em;
+  margin-left: 0.5em;
+  color: var(--at-text-muted);
+  transform: rotate(-1.5deg);
+  vertical-align: middle;
+}
+
+.stamp--status {
+  border-color: var(--at-warning);
+  color: var(--at-warning);
+}
+
+/* Decorative only: a few corrupted-looking glyphs sitting next to a value
+   that stays fully present as ordinary readable text. Never the only copy
+   of the information, so it's safe to hide from assistive tech. Static by
+   default --- no motion at all, so it carries no prefers-reduced-motion or
+   flashing obligations. */
+.glyph-corrupt {
+  font-family: var(--at-font-mono);
+  font-size: 0.85em;
+  color: var(--at-text-muted);
+  opacity: 0.6;
+  letter-spacing: 0.05em;
+  margin-left: 0.35em;
+}
+
+/* A single, one-shot vignette at the page edges --- never over the text
+   column --- used only on the one page whose own prose describes a
+   dimming-lights signal. Plays once on load and settles back to nothing;
+   it does not loop or flicker. */
+.dim-once {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  animation: dim-once-play 2.6s ease-in-out 1 both;
+}
+
+@keyframes dim-once-play {
+  0%,
+  20% {
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  45% {
+    box-shadow: inset 0 0 9vmax 2vmax rgba(0, 0, 0, 0.32);
+  }
+  75%,
+  100% {
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dim-once {
+    animation: none;
+    /* Static stand-in: a permanent, gentle edge vignette instead of the
+       one-shot dip, so the annotation still exists, just without motion. */
+    box-shadow: inset 0 0 6vmax 1vmax rgba(0, 0, 0, 0.1);
+  }
 }

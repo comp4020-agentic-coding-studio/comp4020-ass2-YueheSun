@@ -1,5 +1,6 @@
 ---
-title: Protective practice as applied research, not superstition
+title: "Comparative Warding"
+subtitle: "Protective practices across cultures."
 description:
   Why this course treats nine independently-arrived-at warding traditions,
   named explicitly as themselves, as countermeasure data rather than
@@ -32,7 +33,8 @@ related:
 
 ## After this lecture
 
-Fieldwork starts next week. Week 4 covers the safety protocol you'll run
-these traditions' logic against for real — consent, the buddy system, the
-disengagement rule — before either on-campus case gets its first
-observation logged.
+Having read this week's traditions as testable claims about mechanism, the
+next step is testing or applying them without compromising the observation
+itself — which is exactly what week 4's safety protocol supplies. Fieldwork
+starts next week: consent, the buddy system, and the disengagement rule,
+before either on-campus case gets its first observation logged.

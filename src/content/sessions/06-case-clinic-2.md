@@ -46,10 +46,11 @@ Two additions to what earlier cohorts logged:
   documented edge, not a round number that happens to recur.
 
 One entry in the case's history is on record but not open for further
-observation: **Incident SU-6-04**, an expedition that continued past a
-disengagement trigger. Access to that flight has been restricted since,
-and no further detail is available to this cohort — cite it as precedent,
-not as something you can go verify yourself.
+observation: **Incident SU-6-04**<span class="stamp">access restricted</span>,
+an expedition that continued past a disengagement trigger. Access to that
+flight has been restricted since, and no further detail is available to
+this cohort — cite it as precedent, not as something you can go verify
+yourself.
 
 Same protocol as case clinic 1: buddy pairs, step counts logged aloud as
 they happen rather than reconstructed afterwards from memory, disengagement

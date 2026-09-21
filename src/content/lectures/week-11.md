@@ -1,5 +1,6 @@
 ---
-title: "Current state of the field, and open dissent"
+title: "Hypothesis and Dissent"
+subtitle: "The leading explanation for campus anomalies is still not a settled one."
 description:
   Where the fourth-dimensional hypothesis actually stands — its strongest
   support, its open dissenters, and why this course does not treat

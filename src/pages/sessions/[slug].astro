@@ -16,6 +16,12 @@ export async function getStaticPaths() {
 
 const { session } = Astro.props;
 const { Content } = await render(session);
+
+// This is the one page whose own text describes a dimming-lights signal
+// (the stairwell's fixtures dimming below a wattage threshold) --- the
+// one-shot vignette illustrates that specific sentence, so it stays keyed
+// to this slug rather than becoming a generic per-session toggle.
+const showDimOnce = session.id === "06-case-clinic-2";
 ---
 
 <ContentLayout
@@ -23,6 +29,7 @@ const { Content } = await render(session);
   description={session.data.description}
   {...siteConfig}
 >
+  {showDimOnce && <div class="dim-once" aria-hidden="true"></div>}
   <p><strong>{formatCourseDate(session.data.date)}</strong></p>
   <Content />
   <SpecList spec={session.data.spec}>

@@ -1,5 +1,6 @@
 ---
-title: "Reading a case with no prior write-up"
+title: "Case Clinic I"
+subtitle: "The seminar room that reads larger inside than the floor plan allows."
 description:
   Applying the classification scheme live for the first time, the case
   that finally gives the buddy system real teeth, and the corpus's first

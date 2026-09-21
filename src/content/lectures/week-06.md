@@ -1,5 +1,6 @@
 ---
-title: "Writing up a case file: reviewing the two campus cases"
+title: "Case Clinic II"
+subtitle: "Thirteen steps down. Sometimes you end up back where you started."
 description:
   How to turn a week of field logs into a case file a marker can assess,
   using the seminar room and the 13-step stairwell as worked examples.
@@ -35,7 +36,7 @@ A strong log entry from the stairwell case, as the course's running
 record keeps it — observer identity redacted for privacy, count
 and classification left intact for the write-up to work from:
 
-> Observer <span class="redacted">[redacted]</span>, buddy-paired, west
+> Observer <span class="redacted">[redacted]</span><span class="glyph-corrupt" aria-hidden="true">▓░▓</span>, buddy-paired, west
 > stairwell, descending. Counted thirteen steps aloud with buddy
 > confirming. Arrived at starting floor. Re-ran ascending: sixteen steps,
 > arrived one floor above starting point as geometry predicts. No

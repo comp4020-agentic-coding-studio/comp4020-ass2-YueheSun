@@ -44,7 +44,10 @@ log — not against how the case felt to observe.
 One document covering both cases, structured so a marker can find, for each
 case: the log excerpts that support your classification, an explicit note
 of anywhere the buddy system or disengagement rule was invoked, and your
-classification with its justification.
+classification with its justification. Where you cite unavailable
+precedent — Incident SU-6-04<span class="stamp stamp--status">cited, not observed</span>,
+for instance — keep it visibly separate from what you personally logged;
+a marker is checking that distinction, not just the citation's presence.
 
 The weighted criteria above split roughly as you'd expect: documentation
 rigor asks whether a second observer could reconstruct what you saw from

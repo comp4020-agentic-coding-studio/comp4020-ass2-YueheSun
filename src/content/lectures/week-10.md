@@ -1,5 +1,6 @@
 ---
-title: "What the frameworks that clear the bar actually say"
+title: "Explanatory Frameworks"
+subtitle: "Comparing theories precise enough to be proven wrong."
 description:
   Cosmic prisoner theory and shadow domain theory held to the
   falsifiability test the practical sets, and what three real, citable
@@ -15,13 +16,12 @@ related:
 
 ## Outline
 
-- cosmic prisoner theory and shadow domain theory, restated as precisely
-  as their own popular accounts allow: what would a case have to do to
-  break either one? Neither answer survives being asked out loud: not
-  because the ideas are wrong, but because neither is stated precisely
-  enough to be wrong. That is the failure this week's practical already
-  names: "most popular accounts of these theories can't clear that bar
-  as written"
+- a framework earns space in this phase only if it makes a claim precise
+  enough to generate a possible counterexample. Cosmic prisoner theory and
+  shadow domain theory, restated as precisely as their own popular accounts
+  allow: what would a case have to do to break either one? Neither answer
+  survives being asked out loud: not because the ideas are wrong, but
+  because neither is stated precisely enough to be wrong
 - Freud's uncanny (1919): dread as something familiar returning in
   disguise, not something foreign arriving. The week-1 forum thread
   (alumni "remembering" a broadcast that never aired, each retelling
