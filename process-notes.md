@@ -219,6 +219,43 @@ browser honors). Promoted to CLAUDE.md as a platform-gotcha note, next to
 the scoped-styles one, since any future inline SVG in a `.deck.mdx` file
 will hit this the same way.
 
+## Two Claude sessions shared one working directory — 2026-09-21 (commits b4f43a9, 10676e9, 85716c0)
+
+Working on `main`, committed the lecture-subtitle changes with `git add
+-A` and pushed. The student's next message: "did you push into branch
+atmosphere effect? Thant branch is not for you." `git branch
+--show-current` on `main` had actually reported `atmosphere-effects` —
+another Claude session, running concurrently in this same checkout on a
+demo of its own, had run `git checkout -b atmosphere-effects` mid-task,
+which changed the branch under both sessions at once, with no error to
+either. The broad `git add -A` then staged that other session's
+uncommitted files right alongside mine, and both landed in `b4f43a9`/
+`10676e9` on `origin/atmosphere-effects`.
+
+**How this was found:** only by the student asking directly why the push
+went to that branch — nothing in `pnpm check` or git's own output flags a
+branch that changed under you, or a stage that picked up files you didn't
+touch.
+
+**Fix applied:** confirmed with the student that the other session had
+stopped, then rebuilt only the real content changes on `main`:
+`git cherry-pick -n b4f43a9` to get everything into the index without
+committing, `git restore --source=HEAD --staged --worktree` on every
+file that belonged entirely to the other session's demo, and manual
+per-hunk edits on the two files both sessions had touched
+(`global.css`, `week-06.md`). Verified by grepping the full staged diff
+for the other session's markers before committing — zero matches — then
+committed to `main` as `85716c0` and pushed; `origin/atmosphere-effects`
+was left exactly as it was.
+
+**This is a harness-gap moment, not a routine retry**: promoted straight
+into a `CLAUDE.md` rule rather than just "be more careful" — check
+`git branch --show-current` before every git operation, never
+`git add -A` in a checkout that might be shared, and give concurrent
+sessions their own `git worktree` instead of one shared checkout. Also
+promoted into `PROCESS.md` as the one incident in the build that wasn't a
+content or rendering bug.
+
 ## SVG viewBox clipping caption text — silent, same failure class — 2026-09-21 (commit 0fbb3eb)
 
 Reusing week-02's field-kit SVG icon across weeks 3/5/9 (audit item #21),

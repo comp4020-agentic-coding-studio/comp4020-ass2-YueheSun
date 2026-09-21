@@ -59,6 +59,19 @@ objects rather than bare attributes, so you're relying on the one path
 this pipeline actually gets right instead of hand-tracking which raw
 attribute names need kebab-casing.
 
+## A shared checkout means another session's git state can become yours
+
+If this working directory might be shared with another concurrent Claude
+session, don't trust `git status` to reflect only your own edits, and never
+`git add -A` — stage the files you actually touched, by name. A broad stage
+can silently absorb another session's uncommitted work into your commit,
+and a branch checkout by either session changes what "current branch" means
+for both, mid-command, with no error. Run `git branch --show-current`
+before every git operation, and if it isn't the branch you expect, stop and
+tell the student rather than proceeding. When two sessions are known to be
+running against the same repo, give each its own `git worktree` instead of
+sharing one checkout.
+
 ## Auto-commit
 
 Commit automatically whenever a feature is added, removed, or adjusted —
