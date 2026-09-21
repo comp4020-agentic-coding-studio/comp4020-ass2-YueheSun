@@ -1,5 +1,6 @@
 ---
-title: "Course overview: why anomalology, and how it works"
+title: "Observation as Evidence"
+subtitle: "How to observe something that should not be there."
 description:
   What the course studies, why it insists "applied" is not decoration,
   and the observe–classify–countermeasure method that structures the semester.

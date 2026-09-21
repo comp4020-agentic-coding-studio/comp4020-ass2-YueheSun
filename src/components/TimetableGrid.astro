@@ -55,6 +55,13 @@ const rows = Array.from({ length: 12 }, (_, index) => {
             {row.session && (
               <a href={withBase(`/sessions/${row.session.id}/`)}>{row.session.data.title}</a>
             )}
+            {row.week === 6 && (
+              <sup>
+                <a href={withBase("/incidents/")} title="See the disengagement invocation log">
+                  †
+                </a>
+              </sup>
+            )}
             {row.assessment && (
               <>
                 {" "}
@@ -77,6 +84,10 @@ const rows = Array.from({ length: 12 }, (_, index) => {
     }
   </tbody>
 </table>
+
+<p class="timetable-note">
+  † week 6's practical log has one entry the disengagement log does not.
+</p>
 
 <style>
   .timetable {
@@ -103,6 +114,12 @@ const rows = Array.from({ length: 12 }, (_, index) => {
 
   .timetable th[scope="row"] {
     font-variant-numeric: tabular-nums;
+  }
+
+  .timetable-note {
+    margin-top: 0.75rem;
+    font-size: var(--at-font-size-sm);
+    color: var(--at-text-muted);
   }
 
   .due-badge {

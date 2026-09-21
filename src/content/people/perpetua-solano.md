@@ -12,6 +12,7 @@ contact:
 ---
 
 *Identifying photograph withheld per containment protocol.*
+<span class="stamp">record withheld</span>
 
 Dr. Solano's own doctoral fieldwork is the reason the course's current
 classification scheme replaced the two it inherited — see week 2. She

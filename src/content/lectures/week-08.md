@@ -1,5 +1,6 @@
 ---
-title: "Two countries, no contact, the same structure"
+title: "Comparative Analysis"
+subtitle: "The same ritual, summoned the same way, on two continents with no contact between them."
 description:
   Bloody Mary and Hanako-san read side by side as the same responsive-
   ghost-in-an-institutional-fixture case with no plausible line of

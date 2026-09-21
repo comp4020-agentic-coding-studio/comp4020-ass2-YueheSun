@@ -42,3 +42,7 @@ No submission this week. Next week's capstone brief asks you to design a
 countermeasure protocol grounded in the course's classification and
 countermeasure material — a position on this hypothesis may inform that
 design, but the deliverable is the protocol, not a verdict on the theory.
+
+---
+
+*Session notes last reviewed: 2027-05-02.*

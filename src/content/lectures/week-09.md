@@ -1,5 +1,6 @@
 ---
-title: "Does it converge on one cause?"
+title: "Convergence and Causation"
+subtitle: "The pattern is real. What causes it is still an open question."
 description:
   What the pooled regional and global cases do and don't support, and why the
   course treats a single unifying cause as a live question rather than a

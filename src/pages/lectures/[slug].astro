@@ -20,6 +20,7 @@ const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
 ---
 
 <ContentLayout title={title} description={lecture.data.description} {...siteConfig}>
+  {lecture.data.subtitle && <p class="lecture-subtitle">{lecture.data.subtitle}</p>}
   <p><strong>{formatCourseDate(lecture.data.date)}</strong></p>
   {lecture.data.slides && <p><a href={withBase(lecture.data.slides)}>Open the slides</a></p>}
   <Content />
