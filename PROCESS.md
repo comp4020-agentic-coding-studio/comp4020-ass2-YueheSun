@@ -15,44 +15,47 @@ actually comes from.
 
 ## How I got here
 
-I didn't review my own early planning closely enough. My first
+My first
 [`8b1fdbf`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-YueheSun/commit/8b1fdbf)
-`plan.md` gave the course a department and, for week 10, two theories I
-made up on the spot — "cosmic prisoner theory" and
-"shadow domain theory." Nothing checked them against anything real, and
-because everything built afterward stood on that plan, the department and
-the invented theories spread into sessions, lectures, decks, both People
-bios, and the assessments themselves
+`plan.md` settled the topic and the course's logic: foundations, then
+on-campus fieldwork, then an off-campus desk study, then a
+literature-synthesis phase comparing frameworks for their cause. That
+last phase raised the idea of one unifying account, but the plan was
+explicit that reaching one wasn't the goal.
+
+Turning that logic into real weeks meant gathering material first.
+[`84b4b13`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-YueheSun/commit/84b4b13)'s
+`research/sources.md` pulled from SCP, Reddit, other wikis, and classic
+horror fiction and film; the same commit's
+`research/01-theory-audit.md` checked the plan's two week-10 theory names
+and found neither traced to anything real. Not everything gathered made
+the cut — material only qualified if a student could plausibly meet it
+in daily life and taught a concept, not just a scary story. Under that
+test, "The Dunwich Horror," "The Painted Skin," and SCP-093 were dropped
+as too exotic for ordinary life, replaced by real substitutes teaching
+the same lesson.
+
+That same commit's `course-logic-proposal.md` fixed a structural problem
+underneath the phases: weeks 5–6 tested a week-3 warding measure's
+effect, but week 3 had no real procedure yet to test against. I fixed it
+by pairing each desk-study case with its theory in the same week.
+
+That fix wouldn't have been needed with proper review at the start. That
+same `plan.md` also gave the course a department and named "cosmic
+prisoner theory" and "shadow domain theory" for week 10 — both made up
+on the spot, neither checked. Because everything afterward built on that
+plan, both spread into sessions, lectures, decks, both People bios, and
+the assessments
 ([`b8b8929`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-YueheSun/commit/b8b8929)).
 Removing the department alone
 ([`da33788`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-YueheSun/commit/da33788))
-touched 65 lines across 23 files — unwinding it cost far more than reading
-the plan once, at the start, would have. The lesson: an early planning
-document becomes the foundation everything after it stands on, so a
-mistake made there doesn't stay local, it snowballs — the document that
-most needs careful review is the first one.
-
-Fixing the theories meant treating research as its own step, separate
-from writing content.
-[`84b4b13`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-YueheSun/commit/84b4b13)'s
-`research/01-theory-audit.md` checked both invented names against a live
-search and confirmed neither traced to anything real. `research/sources.md`
-then screened real material — forums and wikis, horror fiction and film,
-folklore and religion, named scholarship — keeping what an ordinary
-student could plausibly encounter and what taught a concept, not just a
-scary story. "The Dunwich Horror," "The Painted Skin," and SCP-093 failed
-that test — too exotic-occult for ordinary campus life — and were replaced
-with real substitutes teaching the same lesson. The same commit's
-`course-logic-proposal.md` used that grounding to fix a structural problem
-underneath: weeks 5–6 tested a week-3 warding measure's effect, but week 3
-had no real procedure yet to test against. I compared three ways to
-restructure the phases and settled on pairing each desk-study case with
-its theory in the same week instead of three weeks apart, ending the
-course on the frameworks' genuine disagreement rather than forcing an
-answer the sources didn't support.
+touched 65 lines across 23 files, and
 [`16f1623`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-YueheSun/commit/16f1623)
-carried the fixed theory into week 10's lecture. The premise stayed
-fictional; the material teaching through it didn't.
+carried the audited theory into week 10's lecture — unwinding both cost
+far more than reading the plan once would have. An early planning
+document becomes the foundation everything after it stands on: a mistake
+there doesn't stay local, it snowballs — the first document is the one
+that most needs careful review.
 
 A separate mistake came from process, not content: two Claude sessions
 worked in the same checkout, and an unrelated session's uncommitted work
