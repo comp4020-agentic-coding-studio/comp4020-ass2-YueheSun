@@ -2,12 +2,17 @@
 
 ## What I built
 
-**Applied Anomalology** — a fictional, deadpan-serious course (`SLOP1646`)
-about anomalous phenomena hidden in ordinary campus life. Built on the
-fixed Slop harness: 12 weeks across five phases, three weighted
-assessments, two staff, a full lecture deck per week, and spec tests
-asserting the content graph stays internally consistent, not just
-individually well-formed.
+**Applied Anomalology** — a fictional, deadpan-serious course (`SLOP3646`)
+about anomalous phenomena in ordinary campus life. The course treats urban
+legends and campus horror stories as real, recurring phenomena, and teaches
+students how to observe, classify, compare, investigate, and safely respond
+to them as practical problems. Its 12-week curriculum follows one
+continuous method — **observe → classify → compare → test/countermeasure →
+apply** — while using an academic tone and bureaucratic seriousness to
+create an unsettling contrast with its subject matter. Built on the fixed
+Slop harness: 12 weeks across five phases, three weighted assessments, two
+staff, a full lecture deck per week, and spec tests asserting the content
+graph stays internally consistent, not just individually well-formed.
 
 ## How I got here
 
