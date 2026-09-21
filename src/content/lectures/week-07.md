@@ -1,5 +1,6 @@
 ---
-title: "Reading a case you didn't collect yourself"
+title: "Sourcing and Evidence"
+subtitle: "A striking story and a sourced one are not the same thing."
 description:
   Three ways a documented case can fail the sourcing test without being
   obviously fake, and the persistent-plus-dormant reveal held back since

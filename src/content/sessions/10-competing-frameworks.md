@@ -24,8 +24,9 @@ framework this week is trying to explain.
 
 ## In the practical
 
-A working survey of frameworks currently in circulation, each read for what
-it actually claims:
+A framework earns space in this phase only if it makes a claim precise
+enough to generate a possible counterexample. A working survey of
+frameworks currently in circulation, each held to that standard:
 
 - **Cosmic prisoner theory** — anomalous sites are containment failures
   around something already contained elsewhere, leaking rather than
@@ -36,10 +37,10 @@ it actually claims:
 - others, briefer, read the same way: what does it predict, and what
   observed case would break it.
 
-None is presented as this course's position. The point of the week is
-being able to state a framework's claim precisely enough that you could say
-what would falsify it — most popular accounts of these theories can't clear
-that bar as written.
+None is presented as this course's position. Most popular accounts of
+cosmic prisoner and shadow domain theory don't actually clear that bar as
+written — the claim sounds precise until you try to state what would break
+it.
 
 ## Afterwards
 

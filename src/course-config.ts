@@ -57,7 +57,7 @@ export const courseMeta = slopCourseMetaSchema.parse({
     "An applied research methods course in observing, classifying and " +
     "containing anomalous phenomena. Students run supervised on-campus " +
     "fieldwork, undertake a comparative desk study of documented cases " +
-    "beyond campus, and apply Western and Chinese warding traditions as " +
+    "beyond campus, and apply cross-cultural warding traditions as " +
     "practical countermeasures.",
   tags: ["fieldwork", "anomalous phenomena", "applied science"],
 }) satisfies CourseMetaInput;

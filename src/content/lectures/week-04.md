@@ -1,5 +1,6 @@
 ---
-title: "Why the protocol is procedure, not caution"
+title: "Fieldwork Safety Protocol"
+subtitle: "What to do when observation becomes participation."
 description:
   The three real-world safety traditions this course's fieldwork protocol
   borrows from, and the case next week that makes the buddy-system rule's

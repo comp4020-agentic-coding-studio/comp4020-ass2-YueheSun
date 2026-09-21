@@ -60,6 +60,7 @@ export const collections = {
     schema: courseNodeSchema
       .extend({
         week: weekSchema,
+        subtitle: z.string().trim().min(1).optional(),
         date: z.coerce.date(),
         teachers: teacherRefs.optional(),
         slides: z

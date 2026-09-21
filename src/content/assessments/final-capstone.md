@@ -37,7 +37,7 @@ This is the capstone the whole semester points at, not a test of whether you
 agree with any one theory of cause. Invent (or adapt from the wider corpus)
 a case the course hasn't already handed you a protocol for, classify it
 using the week-2 scheme, and design a countermeasure that draws
-specifically on the Western/Chinese warding convergence from week 3 and the
+specifically on the cross-cultural warding convergence from week 3 and the
 safety rules from week 4. A position on the fourth-dimensional hypothesis
 may shape how you explain why the protocol should work, but the protocol
 itself has to be usable by a field team who doesn't share that position.

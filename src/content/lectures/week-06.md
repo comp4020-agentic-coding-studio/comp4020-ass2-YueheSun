@@ -1,5 +1,6 @@
 ---
-title: "Writing up a case file: reviewing the two campus cases"
+title: "Case Clinic II"
+subtitle: "Thirteen steps down. Sometimes you end up back where you started."
 description:
   How to turn a week of field logs into a case file a marker can assess,
   using the seminar room and the 13-step stairwell as worked examples.

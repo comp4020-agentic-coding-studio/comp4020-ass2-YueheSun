@@ -4,6 +4,16 @@
    ContentLayout, not this project's PageLayout.astro, so a scoped <style>
    there never reaches them. See process-notes.md. */
 
+/* The short, unsettling tagline under a lecture's academic title. Used on
+   both the /lectures listing cards (routed through PageLayout, which
+   imports this file) and the lecture detail pages (ContentLayout, which
+   import it directly) — one rule, since neither route is scoped-style
+   friendly for the other. */
+.lecture-subtitle {
+  font-style: italic;
+  color: var(--at-text-secondary);
+}
+
 .redacted {
   font-family: var(--at-font-mono);
   padding: 0.05em 0.4em;

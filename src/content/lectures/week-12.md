@@ -1,5 +1,6 @@
 ---
-title: "The method, end to end, and the protocol it was always building toward"
+title: "Capstone Protocol"
+subtitle: "Turning a semester of method into a protocol for a case no one has observed yet."
 description:
   A joint review of the whole semester's method, and the containment or
   warding protocol it all points to — a design task, not a recital.
