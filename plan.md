@@ -1,6 +1,52 @@
 # Applied Anomalology — build plan
 
-## Status: content redesign complete (12/12 weeks); shipped and live at https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-YueheSun/ (Assignment 2, due 2026-09-21T12:00). Post-ship polish audit is now **closed** — see "Full-site audit" below; 22 of 23 items done (1 partially — #22, a deliberately non-exhaustive pass, see that row), 1 demoed on a throwaway branch and rejected by the user after looking at it live (#23 — see that row). **Next step for a cold reader: there isn't one from this audit — it's fully worked through. Any further changes need a new reason to reopen it, not a continuation of this checklist.**
+## Status: content redesign complete (12/12 weeks); shipped and live at https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-YueheSun/ (Assignment 2, due 2026-09-21T12:00). Post-ship polish audit (see "Full-site audit" below) closed at 22/23. A follow-up round, "Coherence pass + lecture titles" below, has since landed on top of that and is also closed. **Next step for a cold reader: there isn't one queued — both the audit and the coherence pass are fully worked through. Any further changes need a new reason from the user to reopen either, not a continuation of either checklist.**
+
+## Coherence pass + lecture titles (2026-09-21, branch `atmosphere-effects`, commit `b4f43a9`) — closed
+
+Two user-requested batches of content work, done together and pushed:
+
+1. **Curriculum-coherence fixes** — user flagged that some prose read as
+   explaining the course to an assignment marker rather than being the
+   course. Fixed: week 3's warding material reframed from "Western/Chinese"
+   to cross-cultural comparative warding everywhere it's mentioned
+   (`week-03.md`, `final-capstone.md`, `course-config.ts`'s course
+   description); week 2's lecture and deck rewritten to drop
+   meta-commentary about content generation/corpus gaps and instead read as
+   a deliberate teaching choice (classification without a new case; first
+   full case in week 7); a one-sentence bridge added to the end of week 3
+   (protective practice → claimed mechanism → test/countermeasure → safe
+   application); week 10's framework-selection criterion stated explicitly
+   ("a framework earns space in this phase only if it makes a claim precise
+   enough to generate a possible counterexample") in both the lecture and
+   `sessions/10-competing-frameworks.md`. No new cases/theories/assessments
+   invented; curriculum progression (observe → classify → compare →
+   test/countermeasure → apply) untouched.
+2. **Lecture titles/subtitles sitewide** — added a `subtitle` field to the
+   `lectures` collection schema (`content.config.ts`) and rendered it on
+   both the `/lectures/` card grid (`LecturesGrid.astro`) and each lecture's
+   detail page (`pages/lectures/[slug].astro`), styled via one shared
+   `.lecture-subtitle` rule in `global.css` (not a scoped `<style>` block —
+   `LecturesGrid` routes through `PageLayout`, the detail page through
+   `ContentLayout` directly, and only `global.css` reaches both). Every
+   week's title tightened to a short, legitimate-sounding lecture title
+   with a subtitle that surfaces the actual anomalous subject matter (e.g.
+   week 6: "Case Clinic II" / "Thirteen steps down. Sometimes you end up
+   back where you started."). Titles were matched to each week's *existing*
+   content, not the user's provisional week-by-week suggestion where the
+   two diverged (e.g. week 8/9 mapped by checking what's actually taught,
+   not by number alone).
+
+Verified: `pnpm check` green; built HTML checked directly for the new
+titles/subtitles on the lectures grid, a lecture detail page, and the
+timetable. Committed and pushed to `origin/atmosphere-effects` at the
+user's explicit request. **No next step queued** — this was a complete,
+closed batch; only reopen it if the user raises something new.
+
+Note: this session shared its working directory with a second, unrelated
+Claude session doing an "atmosphere effects" demo on the same branch name
+(coincidental collision, not a merge of related work) — coordinated over
+SendMessage before either side ran git, no conflicts.
 
 ## Full-site audit (2026-09-21) — prioritized checklist
 
